@@ -21,7 +21,7 @@ module detector(input clk, Clk_EN, rst, serIn, Co,
             F : nstate <= Clk_EN && serIn ? G : Clk_EN && ~serIn ? A : F;
             G : nstate <= ~Co ? G : idle;
         endcase
-        end
+    end
 
         always @(pstate) begin
         case(pstate)
