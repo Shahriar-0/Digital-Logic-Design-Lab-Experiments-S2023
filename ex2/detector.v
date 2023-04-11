@@ -3,8 +3,9 @@ module detector(input clk, Clk_EN, rst, serIn, Co
             parameter idle = 4'b0,A=4'b0001, B = 4'b0010 , C = 4'b0011, D = 4'b0100, E = 4'b0101, F = 4'b0110 , G = 4'b0111;
 
             reg [3:0] pstate,nstate;
-            always @( serIn, co , Clk_EN) begin
-                {serOutValid,inc_cnt,rst_cnt,serOut} <= 4'b0;
+            always @( serIn, Co , Clk_EN) begin
+                {serOutValid, inc_cnt, rst_cnt} <= 3'b0;
+                serOut <= 1'bz;
                 case(pstate)
                 idle : nstate <= Clk_EN ?  A : idle;
                 // if tb then delete condition
@@ -14,15 +15,15 @@ module detector(input clk, Clk_EN, rst, serIn, Co
                 D : nstate <= Clk_EN & ~serIn ? A : Clk_EN & serIn ? E : D;
                 E : nstate <= Clk_EN & ~serIn ?  F : Clk_EN & serIn ? C : E;
                 F : nstate <= Clk_EN & serIn ? G : Clk_EN & ~serIn ? A : F;
-                G : nstate <= ~Co ? G : Co ? A;
+                G : nstate <= ~Co ? G : Co ? idle;
                 endcase
               end
 
               always @(pstate) begin
                 case(pstate)
-                idle : nstate <= Clk_EN ?  A : idle;
+                idle : rst_cnt <= 1'b1;
                 // if tb then delete condition
-                A : rst_cnt <= 1'b1;
+                A : ;
                 B : ;
                 D : ;
                 E : ;
@@ -32,4 +33,13 @@ module detector(input clk, Clk_EN, rst, serIn, Co
                 endcase
               end
 
+            always @(posedge clk, posedge rst) begin 
+                if(rst)
+                    pstate <= idle;
+                else
+                    pstate <= nstate;
+
+            end
+
+            assign serOut = ((pstate == G) & Clk_EN )? serIn : 1'bz ;
 endmodule
