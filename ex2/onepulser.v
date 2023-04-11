@@ -17,3 +17,4 @@ module onepulser(input clk, rst, clkPB, output Clk_EN);
         if (Clk_EN)
             Clk_EN <= 1'b0;
     end
+endmodule
