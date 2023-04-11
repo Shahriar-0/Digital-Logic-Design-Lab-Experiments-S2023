@@ -10,11 +10,14 @@ module onepulser(input clk, rst, clkPB, output Clk_EN);
             Clk_EN <= 1'b1;
             can_assign <= 1'b0;
         end
-
     end
 
     always @(negedge clk) begin
         if (Clk_EN)
             Clk_EN <= 1'b0;
+    end
+
+    always @(posedge rst) begin
+        Clk_EN <= 1'b0;
     end
 endmodule
