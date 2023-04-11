@@ -1,11 +1,12 @@
-module detector(input clk, Clk_EN, rst, serIn, Co
-                output serOut, serOutValid, inc_cnt, rst_cnt);
+module detector(input clk, Clk_EN, rst, serIn, Co,
+                output reg serOut, serOutValid, inc_cnt, rst_cnt);
             
     parameter idle = 4'b0, A = 4'b0001, B = 4'b0010, 
             C = 4'b0011, D = 4'b0100, E = 4'b0101,
             F = 4'b0110, G = 4'b0111;
 
-    reg [3:0] pstate, nstate;
+    reg [3:0] pstate = 4'd0;
+    reg [3:0] nstate = 4'd0;
 
     always @(serIn, Co , Clk_EN) begin
         {serOutValid, inc_cnt, rst_cnt} <= 3'b0;
