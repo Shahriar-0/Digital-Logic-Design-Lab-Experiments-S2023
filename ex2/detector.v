@@ -8,11 +8,9 @@ module detector(input clk, Clk_EN, rst, serIn, Co,
     reg [3:0] pstate = idle;
     reg [3:0] nstate = idle;
 
-    always @(serIn, Co , Clk_EN) begin
-        {serOutValid, inc_cnt, rst_cnt} <= 3'b0;
-        serOut <= 1'bz;
+    always @(serIn, Co , Clk_EN, pstate) begin
         case(pstate)
-            idle : nstate <= Clk_EN ?  A : idle; // if tb then delete condition
+            idle : nstate <= A; 
             A : nstate <= Clk_EN && serIn ? B : A;
             B : nstate <= Clk_EN && serIn ? C : Clk_EN && ~serIn ? A : B;
             C : nstate <= Clk_EN && ~serIn ? D : C;
@@ -24,6 +22,8 @@ module detector(input clk, Clk_EN, rst, serIn, Co,
         end
 
         always @(pstate) begin
+        {serOutValid, inc_cnt, rst_cnt} = 3'b0;
+        serOut = 1'bz;
         case(pstate)
         idle : rst_cnt <= 1'b1;
         // if tb then delete condition
@@ -33,7 +33,7 @@ module detector(input clk, Clk_EN, rst, serIn, Co,
         E : ;
         F : ;
         C : ; 
-        G : begin  serOutValid <= 1'b1; inc_cnt = 1'b1; end
+        G : begin  serOutValid = 1'b1; inc_cnt = 1'b1;  end
         endcase
         end
 
@@ -43,7 +43,7 @@ module detector(input clk, Clk_EN, rst, serIn, Co,
         else
             pstate <= nstate;
 
+        serOut = ((pstate == G) & Clk_EN )? serIn : 1'bz ;
     end
 
-    assign serOut = ((pstate == G) & Clk_EN )? serIn : 1'bz ;
 endmodule
