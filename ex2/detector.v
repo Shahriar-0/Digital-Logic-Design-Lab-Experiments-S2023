@@ -5,8 +5,8 @@ module detector(input clk, Clk_EN, rst, serIn, Co,
             C = 4'b0011, D = 4'b0100, E = 4'b0101,
             F = 4'b0110, G = 4'b0111;
 
-    reg [3:0] pstate = 4'd0;
-    reg [3:0] nstate = 4'd0;
+    reg [3:0] pstate = idle;
+    reg [3:0] nstate = idle;
 
     always @(serIn, Co , Clk_EN) begin
         {serOutValid, inc_cnt, rst_cnt} <= 3'b0;
