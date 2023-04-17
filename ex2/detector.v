@@ -26,7 +26,6 @@ module detector(input clk, Clk_EN, rst, serIn, Co,
         always @(pstate) begin
         case(pstate)
         idle : rst_cnt <= 1'b1;
-        // if tb then delete condition
         A : ;
         B : ;
         D : ;
