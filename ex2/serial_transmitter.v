@@ -12,7 +12,7 @@ module serial_transmitter(clk, rst, clkPB, serIn,
         .clk(clk), .rst(rst), .clkPB(clkPB), .Clk_EN(Clk_EN)
     );
 
-    OTHFSM sequece_detector(
+    othfsm sequece_detector(
         .clk(clk), .rst(rst), .Clk_EN(Clk_EN), 
         .serIn(serIn), .serOut(serOut), 
         .serOutValid(serOutValid), .cnt_out(cnt_out)

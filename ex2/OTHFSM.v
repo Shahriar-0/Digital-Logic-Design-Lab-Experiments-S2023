@@ -1,4 +1,4 @@
-module OTHFSM(clk, rst, Clk_EN, serIn, 
+module othfsm(clk, rst, Clk_EN, serIn, 
              serOut, serOutValid, cnt_out);
 
     input clk, rst, Clk_EN, serIn;
