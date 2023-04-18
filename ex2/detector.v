@@ -27,7 +27,7 @@ module detector(clk, Clk_EN, rst, serIn, Co,
 
     always @(pstate) begin
         {serOutValid, inc_cnt, rst_cnt} <= 3'b000;
-        serOut <= 1'bz;
+        // serOut <= 1'bz;
         case (pstate)
             G : {serOutValid, rst_cnt} = 2'b11; 
             H : {serOutValid, inc_cnt} = 2'b1;
