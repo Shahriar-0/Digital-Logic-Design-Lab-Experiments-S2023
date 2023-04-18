@@ -1,49 +1,46 @@
-module detector(input clk, Clk_EN, rst, serIn, Co,
-                output reg serOut, serOutValid, inc_cnt, rst_cnt);
-            
-    parameter idle = 4'b0, A = 4'b0001, B = 4'b0010, 
-            C = 4'b0011, D = 4'b0100, E = 4'b0101,
-            F = 4'b0110, G = 4'b0111;
+module detector(clk, Clk_EN, rst, serIn, Co,
+                serOut, serOutValid, inc_cnt, rst_cnt);
+    
+    input clk, Clk_EN, rst, serIn, Co;
+    output reg serOut, serOutValid, inc_cnt, rst_cnt;
 
-    reg [3:0] pstate = idle;
-    reg [3:0] nstate = idle;
+    parameter A = 3'b000, B = 3'b001, 
+            C = 3'b010, D = 3'b011, E = 3'b100,
+            F = 3'b101, G = 3'b110, H = 3'b111;
 
-    always @(serIn, Co , Clk_EN, pstate) begin
-        case(pstate)
-            idle : nstate <= A; 
-            A : nstate <= Clk_EN && serIn ? B : A;
-            B : nstate <= Clk_EN && serIn ? C : Clk_EN && ~serIn ? A : B;
-            C : nstate <= Clk_EN && ~serIn ? D : C;
-            D : nstate <= Clk_EN && ~serIn ? A : Clk_EN && serIn ? E : D;
-            E : nstate <= Clk_EN && ~serIn ?  F : Clk_EN && serIn ? C : E;
-            F : nstate <= Clk_EN && serIn ? G : Clk_EN && ~serIn ? A : F;
-            G : nstate <= ~Co ? G : idle;
+    reg [2:0] pstate = A;
+    reg [2:0] nstate = A;
+
+    always @(serIn or Co or Clk_EN) begin
+        
+        case (pstate)
+            A : nstate <= serIn ? B : A;
+            B : nstate <= serIn ? C : A;
+            C : nstate <= ~serIn ? D : C;
+            D : nstate <= ~serIn ? A : E;
+            E : nstate <= ~serIn ?  F : C;
+            F : nstate <= serIn ? G : A;
+            G : nstate <= H;
+            H : nstate <= Co ? A : H;
         endcase
-        end
+    end
 
-        always @(pstate) begin
-        {serOutValid, inc_cnt, rst_cnt} = 3'b0;
-        serOut = 1'bz;
-        case(pstate)
-        idle : rst_cnt <= 1'b1;
-        // if tb then delete condition
-        A : ;
-        B : ;
-        D : ;
-        E : ;
-        F : ;
-        C : ; 
-        G : begin  serOutValid = 1'b1; inc_cnt = 1'b1;  end
+    always @(pstate) begin
+        {serOutValid, inc_cnt, rst_cnt} <= 3'b000;
+        serOut <= 1'bz;
+        case (pstate)
+            G : {serOutValid, rst_cnt} = 2'b11; 
+            H : {serOutValid, inc_cnt} = 2'b1;
         endcase
-        end
+    end
 
     always @(posedge clk, posedge rst) begin 
-        if(rst)
-            pstate <= idle;
-        else
+        if (rst)
+            pstate <= A;
+        else if (Clk_EN)
             pstate <= nstate;
-
-        serOut = ((pstate == G) & Clk_EN )? serIn : 1'bz ;
     end
+
+    assign serOut = (pstate == H)? serIn : 1'bz;
 
 endmodule

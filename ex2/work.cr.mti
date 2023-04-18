@@ -1,0 +1,64 @@
+C:/Users/Asus/source/dld-lab/ex2/serial_transmitter.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex2/serial_transmitter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module serial_transmitter
+
+Top level modules:
+	serial_transmitter
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex2/high_value_7_seg.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex2/high_value_7_seg.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module high_7_seg
+
+Top level modules:
+	high_7_seg
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex2/counter.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex2/counter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex2/othfsm.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex2/othfsm.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module othfsm
+
+Top level modules:
+	othfsm
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex2/onepulser.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex2/onepulser.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module onepulser
+
+Top level modules:
+	onepulser
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex2/othfsm_tb.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex2/othfsm_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module othfsm_tb
+
+Top level modules:
+	othfsm_tb
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex2/onepulser_tb.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex2/onepulser_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module onepulser_tb
+
+Top level modules:
+	onepulser_tb
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex2/low_value_7_seg.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex2/low_value_7_seg.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module low_7_seg
+
+Top level modules:
+	low_7_seg
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex2/detector.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex2/detector.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module detector
+
+Top level modules:
+	detector
+
+} {} {}}

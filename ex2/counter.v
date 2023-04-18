@@ -1,5 +1,10 @@
-module counter(input clk, Clk_EN, inc_cnt, rst_cnt,
-               output reg [3:0] cnt_out, output reg Co);
+module counter(clk, Clk_EN, inc_cnt,
+               rst_cnt, cnt_out, Co);
+    
+    input clk, Clk_EN, inc_cnt, rst_cnt;
+    output reg [3:0] cnt_out;
+    output Co;
+
 
     always @(posedge clk) begin
         if (rst_cnt) begin

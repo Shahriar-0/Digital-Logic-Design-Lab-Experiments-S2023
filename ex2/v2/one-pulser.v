@@ -2,27 +2,23 @@
 `define B 2'b01
 `define C 2'b10
 
-module onepulser(clk, rst, clkPB, Clk_EN);
-    input clk, rst, clkPB;
-    output Clk_EN;
-
+module one_pulser (clk, rst, lp, sp);
+    input clk, rst, lp;
+    output sp;
     reg [1:0] ps, ns;
-    always @(ps or clkPB) begin
+    always @(ps or lp) begin
         case (ps)
-            `A: ns = clkPB ? `B : `A;
+            `A: ns = lp ? `B : `A;
             `B: ns = `C;
-            `C: ns = clkPB ? `C : `A;
+            `C: ns = lp ? `C : `A;
             default: ns = `A;
         endcase
     end
-
+    assign sp = (ps == `B);
     always @(posedge clk or posedge rst) begin
         if (rst)
             ps <= `A;
         else
             ps <= ns;
     end
-
-    assign Clk_EN = (ps == `B)? 1'b1 : 1'b0;
-
 endmodule
