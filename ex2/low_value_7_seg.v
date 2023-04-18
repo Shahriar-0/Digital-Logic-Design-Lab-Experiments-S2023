@@ -1,4 +1,4 @@
-module low_7_seg (d_in, d_out);
+module low_7_seg(d_in, d_out);
     input [3:0] d_in;
     output reg [6:0] d_out;
     
