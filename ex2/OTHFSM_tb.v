@@ -1,4 +1,5 @@
 module OTHFSM_tb();
+
     reg clk, Clk_EN, serIn, rst;
     wire serOut, serOutValid;
     wire [3:0] cnt_out;
