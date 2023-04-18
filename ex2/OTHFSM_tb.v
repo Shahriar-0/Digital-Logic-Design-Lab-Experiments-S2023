@@ -13,7 +13,6 @@ module OTHFSM_tb();
     initial begin
         clk = 0;
         rst = 1;
-        clkPB = 0;
         #5 rst = 0; 
         serIn = 1;
         #100 serIn = 1;

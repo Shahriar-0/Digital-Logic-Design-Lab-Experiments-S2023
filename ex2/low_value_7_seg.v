@@ -27,7 +27,7 @@ module low_7_seg (d_in, d_out);
             4'd13: d_out = THIRTEEN;
             4'd14: d_out = FOURTEEN;
             4'd15: d_out = FIFTEEN;
-            default: d_out = ZERO;;
+            default: d_out = ZERO;
         endcase
     end
 

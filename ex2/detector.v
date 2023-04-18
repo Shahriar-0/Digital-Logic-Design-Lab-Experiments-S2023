@@ -36,7 +36,7 @@ module detector(clk, Clk_EN, rst, serIn, Co,
 
     always @(posedge clk, posedge rst) begin 
         if (rst)
-            pstate <= idle;
+            pstate <= A;
         else if (Clk_EN)
             pstate <= nstate;
     end
