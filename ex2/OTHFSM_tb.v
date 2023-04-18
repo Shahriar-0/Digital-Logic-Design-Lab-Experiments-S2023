@@ -1,6 +1,7 @@
 module OTHFSM_tb();
     reg clk, Clk_EN, serIn, rst;
     wire cnt_out, serOut, serOutValid;
+    
     OTHFSM sequece_detector(
         .clk(clk), .rst(rst), .Clk_EN(Clk_EN), 
         .serIn(serIn), .serOut(serOut), 
