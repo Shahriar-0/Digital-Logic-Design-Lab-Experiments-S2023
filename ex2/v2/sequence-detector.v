@@ -7,12 +7,14 @@
 `define S6 4'b0110
 `define S7 4'b0111
 
-module seq_detector (clk, rst, clk_en, ser_in, co, ser_out, ser_out_valid, inc_cnt, rst_cnt);
+module seq_detector (clk, rst, clk_en, ser_in,
+                     co, ser_out, ser_out_valid, 
+                     inc_cnt, rst_cnt);
+
     input clk, rst, clk_en, ser_in, co;
     output reg ser_out, ser_out_valid, inc_cnt, rst_cnt;
     reg [2:0] ps, ns;
 
-    assign ser_out = (ps == `S7) ? ser_in : 0;
 
     always @(ps or ser_in or co) begin
         case (ps)
@@ -44,13 +46,6 @@ module seq_detector (clk, rst, clk_en, ser_in, co, ser_out, ser_out_valid, inc_c
             ps <= ns;
     end
 
-    always @(ps) begin
-        $display("PS: %d", ps);
-    end
-    always @(posedge clk) begin
-        $display("CLKEN: %d", clk_en);
-    end
-    always @(ser_in) begin
-        $display("SER_IN: %d", ser_in);
-    end
+    assign ser_out = (ps == `S7) ? ser_in : 0;
+
 endmodule
