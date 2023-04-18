@@ -25,6 +25,7 @@ module tb();
         #100 serIn = 1;
         #500 serIn = 0;
         #200 serIn = 1;
+        
         #2000 $stop;
     end
     

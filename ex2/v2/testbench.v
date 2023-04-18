@@ -24,6 +24,16 @@ module MainTB ();
         #100 ser_in = 1;
         #500 ser_in = 0;
         #200 ser_in = 1;
+        #100 ser_in = 0;
+        #100 ser_in = 1;
+        ser_in = 1;
+        #100 ser_in = 1;
+        #100 ser_in = 1;
+        #100 ser_in = 1;
+        #100 ser_in = 1;
+        #100 ser_in = 1;
+        #500 ser_in = 0;
+
         #2000 $stop;
     end
 
