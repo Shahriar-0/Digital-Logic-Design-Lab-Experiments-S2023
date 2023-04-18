@@ -1,10 +1,9 @@
-module OTHFSM_tb();
-
+module othfsm_tb();
     reg clk, Clk_EN, serIn, rst;
     wire serOut, serOutValid;
     wire [3:0] cnt_out;
-    
-    OTHFSM sequece_detector(
+
+    othfsm sequece_detector(
         .clk(clk), .rst(rst), .Clk_EN(Clk_EN), 
         .serIn(serIn), .serOut(serOut), 
         .serOutValid(serOutValid), .cnt_out(cnt_out)

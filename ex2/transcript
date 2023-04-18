@@ -1,0 +1,302 @@
+# Compile of counter.v was successful.
+# Compile of detector.v was successful.
+# Compile of high_value_7_seg.v was successful.
+# Compile of low_value_7_seg.v was successful.
+# Compile of onepulser.v was successful.
+# Compile of onepulser_tb.v was successful.
+# Compile of othfsm.v was successful.
+# Compile of othfsm_tb.v was successful.
+# Compile of serial_transmitter.v was successful.
+# Compile of tb.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.counter work.detector work.othfsm work.othfsm_tb
+# vsim -gui work.counter work.detector work.othfsm work.othfsm_tb 
+# Start time: 14:35:55 on Apr 18,2023
+# Loading work.counter
+# Loading work.detector
+# Loading work.othfsm
+# Loading work.othfsm_tb
+add wave -position end  sim:/othfsm/clk
+add wave -position end  sim:/othfsm/Clk_EN
+add wave -position end  sim:/othfsm/cnt_out
+add wave -position end  sim:/othfsm/Co
+add wave -position end  sim:/othfsm/inc_cnt
+add wave -position end  sim:/othfsm/rst
+add wave -position end  sim:/othfsm/rst_cnt
+add wave -position end  sim:/othfsm/serIn
+add wave -position end  sim:/othfsm/serOut
+add wave -position end  sim:/othfsm/serOutValid
+add wave -position end  sim:/othfsm_tb/clk
+add wave -position end  sim:/othfsm_tb/Clk_EN
+add wave -position end  sim:/othfsm_tb/cnt_out
+add wave -position end  sim:/othfsm_tb/rst
+add wave -position end  sim:/othfsm_tb/serIn
+add wave -position end  sim:/othfsm_tb/serOut
+add wave -position end  sim:/othfsm_tb/serOutValid
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Note: $stop    : C:/Users/Asus/source/dld-lab/ex2/othfsm_tb.v(27)
+#    Time: 2071 ps  Iteration: 0  Instance: /othfsm_tb
+# Break in Module othfsm_tb at C:/Users/Asus/source/dld-lab/ex2/othfsm_tb.v line 27
+run -all
+# Compile of counter.v was successful.
+# Compile of detector.v was successful.
+# Compile of high_value_7_seg.v was successful.
+# Compile of low_value_7_seg.v was successful.
+# Compile of onepulser.v was successful.
+# Compile of onepulser_tb.v was successful.
+# Compile of othfsm.v was successful.
+# Compile of othfsm_tb.v was successful.
+# Compile of serial_transmitter.v was successful.
+# Compile of tb.v was successful.
+# 10 compiles, 0 failed with no errors.
+# Compile of counter.v was successful.
+# Compile of detector.v was successful.
+# Compile of high_value_7_seg.v was successful.
+# Compile of low_value_7_seg.v was successful.
+# Compile of onepulser.v was successful.
+# Compile of onepulser_tb.v was successful.
+# Compile of othfsm.v was successful.
+# Compile of othfsm_tb.v was successful.
+# Compile of serial_transmitter.v was successful.
+# Compile of tb.v was successful.
+# 10 compiles, 0 failed with no errors.
+# Compile of counter.v was successful.
+# Compile of detector.v was successful.
+# Compile of high_value_7_seg.v was successful.
+# Compile of low_value_7_seg.v was successful.
+# Compile of onepulser.v was successful.
+# Compile of onepulser_tb.v was successful.
+# Compile of othfsm.v was successful.
+# Compile of othfsm_tb.v was successful.
+# Compile of serial_transmitter.v was successful.
+# Compile of tb.v was successful.
+# 10 compiles, 0 failed with no errors.
+# Compile of counter.v was successful.
+# Compile of detector.v was successful.
+# Compile of high_value_7_seg.v was successful.
+# Compile of low_value_7_seg.v was successful.
+# Compile of onepulser.v was successful.
+# Compile of onepulser_tb.v was successful.
+# Compile of othfsm.v was successful.
+# Compile of othfsm_tb.v was successful.
+# Compile of serial_transmitter.v was successful.
+# Compile of tb.v was successful.
+# 10 compiles, 0 failed with no errors.
+# Load canceled
+quit -sim
+# End time: 14:43:47 on Apr 18,2023, Elapsed time: 0:07:52
+# Errors: 0, Warnings: 5
+vsim -gui work.othfsm_tb
+# vsim -gui work.othfsm_tb 
+# Start time: 14:43:56 on Apr 18,2023
+# Loading work.othfsm_tb
+# Loading work.onepulser
+# ** Error (suppressible): (vsim-3389) Port 'fuck' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /othfsm_tb/pulser File: C:/Users/Asus/source/dld-lab/ex2/othfsm_tb.v Line: 14
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Clk_EN'.
+#    Time: 0 ps  Iteration: 0  Instance: /othfsm_tb/pulser File: C:/Users/Asus/source/dld-lab/ex2/othfsm_tb.v Line: 14
+# Error loading design
+# End time: 14:43:56 on Apr 18,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 1
+# Compile of counter.v was successful.
+# Compile of detector.v was successful.
+# Compile of high_value_7_seg.v was successful.
+# Compile of low_value_7_seg.v was successful.
+# Compile of onepulser.v was successful.
+# Compile of onepulser_tb.v was successful.
+# Compile of othfsm.v was successful.
+# Compile of othfsm_tb.v was successful.
+# Compile of serial_transmitter.v was successful.
+# Compile of tb.v was successful.
+# 10 compiles, 0 failed with no errors.
+# Compile of counter.v was successful.
+# Compile of detector.v was successful.
+# Compile of high_value_7_seg.v was successful.
+# Compile of low_value_7_seg.v was successful.
+# Compile of onepulser.v was successful.
+# Compile of onepulser_tb.v was successful.
+# Compile of othfsm.v was successful.
+# Compile of othfsm_tb.v was successful.
+# Compile of serial_transmitter.v was successful.
+# Compile of tb.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.othfsm_tb
+# vsim -gui work.othfsm_tb 
+# Start time: 14:44:35 on Apr 18,2023
+# Loading work.othfsm_tb
+# Loading work.othfsm
+# Loading work.detector
+# Loading work.counter
+# ** Error (suppressible): (vsim-3389) Port 'fuck' not found in the connected module (8th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /othfsm_tb/sequece_detector File: C:/Users/Asus/source/dld-lab/ex2/othfsm_tb.v Line: 7
+# Error loading design
+# End time: 14:44:36 on Apr 18,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 3
+# Compile of counter.v was successful.
+# Compile of detector.v was successful.
+# Compile of high_value_7_seg.v was successful.
+# Compile of low_value_7_seg.v was successful.
+# Compile of onepulser.v was successful.
+# Compile of onepulser_tb.v was successful.
+# Compile of othfsm.v was successful.
+# Compile of othfsm_tb.v failed with 1 errors.
+# Compile of serial_transmitter.v was successful.
+# Compile of tb.v was successful.
+# 10 compiles, 1 failed with 1 error.
+# Compile of counter.v was successful.
+# Compile of detector.v was successful.
+# Compile of high_value_7_seg.v was successful.
+# Compile of low_value_7_seg.v was successful.
+# Compile of onepulser.v was successful.
+# Compile of onepulser_tb.v was successful.
+# Compile of othfsm.v was successful.
+# Compile of othfsm_tb.v was successful.
+# Compile of serial_transmitter.v was successful.
+vsim -gui work.othfsm_tb
+# vsim -gui work.othfsm_tb 
+# Start time: 14:45:24 on Apr 18,2023
+# Loading work.othfsm_tb
+# Loading work.othfsm
+# Loading work.detector
+# Loading work.counter
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'cnt_out'. The port definition is at: C:/Users/Asus/source/dld-lab/ex2/othfsm.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /othfsm_tb/sequece_detector File: C:/Users/Asus/source/dld-lab/ex2/othfsm_tb.v Line: 7
+# Compile of tb.v was successful.
+# 10 compiles, 0 failed with no errors.
+quit -sim
+# End time: 14:46:25 on Apr 18,2023, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 4
+# Compile of counter.v was successful.
+# Compile of detector.v was successful.
+# Compile of high_value_7_seg.v was successful.
+# Compile of low_value_7_seg.v was successful.
+# Compile of onepulser.v was successful.
+# Compile of onepulser_tb.v was successful.
+# Compile of othfsm.v was successful.
+# Compile of othfsm_tb.v was successful.
+# Compile of serial_transmitter.v was successful.
+# Compile of tb.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.tb
+# vsim -gui work.tb 
+# Start time: 14:47:43 on Apr 18,2023
+# Loading work.tb
+# Loading work.serial_transmitter
+# Loading work.onepulser
+# Loading work.othfsm
+# Loading work.detector
+# Loading work.counter
+# Loading work.high_7_seg
+# Loading work.low_7_seg
+add wave -position end  sim:/tb/clk
+add wave -position end  sim:/tb/clkPB
+add wave -position end  sim:/tb/highSegment
+add wave -position end  sim:/tb/lowSegment
+add wave -position end  sim:/tb/rst
+add wave -position end  sim:/tb/serIn
+add wave -position end  sim:/tb/serOut
+add wave -position end  sim:/tb/serOutValid
+# Load canceled
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Note: $stop    : C:/Users/Asus/source/dld-lab/ex2/tb.v(27)
+#    Time: 3205 ps  Iteration: 0  Instance: /tb
+# Break in Module tb at C:/Users/Asus/source/dld-lab/ex2/tb.v line 27
+add wave -position end  sim:/tb/serialTransmitter/clk
+add wave -position end  sim:/tb/serialTransmitter/Clk_EN
+add wave -position end  sim:/tb/serialTransmitter/clkPB
+add wave -position end  sim:/tb/serialTransmitter/cnt_out
+add wave -position end  sim:/tb/serialTransmitter/highSegment
+add wave -position end  sim:/tb/serialTransmitter/lowSegment
+add wave -position end  sim:/tb/serialTransmitter/rst
+add wave -position end  sim:/tb/serialTransmitter/serIn
+add wave -position end  sim:/tb/serialTransmitter/serOut
+add wave -position end  sim:/tb/serialTransmitter/serOutValid
+restart -f
+run -all
+# ** Note: $stop    : C:/Users/Asus/source/dld-lab/ex2/tb.v(27)
+#    Time: 3205 ps  Iteration: 0  Instance: /tb
+# Break in Module tb at C:/Users/Asus/source/dld-lab/ex2/tb.v line 27
+add wave -position end  sim:/tb/serialTransmitter/pulser/clk
+add wave -position end  sim:/tb/serialTransmitter/pulser/Clk_EN
+add wave -position end  sim:/tb/serialTransmitter/pulser/clkPB
+add wave -position end  sim:/tb/serialTransmitter/pulser/ns
+add wave -position end  sim:/tb/serialTransmitter/pulser/ps
+add wave -position end  sim:/tb/serialTransmitter/pulser/rst
+add wave -position end  sim:/tb/serialTransmitter/sequece_detector/clk
+add wave -position end  sim:/tb/serialTransmitter/sequece_detector/Clk_EN
+add wave -position end  sim:/tb/serialTransmitter/sequece_detector/cnt_out
+add wave -position end  sim:/tb/serialTransmitter/sequece_detector/Co
+add wave -position end  sim:/tb/serialTransmitter/sequece_detector/inc_cnt
+add wave -position end  sim:/tb/serialTransmitter/sequece_detector/rst
+add wave -position end  sim:/tb/serialTransmitter/sequece_detector/rst_cnt
+add wave -position end  sim:/tb/serialTransmitter/sequece_detector/serIn
+add wave -position end  sim:/tb/serialTransmitter/sequece_detector/serOut
+add wave -position end  sim:/tb/serialTransmitter/sequece_detector/serOutValid
+restart -f
+run -all
+# ** Note: $stop    : C:/Users/Asus/source/dld-lab/ex2/tb.v(27)
+#    Time: 3205 ps  Iteration: 0  Instance: /tb
+# Break in Module tb at C:/Users/Asus/source/dld-lab/ex2/tb.v line 27
+add wave -position end  sim:/tb/serialTransmitter/sequece_detector/moore_110101_detector/clk
+add wave -position end  sim:/tb/serialTransmitter/sequece_detector/moore_110101_detector/Clk_EN
+add wave -position end  sim:/tb/serialTransmitter/sequece_detector/moore_110101_detector/Co
+add wave -position end  sim:/tb/serialTransmitter/sequece_detector/moore_110101_detector/nstate
+add wave -position end  sim:/tb/serialTransmitter/sequece_detector/moore_110101_detector/pstate
+add wave -position end  sim:/tb/serialTransmitter/sequece_detector/moore_110101_detector/rst
+add wave -position end  sim:/tb/serialTransmitter/sequece_detector/moore_110101_detector/rst_cnt
+add wave -position end  sim:/tb/serialTransmitter/sequece_detector/moore_110101_detector/serIn
+add wave -position end  sim:/tb/serialTransmitter/sequece_detector/moore_110101_detector/serOut
+add wave -position end  sim:/tb/serialTransmitter/sequece_detector/moore_110101_detector/serOutValid
+restart -f
+run -all
+# ** Note: $stop    : C:/Users/Asus/source/dld-lab/ex2/tb.v(27)
+#    Time: 3205 ps  Iteration: 0  Instance: /tb
+# Break in Module tb at C:/Users/Asus/source/dld-lab/ex2/tb.v line 27
+add wave -position end  sim:/tb/serialTransmitter/pulser/clk
+add wave -position end  sim:/tb/serialTransmitter/pulser/Clk_EN
+add wave -position end  sim:/tb/serialTransmitter/pulser/clkPB
+add wave -position end  sim:/tb/serialTransmitter/pulser/ns
+add wave -position end  sim:/tb/serialTransmitter/pulser/ps
+add wave -position end  sim:/tb/serialTransmitter/pulser/rst
+restart -f
+run -all
+# ** Note: $stop    : C:/Users/Asus/source/dld-lab/ex2/tb.v(27)
+#    Time: 3205 ps  Iteration: 0  Instance: /tb
+# Break in Module tb at C:/Users/Asus/source/dld-lab/ex2/tb.v line 27
+restart -f
+run -all
+# ** Note: $stop    : C:/Users/Asus/source/dld-lab/ex2/tb.v(27)
+#    Time: 3205 ps  Iteration: 0  Instance: /tb
+# Break in Module tb at C:/Users/Asus/source/dld-lab/ex2/tb.v line 27
+quit -sim
+# End time: 15:01:12 on Apr 18,2023, Elapsed time: 0:13:29
+# Errors: 0, Warnings: 1
+vsim -gui work.tb
+# vsim -gui work.tb 
+# Start time: 15:01:20 on Apr 18,2023
+# Loading work.tb
+# Loading work.serial_transmitter
+# Loading work.onepulser
+# Loading work.othfsm
+# Loading work.detector
+# Loading work.counter
+# Loading work.high_7_seg
+# Loading work.low_7_seg
+add wave -position end  sim:/tb/clk
+add wave -position end  sim:/tb/clkPB
+add wave -position end  sim:/tb/highSegment
+add wave -position end  sim:/tb/lowSegment
+add wave -position end  sim:/tb/rst
+add wave -position end  sim:/tb/serIn
+add wave -position end  sim:/tb/serOut
+add wave -position end  sim:/tb/serOutValid
+restart -f
+run -all
+# ** Note: $stop    : C:/Users/Asus/source/dld-lab/ex2/tb.v(27)
+#    Time: 3205 ps  Iteration: 0  Instance: /tb
+# Break in Module tb at C:/Users/Asus/source/dld-lab/ex2/tb.v line 27
+# WARNING: No extended dataflow license exists
