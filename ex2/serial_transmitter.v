@@ -1,4 +1,4 @@
-module serial_transmiter(clk, rst, clkPB, serIn,
+module serial_transmitter(clk, rst, clkPB, serIn,
                          serOut, serOutValid,
                          lowSegment, highSegment);
 
