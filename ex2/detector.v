@@ -4,16 +4,16 @@ module detector(clk, Clk_EN, rst, serIn, Co,
     input clk, Clk_EN, rst, serIn, Co;
     output reg serOut, serOutValid, inc_cnt, rst_cnt;
 
-    parameter A = 4'b0001, B = 4'b0010, 
-            C = 4'b0011, D = 4'b0100, E = 4'b0101,
-            F = 4'b0110, G = 4'b0111, H = 4'b1000;
+    parameter A = 3'b000, B = 3'b001, 
+            C = 3'b010, D = 3'b011, E = 3'b100,
+            F = 3'b101, G = 3'b110, H = 3'b111;
 
-    reg [3:0] pstate = idle;
-    reg [3:0] nstate = idle;
+    reg [2:0] pstate = A;
+    reg [2:0] nstate = A;
 
-    always @(serIn, Co , Clk_EN) begin
+    always @(serIn or Co or Clk_EN) begin
         
-        case(pstate)
+        case (pstate)
             A : nstate <= serIn ? B : A;
             B : nstate <= serIn ? C : A;
             C : nstate <= ~serIn ? D : C;
@@ -26,20 +26,21 @@ module detector(clk, Clk_EN, rst, serIn, Co,
     end
 
     always @(pstate) begin
-        {serOutValid, inc_cnt, rst_cnt} <= 3'b0;
+        {serOutValid, inc_cnt, rst_cnt} <= 3'b000;
         serOut <= 1'bz;
-        case(pstate)
+        case (pstate)
             G : {serOutValid, rst_cnt} = 2'b11; 
             H : {serOutValid, inc_cnt} = 2'b1;
         endcase
     end
 
     always @(posedge clk, posedge rst) begin 
-        if(rst)
+        if (rst)
             pstate <= idle;
         else if (Clk_EN)
             pstate <= nstate;
     end
 
-    assign serOut = (pstate == H)? serIn : 1'bz ;
+    assign serOut = (pstate == H)? serIn : 1'bz;
+
 endmodule

@@ -7,7 +7,7 @@ module onepulser(clk, rst, clkPB, Clk_EN);
     output Clk_EN;
 
     reg [1:0] ps, ns;
-    always @(ps, clkPB) begin
+    always @(ps or clkPB) begin
         case (ps)
             `A: ns = clkPB ? `B : `A;
             `B: ns = `C;
