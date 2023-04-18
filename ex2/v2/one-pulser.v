@@ -6,6 +6,7 @@ module one_pulser (clk, rst, lp, sp);
 
     input clk, rst, lp;
     output sp;
+    
     reg [1:0] ps, ns;
 
     always @(ps or lp) begin

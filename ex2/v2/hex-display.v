@@ -15,7 +15,8 @@
 `define FOURTEEN 7'b000_0110
 `define FIFTEEN 7'b000_1110
 
-module hex_display (d_in, d_out);
+module hex_display(d_in, d_out);
+
     input [3:0] d_in;
     output reg [6:0] d_out;
 

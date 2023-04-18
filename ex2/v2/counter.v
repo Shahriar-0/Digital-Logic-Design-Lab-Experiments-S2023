@@ -2,6 +2,7 @@ module counter (clk, clk_en, rst_cnt,
                 inc_cnt, co, cnt_out);
                 
     input clk, clk_en, rst_cnt, inc_cnt;
+    
     output co;
     output reg [3:0] cnt_out;
 

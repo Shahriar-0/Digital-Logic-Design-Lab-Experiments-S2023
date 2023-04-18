@@ -13,8 +13,8 @@ module seq_detector (clk, rst, clk_en, ser_in,
 
     input clk, rst, clk_en, ser_in, co;
     output reg ser_out, ser_out_valid, inc_cnt, rst_cnt;
-    reg [2:0] ps, ns;
 
+    reg [2:0] ps, ns;
 
     always @(ps or ser_in or co) begin
         case (ps)
@@ -33,19 +33,19 @@ module seq_detector (clk, rst, clk_en, ser_in,
     always @(ps) begin
         {ser_out_valid, inc_cnt, rst_cnt} = 3'b000;
         case (ps)
+            `S0: rst_cnt = 1'b1;
             `S6: {ser_out_valid, rst_cnt} = 2'b11;
             `S7: {ser_out_valid, inc_cnt} = 2'b11;       
-            default:; 
         endcase
     end
 
-    always @(posedge clk, posedge rst) begin
+    always @(posedge clk or posedge rst) begin
         if (rst)
             ps <= `S0;
         else if(clk_en)
             ps <= ns;
     end
 
-    assign ser_out = (ps == `S7) ? ser_in : 0;
+    assign ser_out = (ps == `S7) ? ser_in : 1'bz;
 
 endmodule
