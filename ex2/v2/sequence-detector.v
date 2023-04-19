@@ -33,6 +33,7 @@ module seq_detector (clk, rst, clk_en, ser_in,
     always @(ps) begin
         {ser_out_valid, inc_cnt, rst_cnt} = 3'b000;
         case (ps)
+            `S0: rst_cnt = 1'b1;
             `S6: {ser_out_valid, rst_cnt} = 2'b11;
             `S7: {ser_out_valid, inc_cnt} = 2'b11;       
             default:; 

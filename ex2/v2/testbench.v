@@ -1,11 +1,11 @@
 module MainTB ();
     reg clk, rst, lp, ser_in;
-    wire ser_out, ser_out_valid, clk_en;
+    wire ser_out, ser_out_valid;
     wire [6:0] hex_out;
 
     main main_module(
         clk, rst, lp, ser_in, ser_out, 
-        ser_out_valid, hex_out, clk_en
+        ser_out_valid, hex_out
     );
     
     always #5 clk = ~clk;

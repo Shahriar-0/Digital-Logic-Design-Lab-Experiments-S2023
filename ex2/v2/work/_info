@@ -9,66 +9,89 @@ z2
 !i10f 100
 cModel Technology
 dC:/Users/asus/Desktop/dld-lab/ex2
-vcounter_4bit
-Z0 !s110 1681821537
+vcounter
+Z0 !s110 1681824328
 !i10b 1
-!s100 Z[C1Z4dj`Mmab8c32n<<[2
+!s100 na905_b]?oEU]KD1Z>ZU42
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-ID4nzYd[4Vbc3f>YooZ8I91
+I7[5bhb]@[?Iacdd>fPA>I3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 dC:/Users/asus/Desktop/dld-lab/ex2/v2
-Z4 w1681820028
-8C:/Users/asus/Desktop/dld-lab/ex2/v2/counter.v
-FC:/Users/asus/Desktop/dld-lab/ex2/v2/counter.v
+Z4 w1681822477
+Z5 8C:/Users/asus/Desktop/dld-lab/ex2/v2/counter.v
+Z6 FC:/Users/asus/Desktop/dld-lab/ex2/v2/counter.v
+!i122 14
+L0 1 17
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1681824328.000000
+Z9 !s107 C:/Users/asus/Desktop/dld-lab/ex2/v2/counter.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/asus/Desktop/dld-lab/ex2/v2/counter.v|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vcounter_4bit
+!s110 1681821537
+!i10b 1
+!s100 Z[C1Z4dj`Mmab8c32n<<[2
+R1
+ID4nzYd[4Vbc3f>YooZ8I91
+R2
+R3
+w1681820028
+R5
+R6
 !i122 0
 L0 1 16
-Z5 OV;L;2020.1;71
+R7
 r1
 !s85 0
 31
 !s108 1681821536.000000
-!s107 C:/Users/asus/Desktop/dld-lab/ex2/v2/counter.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/asus/Desktop/dld-lab/ex2/v2/counter.v|
+R9
+R10
 !i113 1
-Z6 o-work work
-Z7 tCvgOpt 0
+R11
+R12
 vhex_display
 R0
 !i10b 1
-!s100 W3f`R1o^9CV7Fe9fS@4^S2
+!s100 naH`BIUa_hDQlGT;WQl_g2
 R1
-I@G`DQAS>Cai=K_=L`n_ZX1
+IVKgU6IAIm_jW<JmTI?KFA3
 R2
 R3
 R4
 8C:/Users/asus/Desktop/dld-lab/ex2/v2/hex-display.v
 FC:/Users/asus/Desktop/dld-lab/ex2/v2/hex-display.v
-!i122 1
-L0 18 25
-R5
+!i122 15
+L0 18 27
+R7
 r1
 !s85 0
 31
-Z8 !s108 1681821537.000000
+R8
 !s107 C:/Users/asus/Desktop/dld-lab/ex2/v2/hex-display.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/asus/Desktop/dld-lab/ex2/v2/hex-display.v|
 !i113 1
-R6
-R7
+R11
+R12
 vmain
 R0
 !i10b 1
-!s100 KPC9_Ya9S[@=zoLdG9:b40
+!s100 G?OY[8AbV=1YRVEfRFm>`1
 R1
-IiH?KCkNRTMR[W32YYN5[B0
+IQ:gf?@H[24;e]6g6VD=QV1
 R2
 R3
 R4
 8C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v
 FC:/Users/asus/Desktop/dld-lab/ex2/v2/main.v
-!i122 2
-Z9 L0 1 9
-R5
+!i122 16
+L0 1 15
+R7
 r1
 !s85 0
 31
@@ -76,22 +99,22 @@ R8
 !s107 C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v|
 !i113 1
-R6
-R7
+R11
+R12
 vMainTB
 R0
 !i10b 1
-!s100 3zg8bRY3k1L1Y0VZ38Ij30
+!s100 i2RB9cdQnZh?XnbQ?fHg_2
 R1
-I[@U2<6QkN]TeMbQ11bB911
+I0V;c5`8Cf7WUA[B4E?bQ?2
 R2
 R3
-R4
+w1681822542
 8C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v
 FC:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v
-!i122 6
-L0 1 24
-R5
+!i122 20
+L0 1 40
+R7
 r1
 !s85 0
 31
@@ -99,23 +122,23 @@ R8
 !s107 C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v|
 !i113 1
-R6
-R7
+R11
+R12
 n@main@t@b
 vone_pulser
 R0
 !i10b 1
-!s100 i3F1T`Jh7?9;GQ2[glZzn1
+!s100 4DO]5T2MFQbja<ga]3N;70
 R1
-I<MG9S`5Q@V>D`<_c[N1Rk0
+I7d8U<J2mB`:Tf;P9[?T813
 R2
 R3
 R4
 8C:/Users/asus/Desktop/dld-lab/ex2/v2/one-pulser.v
 FC:/Users/asus/Desktop/dld-lab/ex2/v2/one-pulser.v
-!i122 3
-L0 5 20
-R5
+!i122 17
+L0 5 25
+R7
 r1
 !s85 0
 31
@@ -123,22 +146,22 @@ R8
 !s107 C:/Users/asus/Desktop/dld-lab/ex2/v2/one-pulser.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/asus/Desktop/dld-lab/ex2/v2/one-pulser.v|
 !i113 1
-R6
-R7
+R11
+R12
 vseq_detector
 R0
 !i10b 1
-!s100 Ri04@OJ0<h2Rl66iOO`>g3
+!s100 h>Z62L?mN9lRH;m`k]o]M1
 R1
-IDZ`7NM<`j5Bm1SE^=TXVU3
+I<AEN4_H7zNjAnW?azAVb41
 R2
 R3
-R4
+w1681824285
 8C:/Users/asus/Desktop/dld-lab/ex2/v2/sequence-detector.v
 FC:/Users/asus/Desktop/dld-lab/ex2/v2/sequence-detector.v
-!i122 4
-L0 10 47
-R5
+!i122 18
+L0 10 43
+R7
 r1
 !s85 0
 31
@@ -146,22 +169,22 @@ R8
 !s107 C:/Users/asus/Desktop/dld-lab/ex2/v2/sequence-detector.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/asus/Desktop/dld-lab/ex2/v2/sequence-detector.v|
 !i113 1
-R6
-R7
+R11
+R12
 vseq_with_cnt
 R0
 !i10b 1
-!s100 :Yah7:ii^haGRBo_QkX8k2
+!s100 onNg=0RR=Y9WNb8F;CheU3
 R1
-IA`SNYLYbdTb0J>FDQlEzF3
+I?1lJHNLF;@83VGI6OUbgB1
 R2
 R3
 R4
 8C:/Users/asus/Desktop/dld-lab/ex2/v2/seq-with-cnt.v
 FC:/Users/asus/Desktop/dld-lab/ex2/v2/seq-with-cnt.v
-!i122 5
-R9
-R5
+!i122 19
+L0 1 18
+R7
 r1
 !s85 0
 31
@@ -169,5 +192,5 @@ R8
 !s107 C:/Users/asus/Desktop/dld-lab/ex2/v2/seq-with-cnt.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/asus/Desktop/dld-lab/ex2/v2/seq-with-cnt.v|
 !i113 1
-R6
-R7
+R11
+R12

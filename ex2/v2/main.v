@@ -1,10 +1,12 @@
 module main (clk, rst, lp, ser_in, 
             ser_out, ser_out_valid,
-            hex_out, clk_en);
+            hex_out);
 
     input clk, rst, lp, ser_in;
     output ser_out, ser_out_valid;
-    output [6:0] hex_out, clk_en;
+    output [6:0] hex_out;
+
+    wire clk_en;
     
     wire [3:0] cnt_out; 
 
