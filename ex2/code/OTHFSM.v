@@ -1,5 +1,5 @@
-module OTHFSM (clk, rst, clk_en, ser_in,
-                     ser_out, ser_out_valid, cnt_out);
+module OTHFSM(clk, rst, clk_en, ser_in,
+              ser_out, ser_out_valid, cnt_out);
 
     input clk, rst, clk_en, ser_in;
     output ser_out, ser_out_valid;

@@ -7,9 +7,9 @@
 `define S6 4'b0110
 `define S7 4'b0111
 
-module seq_detector (clk, rst, clk_en, ser_in,
-                     co, ser_out, ser_out_valid, 
-                     inc_cnt, rst_cnt);
+module seq_detector(clk, rst, clk_en, ser_in,
+                    co, ser_out, ser_out_valid, 
+                    inc_cnt, rst_cnt);
 
     input clk, rst, clk_en, ser_in, co;
     output reg ser_out, ser_out_valid, inc_cnt, rst_cnt;

@@ -2,7 +2,7 @@
 `define B 2'b01
 `define C 2'b10
 
-module one_pulser (clk, rst, lp, sp);
+module one_pulser(clk, rst, lp, sp);
 
     input clk, rst, lp;
     output sp;

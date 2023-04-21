@@ -1,6 +1,5 @@
-module serial_transmitter (clk, rst, lp, ser_in, 
-            ser_out, ser_out_valid,
-            hex_out);
+module serial_transmitter(clk, rst, lp, ser_in, 
+                          ser_out, ser_out_valid, hex_out);
 
     input clk, rst, lp, ser_in;
     output ser_out, ser_out_valid;
