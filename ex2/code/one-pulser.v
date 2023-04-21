@@ -28,3 +28,7 @@ module one_pulser(clk, rst, lp, sp);
     end
     
 endmodule
+
+
+
+
