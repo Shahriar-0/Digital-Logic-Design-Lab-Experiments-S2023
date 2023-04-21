@@ -11,14 +11,13 @@ module serial_transmitter(clk, rst, lp, serIn,
     one_pulser op (
         clk, rst, lp, clk_en
     );
-
     OTHFSM seqwc (
         clk, rst, clk_en, serIn, 
         serOut, serOutValid, cnt_out
     );
-
     hex_display hd (
         cnt_out, hex_out
     );
-
 endmodule
+
+
