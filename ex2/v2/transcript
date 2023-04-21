@@ -1,0 +1,205 @@
+# Compile of counter.v was successful.
+# Compile of hex-display.v was successful.
+# Compile of main.v was successful.
+# Compile of one-pulser.v was successful.
+# Compile of sequence-detector.v was successful.
+# Compile of seq-with-cnt.v was successful.
+# Compile of testbench.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.MainTB
+# vsim -gui work.MainTB 
+# Start time: 17:27:54 on Apr 18,2023
+# Loading work.MainTB
+# Loading work.main
+# Loading work.one_pulser
+# Loading work.seq_with_cnt
+# Loading work.seq_detector
+# Loading work.counter
+# Loading work.hex_display
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'clk_en'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module File: C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'sp'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/one-pulser.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module/op File: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v Line: 11
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'clk_en'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/seq-with-cnt.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module/seqwc File: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v Line: 12
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/MainTB/clk \
+sim:/MainTB/clk_en \
+sim:/MainTB/hex_out \
+sim:/MainTB/lp \
+sim:/MainTB/rst \
+sim:/MainTB/ser_in \
+sim:/MainTB/ser_out \
+sim:/MainTB/ser_out_valid
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'clk_en'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module File: C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'sp'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/one-pulser.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module/op File: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v Line: 11
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'clk_en'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/seq-with-cnt.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module/seqwc File: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v Line: 12
+run
+# ** Note: $stop    : C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v(37)
+#    Time: 4450 ps  Iteration: 0  Instance: /MainTB
+# Break in Module MainTB at C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v line 37
+add wave -position insertpoint  \
+sim:/MainTB/main_module/op/clk \
+sim:/MainTB/main_module/op/lp \
+sim:/MainTB/main_module/op/ns \
+sim:/MainTB/main_module/op/ps \
+sim:/MainTB/main_module/op/rst \
+sim:/MainTB/main_module/op/sp
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'clk_en'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module File: C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'sp'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/one-pulser.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module/op File: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v Line: 11
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'clk_en'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/seq-with-cnt.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module/seqwc File: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v Line: 12
+run
+# ** Note: $stop    : C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v(37)
+#    Time: 4450 ps  Iteration: 0  Instance: /MainTB
+# Break in Module MainTB at C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v line 37
+add wave -position insertpoint  \
+sim:/MainTB/main_module/seqwc/cntr/co
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'clk_en'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module File: C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'sp'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/one-pulser.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module/op File: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v Line: 11
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'clk_en'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/seq-with-cnt.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module/seqwc File: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v Line: 12
+run
+# ** Note: $stop    : C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v(37)
+#    Time: 4450 ps  Iteration: 0  Instance: /MainTB
+# Break in Module MainTB at C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v line 37
+add wave -position insertpoint  \
+sim:/MainTB/main_module/seqwc/seq_d/ns \
+sim:/MainTB/main_module/seqwc/seq_d/ps
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'clk_en'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module File: C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'sp'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/one-pulser.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module/op File: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v Line: 11
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'clk_en'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/seq-with-cnt.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module/seqwc File: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v Line: 12
+run -all
+# ** Note: $stop    : C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v(37)
+#    Time: 4450 ps  Iteration: 0  Instance: /MainTB
+# Break in Module MainTB at C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v line 37
+quit -sim
+# End time: 17:41:03 on Apr 18,2023, Elapsed time: 0:13:09
+# Errors: 0, Warnings: 4
+vsim -gui work.MainTB
+# vsim -gui work.MainTB 
+# Start time: 17:41:10 on Apr 18,2023
+# Loading work.MainTB
+# Loading work.main
+# Loading work.one_pulser
+# Loading work.seq_with_cnt
+# Loading work.seq_detector
+# Loading work.counter
+# Loading work.hex_display
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'clk_en'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module File: C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'sp'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/one-pulser.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module/op File: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v Line: 11
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'clk_en'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/seq-with-cnt.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module/seqwc File: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v Line: 12
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/MainTB/clk \
+sim:/MainTB/clk_en \
+sim:/MainTB/hex_out \
+sim:/MainTB/lp \
+sim:/MainTB/rst \
+sim:/MainTB/ser_in \
+sim:/MainTB/ser_out \
+sim:/MainTB/ser_out_valid
+run
+# ** Note: $stop    : C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v(37)
+#    Time: 4450 ps  Iteration: 0  Instance: /MainTB
+# Break in Module MainTB at C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v line 37
+add wave -position insertpoint  \
+sim:/MainTB/main_module/seqwc/cntr/clk \
+sim:/MainTB/main_module/seqwc/cntr/clk_en \
+sim:/MainTB/main_module/seqwc/cntr/cnt_out \
+sim:/MainTB/main_module/seqwc/cntr/co \
+sim:/MainTB/main_module/seqwc/cntr/inc_cnt \
+sim:/MainTB/main_module/seqwc/cntr/rst_cnt
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'clk_en'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module File: C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'sp'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/one-pulser.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module/op File: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v Line: 11
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'clk_en'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/seq-with-cnt.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module/seqwc File: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v Line: 12
+run -all
+# ** Note: $stop    : C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v(37)
+#    Time: 4450 ps  Iteration: 0  Instance: /MainTB
+# Break in Module MainTB at C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v line 37
+quit -sim
+# End time: 17:55:19 on Apr 18,2023, Elapsed time: 0:14:09
+# Errors: 0, Warnings: 4
+# Compile of counter.v was successful.
+# Compile of hex-display.v was successful.
+# Compile of main.v was successful.
+# Compile of one-pulser.v was successful.
+# Compile of sequence-detector.v was successful.
+# Compile of seq-with-cnt.v was successful.
+# Compile of testbench.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.MainTB
+# vsim -gui work.MainTB 
+# Start time: 17:55:38 on Apr 18,2023
+# Loading work.MainTB
+# Loading work.main
+# Loading work.one_pulser
+# Loading work.seq_with_cnt
+# Loading work.seq_detector
+# Loading work.counter
+# Loading work.hex_display
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'clk_en'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module File: C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'sp'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/one-pulser.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module/op File: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v Line: 11
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'clk_en'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/seq-with-cnt.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module/seqwc File: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v Line: 12
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/MainTB/clk \
+sim:/MainTB/clk_en \
+sim:/MainTB/hex_out \
+sim:/MainTB/lp \
+sim:/MainTB/rst \
+sim:/MainTB/ser_in \
+sim:/MainTB/ser_out \
+sim:/MainTB/ser_out_valid
+run
+# ** Note: $stop    : C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v(37)
+#    Time: 4450 ps  Iteration: 0  Instance: /MainTB
+# Break in Module MainTB at C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v line 37
+add wave -position insertpoint  \
+sim:/MainTB/main_module/seqwc/cntr/cnt_out \
+sim:/MainTB/main_module/seqwc/cntr/co
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'clk_en'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module File: C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'sp'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/one-pulser.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module/op File: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v Line: 11
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'clk_en'. The port definition is at: C:/Users/asus/Desktop/dld-lab/ex2/v2/seq-with-cnt.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /MainTB/main_module/seqwc File: C:/Users/asus/Desktop/dld-lab/ex2/v2/main.v Line: 12
+run
+# ** Note: $stop    : C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v(37)
+#    Time: 4450 ps  Iteration: 0  Instance: /MainTB
+# Break in Module MainTB at C:/Users/asus/Desktop/dld-lab/ex2/v2/testbench.v line 37
+# End time: 17:58:36 on Apr 18,2023, Elapsed time: 0:02:58
+# Errors: 0, Warnings: 4
