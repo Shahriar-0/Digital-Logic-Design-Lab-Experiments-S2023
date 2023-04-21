@@ -43,3 +43,9 @@ module detector(clk, Clk_EN, rst, serIn, Co,
     assign serOut = (pstate == H)? serIn : 1'bz;
 
 endmodule
+
+
+
+
+
+

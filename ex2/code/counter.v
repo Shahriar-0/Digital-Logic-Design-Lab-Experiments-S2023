@@ -16,3 +16,6 @@ module counter (clk, clk_en, rst_cnt,
     assign co = &cnt_out;
 
 endmodule
+
+
+

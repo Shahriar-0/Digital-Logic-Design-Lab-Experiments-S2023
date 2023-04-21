@@ -7,23 +7,23 @@
 `define S6 4'b0110
 `define S7 4'b0111
 
-module seq_detector(clk, rst, clk_en, ser_in,
-                    co, ser_out, ser_out_valid, 
+module seq_detector(clk, rst, clk_en, serIn,
+                    co, serOut, serOutValid, 
                     inc_cnt, rst_cnt);
 
-    input clk, rst, clk_en, ser_in, co;
-    output reg ser_out, ser_out_valid, inc_cnt, rst_cnt;
+    input clk, rst, clk_en, serIn, co;
+    output reg serOut, serOutValid, inc_cnt, rst_cnt;
 
     reg [2:0] ps, ns;
 
-    always @(ps or ser_in or co) begin
+    always @(ps or serIn or co) begin
         case (ps)
-            `S0: ns = ser_in ? `S1 : `S0; 
-            `S1: ns = ser_in ? `S2 : `S0;
-            `S2: ns = ser_in ? `S2 : `S3;
-            `S3: ns = ser_in ? `S4 : `S0;
-            `S4: ns = ser_in ? `S2 : `S5;
-            `S5: ns = ser_in ? `S6 : `S0;
+            `S0: ns = serIn ? `S1 : `S0; 
+            `S1: ns = serIn ? `S2 : `S0;
+            `S2: ns = serIn ? `S2 : `S3;
+            `S3: ns = serIn ? `S4 : `S0;
+            `S4: ns = serIn ? `S2 : `S5;
+            `S5: ns = serIn ? `S6 : `S0;
             `S6: ns = `S7;
             `S7: ns = co ? `S0 : `S7;       
             default: ns = `S0;
@@ -31,11 +31,11 @@ module seq_detector(clk, rst, clk_en, ser_in,
     end
 
     always @(ps) begin
-        {ser_out_valid, inc_cnt, rst_cnt} = 3'b000;
+        {serOutValid, inc_cnt, rst_cnt} = 3'b000;
         case (ps)
             `S0: rst_cnt = 1'b1;
-            `S6: {ser_out_valid, rst_cnt} = 2'b11;
-            `S7: {ser_out_valid, inc_cnt} = 2'b11;       
+            `S6: {serOutValid, rst_cnt} = 2'b11;
+            `S7: {serOutValid, inc_cnt} = 2'b11;       
         endcase
     end
 
@@ -46,6 +46,6 @@ module seq_detector(clk, rst, clk_en, ser_in,
             ps <= ns;
     end
 
-    assign ser_out = (ps == `S7) ? ser_in : 1'bz;
+    assign serOut = (ps == `S7) ? serIn : 1'bz;
 
 endmodule

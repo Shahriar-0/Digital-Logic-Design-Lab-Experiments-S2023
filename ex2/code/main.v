@@ -1,8 +1,8 @@
-module serial_transmitter(clk, rst, lp, ser_in, 
-                          ser_out, ser_out_valid, hex_out);
+module serial_transmitter(clk, rst, lp, serIn, 
+                          serOut, serOutValid, hex_out);
 
-    input clk, rst, lp, ser_in;
-    output ser_out, ser_out_valid;
+    input clk, rst, lp, serIn;
+    output serOut, serOutValid;
     output [6:0] hex_out;
     wire clk_en;
 
@@ -13,8 +13,8 @@ module serial_transmitter(clk, rst, lp, ser_in,
     );
 
     OTHFSM seqwc (
-        clk, rst, clk_en, ser_in, 
-        ser_out, ser_out_valid, cnt_out
+        clk, rst, clk_en, serIn, 
+        serOut, serOutValid, cnt_out
     );
 
     hex_display hd (
