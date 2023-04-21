@@ -1,4 +1,4 @@
-module main (clk, rst, lp, ser_in, 
+module serial_transmitter (clk, rst, lp, ser_in, 
             ser_out, ser_out_valid,
             hex_out);
 
