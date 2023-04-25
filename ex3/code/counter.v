@@ -1,5 +1,5 @@
 module Counter #(parameter N = 8)
-                (loadData, load, en, clr, clk, rst);
+                (loadData, load, en, clr, clk, rst, out, co);
 
     input [N - 1:0] loadData;
     input load, en, clr, clk, rst;
