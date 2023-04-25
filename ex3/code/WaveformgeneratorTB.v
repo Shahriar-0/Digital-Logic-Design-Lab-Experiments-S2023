@@ -16,7 +16,6 @@ module WaveformGeneratorTB();
         #25600 slc = 3'b100;
         #25600 slc = 3'b101;
         #25600 slc = 3'b010;
-        #25600 slc = 3'b110;
         #25600 slc = 3'b000;
         #25600 $stop;
     end
