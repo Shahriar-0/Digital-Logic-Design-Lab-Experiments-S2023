@@ -12,7 +12,7 @@ module GenSineWave(cnt, clk, rst, out);
     Register #(16) sin(.loadData(sinLdData), .load(regLd), .clk(clk), .rst(rst), .out(sinOut));
     Register #(16) cos(.loadData(cosLdData), .load(regLd), .clk(clk), .rst(rst), .out(cosOut));
     Register #(16) prevSin(.loadData(sinOut), .load(regLd), .clk(clk), .rst(rst), .out(pSinOut));
-    Register #(16) prevCos(.loadData(cosOut), .load(regLd), .clk(clk), .rst(rst), .out(pCosOut));
+    Register #(.N(16), .init(16'b30000)) prevCos(.loadData(cosOut), .load(regLd), .clk(clk), .rst(rst), .out(pCosOut));
 
     wire signed [15:0] apCos, aSin;
     assign apCos = pCosOut >>> 6;
