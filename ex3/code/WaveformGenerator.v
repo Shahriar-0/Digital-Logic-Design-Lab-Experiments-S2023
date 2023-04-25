@@ -1,4 +1,4 @@
-module WaveformGenerator(clk,rst,phase_cnt,slc,out);
+module WaveformGenerator(clk,rst,slc,out);
     input [2:0] sel;
     input clk, rst, phase_cnt;
     output [7:0] out;
