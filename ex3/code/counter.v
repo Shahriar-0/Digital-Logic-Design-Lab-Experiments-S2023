@@ -1,9 +1,9 @@
 module Counter #(parameter N = 8)
                 (loadData, load, en, clr, clk, rst);
 
-    input [N - 1:0] loadData,
-    input load, en, clr, clk, rst,
-    output reg [N - 1:0] out,
+    input [N - 1:0] loadData;
+    input load, en, clr, clk, rst;
+    output reg [N - 1:0] out;
     output co;
 
     always @(posedge clk or posedge rst) begin
