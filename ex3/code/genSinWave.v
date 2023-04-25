@@ -1,4 +1,5 @@
-module GenSineWave(cnt, clk, rst, out);
+module GenSineWave #(parameter [2:0] a = 3'd6)
+                    (cnt, clk, rst, out);
 
     input [7:0] cnt,
     input clk, rst,
@@ -15,8 +16,8 @@ module GenSineWave(cnt, clk, rst, out);
     Register #(.N(16), .init(16'b30000)) prevCos(.loadData(cosOut), .load(regLd), .clk(clk), .rst(rst), .out(pCosOut));
 
     wire signed [15:0] apCos, aSin;
-    assign apCos = pCosOut >>> 6;
-    assign aSin = sinLdData >>> 6;
+    assign apCos = pCosOut >>> a;
+    assign aSin = sinLdData >>> a;
 
     Adder      #(16) adr(.a(pSinOut), .b(apCos), .out(sinLdData));
     Subtractor #(16) sub(.a(pCosOut), .b(aSin), .out(cosLdData));
