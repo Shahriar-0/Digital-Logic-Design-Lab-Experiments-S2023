@@ -1,12 +1,13 @@
-module GenSinHalfWave #(parameter [7:0] HALF = 127)
-                       (sine, out);
+module GenSinHalfWave #(parameter [7:0] HALF = 8'127, 
+                                        ZERO = 8'd0)
+                       (sine, out, cnt);
 
-    input [7:0] sine;
+    input [7:0] sine, cnt;
     output reg [7:0] out;
 
-    always @(sine) begin
-        if (sine >= HALF) out = sine;
-        else out = HALF;
+    always @(sine or cnt) begin
+        if (cnt < HALF) out = sine;
+        else out = ZERO;
     end
 
 endmodule

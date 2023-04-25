@@ -14,11 +14,9 @@ module WaveformGenerator(clk,rst,slc,out);
     GenSquareWave     square(.cnt(cnt), .out(squareOut));
     GenTriangleWave   triangle(.cnt(cnt), .out(triangleOut));
     GenSineWave       sine(.cnt(cnt), .out(sineOut), .clk(clk), .rst(rst));
-    GenSinFullWave    sinFull(.sine(shiftedSineMSB), .out(sinFullOut));
-    GenSinHalfWave    sinHalf(.sine(shiftedSineMSB), .out(sinHalfOut));
+    GenSinFullWave    sinFull(.sine(shiftedSineMSB), .out(sinFullOut), .cnt(cnt));
+    GenSinHalfWave    sinHalf(.sine(shiftedSineMSB), .out(sinHalfOut), .cnt(cnt));
     GenReciprocalWave reciprocal(.cnt(cnt), .out(reciprocalOut));
-    GenModulatedWave  modulated(.sine(shiftedSineMSB), .clk(clk), .rst(rst), .out(modulatedOut));
-    GenRhomboidWave   rhomboid(.cnt(cnt), .out(rhomboidOut));
 
     always @(*) begin
         case (sel)

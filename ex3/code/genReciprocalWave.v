@@ -8,7 +8,7 @@ module GenReciprocalWave #(parameter [7:0] INITIAL = 8'd8,
     input [7:0] cnt,
     output reg [7:0] out
 
-    // 255/(32-x/8)
+    // 255 / (32 - x / 8)
     parameter [7:0] INITIAL = 8'd8,
                     FULL = 8'd255,
                     X_COEFFICIENT_DENOMINATOR = 8'd3, 
