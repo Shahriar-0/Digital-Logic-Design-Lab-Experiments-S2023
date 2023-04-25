@@ -5,7 +5,7 @@ module WaveformGenerator(clk,rst,phase_cnt,slc,out);
     // reg [7:0] cnt;
     wire [7:0] cnt;
     wire co;
-    Counter counter(.loadData(8'b0), .load(1'b0), .en(1'b1), .clr(1'b0), .clk(clk), .rst(rst), .out(cnt), .co(co));
+    Counter counter(.clk(clk), .rst(rst), .out(cnt), .co(co));
     wire [7:0] squareOut, triangleOut, sinFullOut, sinHalfOut, reciprocalOut, modulatedOut, rhomboidOut;
     wire [7:0] sineOut;
     wire [7:0] shiftedSineMSB;
