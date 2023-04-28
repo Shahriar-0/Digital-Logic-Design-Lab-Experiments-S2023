@@ -589,3 +589,233 @@ run -all
 # ** Note: $stop    : C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v(20)
 #    Time: 153710 ns  Iteration: 0  Instance: /WaveformGeneratorTB
 # Break in Module WaveformGeneratorTB at C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v line 20
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v was successful.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v was successful.
+# Compile of register.v was successful.
+# Compile of WaveformGenerator.v was successful.
+# Compile of WaveformgeneratorTB.v was successful.
+# 10 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.WaveformGeneratorTB
+# Loading work.WaveformGenerator
+# Loading work.Counter
+# Loading work.GenReciprocalWave
+# Loading work.GenSquareWave
+# Loading work.GenTriangleWave
+# Loading work.GenSineWave
+# Loading work.Register
+# Loading work.GenFullWaveRectified
+# Loading work.GenHalfWaveRectified
+run -all
+# ** Note: $stop    : C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v(20)
+#    Time: 153710 ns  Iteration: 0  Instance: /WaveformGeneratorTB
+# Break in Module WaveformGeneratorTB at C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v line 20
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v was successful.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v was successful.
+# Compile of register.v was successful.
+# Compile of WaveformGenerator.v was successful.
+# Compile of WaveformgeneratorTB.v was successful.
+# 10 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.WaveformGeneratorTB
+# Loading work.WaveformGenerator
+# Loading work.Counter
+# Loading work.GenReciprocalWave
+# Loading work.GenSquareWave
+# Loading work.GenTriangleWave
+# Loading work.GenSineWave
+# Loading work.Register
+# Loading work.GenFullWaveRectified
+# Loading work.GenHalfWaveRectified
+run -all
+# ** Note: $stop    : C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v(20)
+#    Time: 153710 ns  Iteration: 0  Instance: /WaveformGeneratorTB
+# Break in Module WaveformGeneratorTB at C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v line 20
+add wave -position insertpoint  \
+sim:/WaveformGeneratorTB/main/sine/out
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v was successful.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v was successful.
+# Compile of register.v was successful.
+# Compile of WaveformGenerator.v was successful with warnings.
+# Compile of WaveformgeneratorTB.v was successful.
+# 10 compiles, 0 failed with no errors.
+run -all
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v was successful.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v was successful.
+# Compile of register.v was successful.
+# Compile of WaveformGenerator.v was successful with warnings.
+# Compile of WaveformgeneratorTB.v was successful.
+# 10 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.WaveformGeneratorTB
+# Loading work.WaveformGenerator
+# Loading work.Counter
+# Loading work.GenReciprocalWave
+# Loading work.GenSquareWave
+# Loading work.GenTriangleWave
+# Loading work.GenSineWave
+# Loading work.Register
+# Loading work.GenFullWaveRectified
+# Loading work.GenHalfWaveRectified
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/Asus/source/dld-lab/ex3/code/genSinWave.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /WaveformGeneratorTB/main/sine File: C:/Users/Asus/source/dld-lab/ex3/code/WaveformGenerator.v Line: 20
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/Asus/source/dld-lab/ex3/code/genSinWave.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /WaveformGeneratorTB/main/sine File: C:/Users/Asus/source/dld-lab/ex3/code/WaveformGenerator.v Line: 20
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v was successful.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v was successful.
+# Compile of register.v was successful.
+# Compile of WaveformGenerator.v was successful with warnings.
+# Compile of WaveformgeneratorTB.v was successful.
+# 10 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.WaveformGeneratorTB
+# Loading work.WaveformGenerator
+# Loading work.Counter
+# Loading work.GenReciprocalWave
+# Loading work.GenSquareWave
+# Loading work.GenTriangleWave
+# Loading work.GenSineWave
+# Loading work.Register
+# Loading work.GenFullWaveRectified
+# Loading work.GenHalfWaveRectified
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/Asus/source/dld-lab/ex3/code/genSinWave.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /WaveformGeneratorTB/main/sine File: C:/Users/Asus/source/dld-lab/ex3/code/WaveformGenerator.v Line: 20
+run -all
+# ** Note: $stop    : C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v(20)
+#    Time: 153710 ns  Iteration: 0  Instance: /WaveformGeneratorTB
+# Break in Module WaveformGeneratorTB at C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v line 20
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v was successful.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v was successful.
+# Compile of register.v was successful.
+# Compile of WaveformGenerator.v was successful.
+# Compile of WaveformgeneratorTB.v was successful.
+# 10 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.WaveformGeneratorTB
+# Loading work.WaveformGenerator
+# Loading work.Counter
+# Loading work.GenReciprocalWave
+# Loading work.GenSquareWave
+# Loading work.GenTriangleWave
+# Loading work.GenSineWave
+# Loading work.Register
+# Loading work.GenFullWaveRectified
+# Loading work.GenHalfWaveRectified
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/Asus/source/dld-lab/ex3/code/genSinWave.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /WaveformGeneratorTB/main/sine File: C:/Users/Asus/source/dld-lab/ex3/code/WaveformGenerator.v Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'sine'. The port definition is at: C:/Users/Asus/source/dld-lab/ex3/code/genFullWaveRectified.v(2).
+#    Time: 0 ns  Iteration: 0  Instance: /WaveformGeneratorTB/main/full_rectified File: C:/Users/Asus/source/dld-lab/ex3/code/WaveformGenerator.v Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'sine'. The port definition is at: C:/Users/Asus/source/dld-lab/ex3/code/genHalfWaveRectified.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /WaveformGeneratorTB/main/half_rectified File: C:/Users/Asus/source/dld-lab/ex3/code/WaveformGenerator.v Line: 19
+# Warning in wave window restart: (vish-4014) No objects found matching '/WaveformGeneratorTB/main/sine_output_MSB'. 
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v was successful.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v was successful.
+# Compile of register.v was successful.
+# Compile of WaveformGenerator.v was successful.
+# Compile of WaveformgeneratorTB.v was successful.
+# 10 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.WaveformGeneratorTB
+# Loading work.WaveformGenerator
+# Loading work.Counter
+# Loading work.GenReciprocalWave
+# Loading work.GenSquareWave
+# Loading work.GenTriangleWave
+# Loading work.GenSineWave
+# Loading work.Register
+# Loading work.GenFullWaveRectified
+# Loading work.GenHalfWaveRectified
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/Asus/source/dld-lab/ex3/code/genSinWave.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /WaveformGeneratorTB/main/sine File: C:/Users/Asus/source/dld-lab/ex3/code/WaveformGenerator.v Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'sine'. The port definition is at: C:/Users/Asus/source/dld-lab/ex3/code/genFullWaveRectified.v(2).
+#    Time: 0 ns  Iteration: 0  Instance: /WaveformGeneratorTB/main/full_rectified File: C:/Users/Asus/source/dld-lab/ex3/code/WaveformGenerator.v Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'sine'. The port definition is at: C:/Users/Asus/source/dld-lab/ex3/code/genHalfWaveRectified.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /WaveformGeneratorTB/main/half_rectified File: C:/Users/Asus/source/dld-lab/ex3/code/WaveformGenerator.v Line: 19
+run -all
+# ** Note: $stop    : C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v(20)
+#    Time: 153710 ns  Iteration: 0  Instance: /WaveformGeneratorTB
+# Break in Module WaveformGeneratorTB at C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v line 20
+add wave -position insertpoint  \
+sim:/WaveformGeneratorTB/main/sine_output
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/Asus/source/dld-lab/ex3/code/genSinWave.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /WaveformGeneratorTB/main/sine File: C:/Users/Asus/source/dld-lab/ex3/code/WaveformGenerator.v Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'sine'. The port definition is at: C:/Users/Asus/source/dld-lab/ex3/code/genFullWaveRectified.v(2).
+#    Time: 0 ns  Iteration: 0  Instance: /WaveformGeneratorTB/main/full_rectified File: C:/Users/Asus/source/dld-lab/ex3/code/WaveformGenerator.v Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'sine'. The port definition is at: C:/Users/Asus/source/dld-lab/ex3/code/genHalfWaveRectified.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /WaveformGeneratorTB/main/half_rectified File: C:/Users/Asus/source/dld-lab/ex3/code/WaveformGenerator.v Line: 19
+run -all
+# ** Note: $stop    : C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v(20)
+#    Time: 153710 ns  Iteration: 0  Instance: /WaveformGeneratorTB
+# Break in Module WaveformGeneratorTB at C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v line 20
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v was successful.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v was successful.
+# Compile of register.v was successful.
+# Compile of WaveformGenerator.v was successful.
+# Compile of WaveformgeneratorTB.v was successful.
+# 10 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.WaveformGeneratorTB
+# Loading work.WaveformGenerator
+# Loading work.Counter
+# Loading work.GenReciprocalWave
+# Loading work.GenSquareWave
+# Loading work.GenTriangleWave
+# Loading work.GenSineWave
+# Loading work.Register
+# Loading work.GenFullWaveRectified
+# Loading work.GenHalfWaveRectified
+run -all
+# ** Note: $stop    : C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v(20)
+#    Time: 153710 ns  Iteration: 0  Instance: /WaveformGeneratorTB
+# Break in Module WaveformGeneratorTB at C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v line 20
