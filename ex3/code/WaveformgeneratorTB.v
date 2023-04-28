@@ -10,7 +10,7 @@ module WaveformGeneratorTB();
     always #5 clk = ~clk;
 
     initial begin
-        #3 rst = 1'b1;
+        #10 rst = 1'b1;
         #100 rst = 1'b0;
         #25600 slc = 3'b011;
         #25600 slc = 3'b100;

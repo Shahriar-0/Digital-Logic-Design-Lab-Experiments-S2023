@@ -20,7 +20,7 @@ module WaveformGenerator(clk, rst, slc, out);
     GenFullWaveRectified full_rectified(.cnt(cnt), .out(full_wave_rectified_output), .sine(sine_output_MSB));
     GenHalfWaveRectified half_rectified(.cnt(cnt), .out(half_wave_rectified_output),  .sine(sine_output_MSB));
 
-    always @(slc or reciprocal_output or square_output
+    always @(slc or reciprocal_output or square_output or
              triangle_output or sine_output_MSB or 
              full_wave_rectified_output or DDS_output) begin
         case (slc)
