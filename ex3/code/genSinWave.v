@@ -1,9 +1,8 @@
-module GenSineWave #(parameter [2:0] a = 3'd6)
-                    (cnt, clk, rst, out);
+module GenSineWave (cnt, clk, rst, out);
 
-    input [7:0] cnt,
-    input clk, rst,
-    output [7:0] out
+    input [7:0] cnt;
+    input clk, rst;
+    output [7:0] out;
 
     wire signed [15:0] sinLdData, cosLdData;
     wire signed [15:0] sinOut, cosOut, pSinOut, pCosOut;
@@ -13,11 +12,11 @@ module GenSineWave #(parameter [2:0] a = 3'd6)
     Register #(16) sin(.loadData(sinLdData), .load(regLd), .clk(clk), .rst(rst), .out(sinOut));
     Register #(16) cos(.loadData(cosLdData), .load(regLd), .clk(clk), .rst(rst), .out(cosOut));
     Register #(16) prevSin(.loadData(sinOut), .load(regLd), .clk(clk), .rst(rst), .out(pSinOut));
-    Register #(.N(16), .init(16'b30000)) prevCos(.loadData(cosOut), .load(regLd), .clk(clk), .rst(rst), .out(pCosOut));
+    Register #(.N(16), .INIT(16'd30000)) prevCos(.loadData(cosOut), .load(regLd), .clk(clk), .rst(rst), .out(pCosOut));
 
     wire signed [15:0] apCos, aSin;
-    assign apCos = pCosOut >>> a;
-    assign aSin = sinLdData >>> a;
+    assign apCos = {6{pCosOut[15]}, pCosOut[9:0]};
+    assign aSin = {6{sinLdData[15]}, sinLdData[9:0]};
 
     Adder      #(16) adr(.a(pSinOut), .b(apCos), .out(sinLdData));
     Subtractor #(16) sub(.a(pCosOut), .b(aSin), .out(cosLdData));

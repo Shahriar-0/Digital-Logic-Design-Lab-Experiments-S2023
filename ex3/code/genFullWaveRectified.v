@@ -1,4 +1,4 @@
-module GenSinFullWave #(parameter [7:0] HALF = 8'128)
+module GenSinFullWave #(parameter [7:0] HALF = 8'd128)
                        (sine, out, cnt);
 
     input [7:0] sine, cnt;

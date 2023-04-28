@@ -1,7 +1,7 @@
 module WaveformGenerator(clk,rst,slc,out);
-    input [2:0] sel;
-    input clk, rst, phase_cnt;
-    output [7:0] out;
+    input [2:0] slc;
+    input clk, rst;
+    output reg [7:0] out;
     // reg [7:0] cnt;
     wire [7:0] cnt;
     wire co;
@@ -19,7 +19,7 @@ module WaveformGenerator(clk,rst,slc,out);
     GenReciprocalWave reciprocal(.cnt(cnt), .out(reciprocalOut));
 
     always @(*) begin
-        case (sel)
+        case (slc)
             3'b000: out = reciprocalOut;   // Reciprocal
             3'b001: out = squareOut;     // Square
             3'b010: out = triangleOut; // Triangle

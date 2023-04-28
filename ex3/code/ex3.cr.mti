@@ -1,0 +1,92 @@
+E:/elahe/git/dld-lab-uni/ex3/code/register.v {1 {vlog -work work -stats=none E:/elahe/git/dld-lab-uni/ex3/code/register.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Register
+
+Top level modules:
+	Register
+
+} {} {}} E:/elahe/git/dld-lab-uni/ex3/code/WaveformGenerator.v {1 {vlog -work work -stats=none E:/elahe/git/dld-lab-uni/ex3/code/WaveformGenerator.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module WaveformGenerator
+
+Top level modules:
+	WaveformGenerator
+
+} {} {}} E:/elahe/git/dld-lab-uni/ex3/code/genSquareWave.v {1 {vlog -work work -stats=none E:/elahe/git/dld-lab-uni/ex3/code/genSquareWave.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module GenSquareWave
+
+Top level modules:
+	GenSquareWave
+
+} {} {}} E:/elahe/git/dld-lab-uni/ex3/code/genSinWave.v {0 vlog\ -work\ work\ -stats=none\ E:/elahe/git/dld-lab-uni/ex3/code/genSinWave.v\nModel\ Technology\ ModelSim\ -\ Intel\ FPGA\ Edition\ vlog\ 2020.1\ Compiler\ 2020.02\ Feb\ 28\ 2020\n--\ Compiling\ module\ GenSineWave\n**\ Error:\ (vlog-13069)\ E:/elahe/git/dld-lab-uni/ex3/code/genSinWave.v(18):\ near\ \",\":\ syntax\ error,\ unexpected\ ',',\ expecting\ '\}'.\n**\ Error:\ (vlog-13069)\ E:/elahe/git/dld-lab-uni/ex3/code/genSinWave.v(19):\ near\ \",\":\ syntax\ error,\ unexpected\ ',',\ expecting\ '\}'.\n\n {4.0 6.0} {}} E:/elahe/git/dld-lab-uni/ex3/code/genFullWaveRectified.v {1 {vlog -work work -stats=none E:/elahe/git/dld-lab-uni/ex3/code/genFullWaveRectified.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module GenSinFullWave
+
+Top level modules:
+	GenSinFullWave
+
+} {} {}} E:/elahe/git/dld-lab-uni/ex3/code/counter.v {1 {vlog -work work -stats=none E:/elahe/git/dld-lab-uni/ex3/code/counter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Counter
+
+Top level modules:
+	Counter
+
+} {} {}} E:/elahe/git/dld-lab-uni/ex3/code/jkflipflop.v {1 {vlog -work work -stats=none E:/elahe/git/dld-lab-uni/ex3/code/jkflipflop.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module jkFlipFlop
+
+Top level modules:
+	jkFlipFlop
+
+} {} {}} E:/elahe/git/dld-lab-uni/ex3/code/mux.v {1 {vlog -work work -stats=none E:/elahe/git/dld-lab-uni/ex3/code/mux.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux2to1
+
+Top level modules:
+	Mux2to1
+
+} {} {}} E:/elahe/git/dld-lab-uni/ex3/code/WaveformgeneratorTB.v {1 {vlog -work work -stats=none E:/elahe/git/dld-lab-uni/ex3/code/WaveformgeneratorTB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module WaveformGeneratorTB
+
+Top level modules:
+	WaveformGeneratorTB
+
+} {} {}} E:/elahe/git/dld-lab-uni/ex3/code/genHalfWaveRectified.v {1 {vlog -work work -stats=none E:/elahe/git/dld-lab-uni/ex3/code/genHalfWaveRectified.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module GenSinHalfWave
+
+Top level modules:
+	GenSinHalfWave
+
+} {} {}} E:/elahe/git/dld-lab-uni/ex3/code/adder.v {1 {vlog -work work -stats=none E:/elahe/git/dld-lab-uni/ex3/code/adder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Adder
+
+Top level modules:
+	Adder
+
+} {} {}} E:/elahe/git/dld-lab-uni/ex3/code/subtract.v {1 {vlog -work work -stats=none E:/elahe/git/dld-lab-uni/ex3/code/subtract.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Subtractor
+
+Top level modules:
+	Subtractor
+
+} {} {}} E:/elahe/git/dld-lab-uni/ex3/code/genReciprocalWave.v {1 {vlog -work work -stats=none E:/elahe/git/dld-lab-uni/ex3/code/genReciprocalWave.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module GenReciprocalWave
+
+Top level modules:
+	GenReciprocalWave
+
+} {} {}} E:/elahe/git/dld-lab-uni/ex3/code/genTriangleWave.v {1 {vlog -work work -stats=none E:/elahe/git/dld-lab-uni/ex3/code/genTriangleWave.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module GenTriangleWave
+
+Top level modules:
+	GenTriangleWave
+
+} {} {}}

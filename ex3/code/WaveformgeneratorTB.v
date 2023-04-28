@@ -11,7 +11,7 @@ module WaveformGeneratorTB();
 
     initial begin
         #3 rst = 1'b1;
-        #5 rst = 1'b0;
+        #100 rst = 1'b0;
         #25600 slc = 3'b011;
         #25600 slc = 3'b100;
         #25600 slc = 3'b101;

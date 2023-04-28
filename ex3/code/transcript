@@ -1,0 +1,313 @@
+# Compile of adder.v failed with 1 errors.
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v failed with 1 errors.
+# Compile of genHalfWaveRectified.v failed with 1 errors.
+# Compile of genReciprocalWave.v failed with 3 errors.
+# Compile of genSinWave.v failed with 5 errors.
+# Compile of genSquareWave.v failed with 5 errors.
+# Compile of genTriangleWave.v failed with 1 errors.
+# Compile of jkflipflop.v was successful.
+# Compile of mux.v was successful.
+# Compile of register.v failed with 1 errors.
+# Compile of subtract.v was successful.
+# Compile of WaveformGenerator.v failed with 2 errors.
+# Compile of WaveformgeneratorTB.v was successful.
+# 14 compiles, 9 failed with 20 errors.
+# Compile of adder.v was successful.
+# Compile of adder.v was successful.
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v failed with 3 errors.
+# Compile of genSinWave.v failed with 5 errors.
+# Compile of genSquareWave.v failed with 5 errors.
+# Compile of genTriangleWave.v failed with 1 errors.
+# Compile of jkflipflop.v was successful.
+# Compile of mux.v was successful.
+# Compile of register.v failed with 1 errors.
+# Compile of subtract.v was successful.
+# Compile of WaveformGenerator.v failed with 2 errors.
+# Compile of WaveformgeneratorTB.v was successful.
+# 14 compiles, 6 failed with 17 errors.
+# Compile of adder.v was successful.
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v failed with 7 errors.
+# Compile of genSinWave.v failed with 5 errors.
+# Compile of genSquareWave.v failed with 5 errors.
+# Compile of genTriangleWave.v failed with 1 errors.
+# Compile of jkflipflop.v was successful.
+# Compile of mux.v was successful.
+# Compile of register.v failed with 1 errors.
+# Compile of subtract.v was successful.
+# Compile of WaveformGenerator.v failed with 2 errors.
+# Compile of WaveformgeneratorTB.v was successful.
+# 14 compiles, 6 failed with 21 errors.
+# Compile of adder.v was successful.
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v failed with 5 errors.
+# Compile of genSquareWave.v failed with 5 errors.
+# Compile of genTriangleWave.v failed with 1 errors.
+# Compile of jkflipflop.v was successful.
+# Compile of mux.v was successful.
+# Compile of register.v failed with 1 errors.
+# Compile of subtract.v was successful.
+# Compile of WaveformGenerator.v failed with 2 errors.
+# Compile of WaveformgeneratorTB.v was successful.
+# 14 compiles, 5 failed with 14 errors.
+# Compile of adder.v was successful.
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v failed with 1 errors.
+# Compile of genSquareWave.v failed with 5 errors.
+# Compile of genTriangleWave.v failed with 1 errors.
+# Compile of jkflipflop.v was successful.
+# Compile of mux.v was successful.
+# Compile of register.v failed with 1 errors.
+# Compile of subtract.v was successful.
+# Compile of WaveformGenerator.v failed with 2 errors.
+# Compile of WaveformgeneratorTB.v was successful.
+# 14 compiles, 5 failed with 10 errors.
+# Compile of adder.v was successful.
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v was successful.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v failed with 1 errors.
+# Compile of jkflipflop.v was successful.
+# Compile of mux.v was successful.
+# Compile of register.v failed with 1 errors.
+# Compile of subtract.v was successful.
+# Compile of WaveformGenerator.v failed with 2 errors.
+# Compile of WaveformgeneratorTB.v was successful.
+# 14 compiles, 3 failed with 4 errors.
+# Compile of adder.v was successful.
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v was successful.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v was successful.
+# Compile of jkflipflop.v was successful.
+# Compile of mux.v was successful.
+# Compile of register.v was successful.
+# Compile of subtract.v was successful.
+# Compile of WaveformGenerator.v failed with 9 errors.
+# Compile of WaveformgeneratorTB.v was successful.
+# 14 compiles, 1 failed with 9 errors.
+# Compile of adder.v was successful.
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v was successful.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v was successful.
+# Compile of jkflipflop.v was successful.
+# Compile of mux.v was successful.
+# Compile of register.v was successful.
+# Compile of subtract.v was successful.
+# Compile of WaveformGenerator.v failed with 1 errors.
+# Compile of WaveformgeneratorTB.v was successful.
+# 14 compiles, 1 failed with 1 error.
+# Compile of adder.v was successful.
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v was successful.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v was successful.
+# Compile of jkflipflop.v was successful.
+# Compile of mux.v was successful.
+# Compile of register.v was successful.
+# Compile of subtract.v was successful.
+# Compile of WaveformGenerator.v was successful.
+# Compile of WaveformgeneratorTB.v was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui work.WaveformGeneratorTB
+# vsim -gui work.WaveformGeneratorTB 
+# Start time: 19:07:38 on Apr 25,2023
+# Loading work.WaveformGeneratorTB
+# Loading work.WaveformGenerator
+# Loading work.Counter
+# Loading work.GenSquareWave
+# Loading work.GenTriangleWave
+# Loading work.GenSineWave
+# Loading work.Register
+# Loading work.Adder
+# Loading work.Subtractor
+# Loading work.GenSinFullWave
+# Loading work.GenSinHalfWave
+# Loading work.GenReciprocalWave
+# ** Error (suppressible): (vsim-3584) E:/elahe/git/dld-lab-uni/ex3/code/genSinWave.v(16): Module parameter 'init' not found for override.
+#    Time: 0 ps  Iteration: 0  Instance: /WaveformGeneratorTB/main/sine File: E:/elahe/git/dld-lab-uni/ex3/code/genSinWave.v
+# Error loading design
+# End time: 19:07:38 on Apr 25,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 14
+# Compile of adder.v was successful.
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v was successful.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v was successful.
+# Compile of jkflipflop.v was successful.
+# Compile of mux.v was successful.
+# Compile of register.v was successful.
+# Compile of subtract.v was successful.
+# Compile of WaveformGenerator.v was successful.
+# Compile of WaveformgeneratorTB.v was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui work.WaveformGeneratorTB
+# vsim -gui work.WaveformGeneratorTB 
+# Start time: 19:09:08 on Apr 25,2023
+# Loading work.WaveformGeneratorTB
+# Loading work.WaveformGenerator
+# Loading work.Counter
+# Loading work.GenSquareWave
+# Loading work.GenTriangleWave
+# Loading work.GenSineWave
+# Loading work.Register
+# Loading work.Adder
+# Loading work.Subtractor
+# Loading work.GenSinFullWave
+# Loading work.GenSinHalfWave
+# Loading work.GenReciprocalWave
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'adr'.  Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /WaveformGeneratorTB/main/sine/adr File: E:/elahe/git/dld-lab-uni/ex3/code/genSinWave.v Line: 22
+# ** Warning: (vsim-3722) E:/elahe/git/dld-lab-uni/ex3/code/genSinWave.v(22): [TFMPC] - Missing connection for port 'co'.
+add wave -position insertpoint  \
+sim:/WaveformGeneratorTB/clk \
+sim:/WaveformGeneratorTB/out \
+sim:/WaveformGeneratorTB/rst \
+sim:/WaveformGeneratorTB/slc
+add wave -position insertpoint  \
+sim:/WaveformGeneratorTB/main/reciprocalOut \
+sim:/WaveformGeneratorTB/main/shiftedSineMSB \
+sim:/WaveformGeneratorTB/main/sineOut \
+sim:/WaveformGeneratorTB/main/sinFullOut \
+sim:/WaveformGeneratorTB/main/sinHalfOut \
+sim:/WaveformGeneratorTB/main/squareOut \
+sim:/WaveformGeneratorTB/main/triangleOut
+run
+# ** Note: $stop    : E:/elahe/git/dld-lab-uni/ex3/code/WaveformgeneratorTB.v(20)
+#    Time: 153608 ns  Iteration: 0  Instance: /WaveformGeneratorTB
+# Break in Module WaveformGeneratorTB at E:/elahe/git/dld-lab-uni/ex3/code/WaveformgeneratorTB.v line 20
+add wave -position insertpoint  \
+sim:/WaveformGeneratorTB/main/triangle/cnt \
+sim:/WaveformGeneratorTB/main/triangle/FULL \
+sim:/WaveformGeneratorTB/main/triangle/HALF \
+sim:/WaveformGeneratorTB/main/triangle/out
+run -all
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'adr'.  Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /WaveformGeneratorTB/main/sine/adr File: E:/elahe/git/dld-lab-uni/ex3/code/genSinWave.v Line: 22
+# ** Warning: (vsim-3722) E:/elahe/git/dld-lab-uni/ex3/code/genSinWave.v(22): [TFMPC] - Missing connection for port 'co'.
+run
+# ** Note: $stop    : E:/elahe/git/dld-lab-uni/ex3/code/WaveformgeneratorTB.v(20)
+#    Time: 153608 ns  Iteration: 0  Instance: /WaveformGeneratorTB
+# Break in Module WaveformGeneratorTB at E:/elahe/git/dld-lab-uni/ex3/code/WaveformgeneratorTB.v line 20
+add wave -position insertpoint  \
+sim:/WaveformGeneratorTB/main/sine/cosLdData \
+sim:/WaveformGeneratorTB/main/sine/cosOut \
+sim:/WaveformGeneratorTB/main/sine/pCosOut \
+sim:/WaveformGeneratorTB/main/sine/pSinOut
+run
+# Compile of adder.v was successful.
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v failed with 1 errors.
+# Compile of genSinWave.v was successful.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v was successful.
+# Compile of jkflipflop.v was successful.
+# Compile of mux.v was successful.
+# Compile of register.v was successful.
+# Compile of subtract.v was successful.
+# Compile of WaveformGenerator.v was successful.
+# Compile of WaveformgeneratorTB.v was successful.
+# 14 compiles, 1 failed with 1 error.
+# Compile of adder.v was successful.
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v was successful.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v was successful.
+# Compile of jkflipflop.v was successful.
+# Compile of mux.v was successful.
+# Compile of register.v was successful.
+# Compile of subtract.v was successful.
+# Compile of WaveformGenerator.v was successful.
+# Compile of WaveformgeneratorTB.v was successful.
+# 14 compiles, 0 failed with no errors.
+# Load canceled
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.WaveformGeneratorTB
+# Loading work.WaveformGenerator
+# Loading work.Counter
+# Loading work.GenSquareWave
+# Loading work.GenTriangleWave
+# Loading work.GenSineWave
+# Loading work.Register
+# Loading work.Adder
+# Loading work.Subtractor
+# Loading work.GenSinFullWave
+# Loading work.GenSinHalfWave
+# Loading work.GenReciprocalWave
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'adr'.  Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /WaveformGeneratorTB/main/sine/adr File: E:/elahe/git/dld-lab-uni/ex3/code/genSinWave.v Line: 21
+# ** Warning: (vsim-3722) E:/elahe/git/dld-lab-uni/ex3/code/genSinWave.v(21): [TFMPC] - Missing connection for port 'co'.
+run
+# ** Note: $stop    : E:/elahe/git/dld-lab-uni/ex3/code/WaveformgeneratorTB.v(20)
+#    Time: 153703 ns  Iteration: 0  Instance: /WaveformGeneratorTB
+# Break in Module WaveformGeneratorTB at E:/elahe/git/dld-lab-uni/ex3/code/WaveformgeneratorTB.v line 20
+add wave -position insertpoint  \
+sim:/WaveformGeneratorTB/main/sine/aSin
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'adr'.  Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /WaveformGeneratorTB/main/sine/adr File: E:/elahe/git/dld-lab-uni/ex3/code/genSinWave.v Line: 21
+# ** Warning: (vsim-3722) E:/elahe/git/dld-lab-uni/ex3/code/genSinWave.v(21): [TFMPC] - Missing connection for port 'co'.
+run
+# ** Note: $stop    : E:/elahe/git/dld-lab-uni/ex3/code/WaveformgeneratorTB.v(20)
+#    Time: 153703 ns  Iteration: 0  Instance: /WaveformGeneratorTB
+# Break in Module WaveformGeneratorTB at E:/elahe/git/dld-lab-uni/ex3/code/WaveformgeneratorTB.v line 20
+# WARNING: No extended dataflow license exists
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of adder.v was successful.
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v failed with 2 errors.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v was successful.
+# Compile of jkflipflop.v was successful.
+# Compile of mux.v was successful.
+# Compile of register.v was successful.
+# Compile of subtract.v was successful.
+# Compile of WaveformGenerator.v was successful.
+# Compile of WaveformgeneratorTB.v was successful.
+# 14 compiles, 1 failed with 2 errors.
+# End time: 00:32:45 on Apr 26,2023, Elapsed time: 5:23:37
+# Errors: 0, Warnings: 4
