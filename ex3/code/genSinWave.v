@@ -7,7 +7,7 @@ module GenSineWave (cnt, clk, rst, out);
     wire signed [15:0] sine_load_data, cos_load_data;
     wire signed [15:0] sine_output, cos_output, prev_sine_output, prev_cos_output;
 
-    Register sin(.load_data(sin_load_data), .clk(clk), .rst(rst), .out(sine_output));
+    Register sin(.load_data(sine_load_data), .clk(clk), .rst(rst), .out(sine_output));
     Register #(.N(16), .INIT(16'd29993)) cos(.load_data(cos_load_data), .clk(clk), .rst(rst), .out(cos_output)); // the 29993 is the value of cos(1)
     Register prev_sin(.load_data(sine_output), .clk(clk), .rst(rst), .out(prev_sine_output));
     Register #(.N(16), .INIT(16'd30000)) prev_cos(.load_data(cos_output), .clk(clk), .rst(rst), .out(prev_cos_output)); // the 30000 is the value of cos(0)

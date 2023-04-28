@@ -12,6 +12,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	Counter
 
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/code/register.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/register.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Register
+
+Top level modules:
+	Register
+
 } {} {}} C:/Users/Asus/source/dld-lab/ex3/code/genReciprocalWave.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/genReciprocalWave.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module GenReciprocalWave
@@ -32,13 +39,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	GenSquareWave
-
-} {} {}} C:/Users/Asus/source/dld-lab/ex3/code/genSinWave.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/genSinWave.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module GenSineWave
-
-Top level modules:
-	GenSineWave
 
 } {} {}} C:/Users/Asus/source/dld-lab/ex3/code/genTriangleWave.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/genTriangleWave.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
