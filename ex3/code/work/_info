@@ -10,67 +10,67 @@ z2
 cModel Technology
 dC:/intelFPGA/20.1
 vCounter
-Z0 !s110 1682703932
+!s110 1682704593
 !i10b 1
 !s100 E_c?RJC5ajJ^gk?VN3bfF2
-Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
 Ig7495Q=zUHP2Ob`kDf6nh0
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 dC:/Users/Asus/source/dld-lab/ex3/code
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Asus/source/dld-lab/ex3/code
 w1682697653
 8C:/Users/Asus/source/dld-lab/ex3/code/counter.v
 FC:/Users/Asus/source/dld-lab/ex3/code/counter.v
-!i122 160
+!i122 200
 L0 1 15
-Z4 OV;L;2020.1;71
+Z3 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1682703931.000000
+!s108 1682704593.000000
 !s107 C:/Users/Asus/source/dld-lab/ex3/code/counter.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Asus/source/dld-lab/ex3/code/counter.v|
 !i113 1
-Z5 o-work work
-Z6 tCvgOpt 0
+Z4 o-work work
+Z5 tCvgOpt 0
 n@counter
 vGenFullWaveRectified
-R0
+Z6 !s110 1682704594
 !i10b 1
 !s100 jI6LU4798GR:<4O?QN89E2
-R1
+R0
 I_`R?UN4_kj:a<Q?YH[hmV3
+R1
 R2
-R3
 w1682698095
 8C:/Users/Asus/source/dld-lab/ex3/code/genFullWaveRectified.v
 FC:/Users/Asus/source/dld-lab/ex3/code/genFullWaveRectified.v
-!i122 161
+!i122 201
 L0 1 12
-R4
+R3
 r1
 !s85 0
 31
-Z7 !s108 1682703932.000000
+Z7 !s108 1682704594.000000
 !s107 C:/Users/Asus/source/dld-lab/ex3/code/genFullWaveRectified.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Asus/source/dld-lab/ex3/code/genFullWaveRectified.v|
 !i113 1
+R4
 R5
-R6
 n@gen@full@wave@rectified
 vGenHalfWaveRectified
-R0
+R6
 !i10b 1
 !s100 Zec;VR<zSPDX]PCHB4?:i2
-R1
+R0
 I=L@BN:JleD?OM510^gn;F2
+R1
 R2
-R3
 w1682698132
 8C:/Users/Asus/source/dld-lab/ex3/code/genHalfWaveRectified.v
 FC:/Users/Asus/source/dld-lab/ex3/code/genHalfWaveRectified.v
-!i122 162
+!i122 202
 Z8 L0 1 13
-R4
+R3
 r1
 !s85 0
 31
@@ -78,23 +78,23 @@ R7
 !s107 C:/Users/Asus/source/dld-lab/ex3/code/genHalfWaveRectified.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Asus/source/dld-lab/ex3/code/genHalfWaveRectified.v|
 !i113 1
+R4
 R5
-R6
 n@gen@half@wave@rectified
 vGenReciprocalWave
-R0
+R6
 !i10b 1
 !s100 UOg14:8;k_b`mGFJ?kA;12
-R1
+R0
 I>Ez@l7j@V@P8fLI^angC30
+R1
 R2
-R3
 w1682700220
 8C:/Users/Asus/source/dld-lab/ex3/code/genReciprocalWave.v
 FC:/Users/Asus/source/dld-lab/ex3/code/genReciprocalWave.v
-!i122 163
+!i122 203
 L0 1 11
-R4
+R3
 r1
 !s85 0
 31
@@ -102,23 +102,23 @@ R7
 !s107 C:/Users/Asus/source/dld-lab/ex3/code/genReciprocalWave.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Asus/source/dld-lab/ex3/code/genReciprocalWave.v|
 !i113 1
+R4
 R5
-R6
 n@gen@reciprocal@wave
 vGenSineWave
-Z9 !s110 1682703933
+R6
 !i10b 1
-!s100 U?h>XNILi1IaX<2S2UGQ[0
+!s100 k^A4TC[`_;SPW9<g[d[EP2
+R0
+I[lgkL1RY06GEDz^aNmkf=2
 R1
-IaAX:kRNlZK1dY3`D:Fn?N2
 R2
-R3
-w1682703925
+w1682704589
 8C:/Users/Asus/source/dld-lab/ex3/code/genSinWave.v
 FC:/Users/Asus/source/dld-lab/ex3/code/genSinWave.v
-!i122 164
-L0 1 28
-R4
+!i122 204
+L0 1 26
+R3
 r1
 !s85 0
 31
@@ -126,47 +126,47 @@ R7
 !s107 C:/Users/Asus/source/dld-lab/ex3/code/genSinWave.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Asus/source/dld-lab/ex3/code/genSinWave.v|
 !i113 1
+R4
 R5
-R6
 n@gen@sine@wave
 vGenSquareWave
-R9
+Z9 !s110 1682704595
 !i10b 1
 !s100 GGb:[ggNIfD9O;SUa[<6W2
-R1
+R0
 IjS3feMY9>?H?kj`D^@:<@0
+R1
 R2
-R3
 Z10 w1682695241
 8C:/Users/Asus/source/dld-lab/ex3/code/genSquareWave.v
 FC:/Users/Asus/source/dld-lab/ex3/code/genSquareWave.v
-!i122 165
+!i122 205
 Z11 L0 1 14
-R4
+R3
 r1
 !s85 0
 31
-Z12 !s108 1682703933.000000
+Z12 !s108 1682704595.000000
 !s107 C:/Users/Asus/source/dld-lab/ex3/code/genSquareWave.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Asus/source/dld-lab/ex3/code/genSquareWave.v|
 !i113 1
+R4
 R5
-R6
 n@gen@square@wave
 vGenTriangleWave
 R9
 !i10b 1
 !s100 zoTXTWalN2f@]RAkEUkd61
-R1
+R0
 IRBNNhO2A>gOinUUkdVdNi3
+R1
 R2
-R3
 R10
 8C:/Users/Asus/source/dld-lab/ex3/code/genTriangleWave.v
 FC:/Users/Asus/source/dld-lab/ex3/code/genTriangleWave.v
-!i122 166
+!i122 206
 R8
-R4
+R3
 r1
 !s85 0
 31
@@ -174,78 +174,78 @@ R12
 !s107 C:/Users/Asus/source/dld-lab/ex3/code/genTriangleWave.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Asus/source/dld-lab/ex3/code/genTriangleWave.v|
 !i113 1
+R4
 R5
-R6
 n@gen@triangle@wave
 vRegister
-!s110 1682703935
+R9
 !i10b 1
 !s100 MQXloWgEFEaozRLVcGQ>X0
-R1
+R0
 IzAg>XcZegWEn0CEKHPoeh0
+R1
 R2
-R3
 w1682703781
 8C:/Users/Asus/source/dld-lab/ex3/code/register.v
 FC:/Users/Asus/source/dld-lab/ex3/code/register.v
-!i122 167
+!i122 207
 R11
-R4
+R3
 r1
 !s85 0
 31
-!s108 1682703934.000000
+R12
 !s107 C:/Users/Asus/source/dld-lab/ex3/code/register.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Asus/source/dld-lab/ex3/code/register.v|
 !i113 1
+R4
 R5
-R6
 n@register
 vWaveformGenerator
-!s110 1682703936
+Z13 !s110 1682704596
 !i10b 1
 !s100 TdIik_0Zb3^^LcQGzTFf>0
-R1
+R0
 ITe]gH8A4:VMnLU[;:cZm]0
+R1
 R2
-R3
 w1682699831
 8C:/Users/Asus/source/dld-lab/ex3/code/WaveformGenerator.v
 FC:/Users/Asus/source/dld-lab/ex3/code/WaveformGenerator.v
-!i122 168
+!i122 208
 L0 1 38
-R4
+R3
 r1
 !s85 0
 31
-Z13 !s108 1682703936.000000
+Z14 !s108 1682704596.000000
 !s107 C:/Users/Asus/source/dld-lab/ex3/code/WaveformGenerator.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Asus/source/dld-lab/ex3/code/WaveformGenerator.v|
 !i113 1
+R4
 R5
-R6
 n@waveform@generator
 vWaveformGeneratorTB
-!s110 1682703937
+R13
 !i10b 1
 !s100 YHiZYIRENl2k;W=0J8^PN2
-R1
+R0
 IPeZ;0Sa6S26^JfJbzmkDV3
+R1
 R2
-R3
 w1682700771
 8C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v
 FC:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v
-!i122 169
+!i122 209
 L0 3 20
-R4
+R3
 r1
 !s85 0
 31
-R13
+R14
 !s107 C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v|
 !i113 1
+R4
 R5
-R6
 n@waveform@generator@t@b
