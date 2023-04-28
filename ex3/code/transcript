@@ -819,3 +819,6 @@ run -all
 # ** Note: $stop    : C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v(20)
 #    Time: 153710 ns  Iteration: 0  Instance: /WaveformGeneratorTB
 # Break in Module WaveformGeneratorTB at C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v line 20
+quit -sim
+# End time: 23:06:33 on Apr 28,2023, Elapsed time: 1:59:00
+# Errors: 0, Warnings: 1
