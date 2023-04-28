@@ -1,14 +1,14 @@
 module Register #(parameter N = 8, 
-                  parameter [N-1:0] INIT = {N{1'b0}})
-                 (loadData, load, clk, rst, out);
+                  parameter [N - 1:0] INIT = {N{1'b0}})
+                 (load_data, clk, rst, out);
 
-    input [N-1:0] loadData;
-    input load, clk, rst;
-    output reg [N-1:0] out;
+    input [N - 1:0] load_data;
+    input clk, rst;
+    output reg [N - 1:0] out;
 
     always @(posedge clk or posedge rst) begin
         if (rst) out <= INIT;
-        else if (load) out <= loadData;
+        else out <= load_data;
     end
 
 endmodule

@@ -10,6 +10,6 @@ module Counter #(parameter N = 8)
         else out = out + 1'b1;
     end
 
-    assign co = &{out};
+    assign co = &out;
 
 endmodule

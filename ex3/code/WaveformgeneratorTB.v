@@ -5,7 +5,7 @@ module WaveformGeneratorTB();
     wire [7:0] out;
     reg clk = 1'b0, rst = 1'b0;
 
-    WaveformGenerator main(.clk(clk),.rst(rst),.slc(slc),.out(out));
+    WaveformGenerator main(.clk(clk), .rst(rst), .slc(slc), .out(out));
 
     always #5 clk = ~clk;
 
