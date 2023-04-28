@@ -1,4 +1,4 @@
-module GenSinHalfWave #(parameter [7:0] HALF = 8'd127, 
+module GenHalfWaveRectified #(parameter [7:0] HALF = 8'd127, 
                                         ZERO = 8'd0)
                        (sine, out, cnt);
 

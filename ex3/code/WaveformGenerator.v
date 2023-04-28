@@ -3,7 +3,6 @@ module WaveformGenerator(clk, rst, slc, out);
     input [2:0] slc;
     input clk, rst;
     output reg [7:0] out;
-    // reg [7:0] cnt; FIXME
     wire [7:0] cnt;
     wire co;
 
@@ -14,14 +13,16 @@ module WaveformGenerator(clk, rst, slc, out);
 
     Counter counter(.clk(clk), .rst(rst), .out(cnt), .co(co));
 
-    GenSquareWave     square(.cnt(cnt), .out(square_output));
-    GenTriangleWave   triangle(.cnt(cnt), .out(triangle_output));
-    GenSineWave       sine(.cnt(cnt), .out(sine_output), .clk(clk), .rst(rst));
-    GenSinFullWave    sinFull(.cnt(cnt), .out(full_wave_rectified_output), .sine(sine_output_MSB));
-    GenSinHalfWave    sinHalf(.cnt(cnt), .out(half_wave_rectified_output),  .sine(sine_output_MSB));
-    GenReciprocalWave reciprocal(.cnt(cnt), .out(reciprocal_output));
+    GenReciprocalWave    reciprocal(.cnt(cnt), .out(reciprocal_output));
+    GenSquareWave        square(.cnt(cnt), .out(square_output));
+    GenTriangleWave      triangle(.cnt(cnt), .out(triangle_output));
+    GenSineWave          sine(.cnt(cnt), .out(sine_output), .clk(clk), .rst(rst));
+    GenFullWaveRectified full_rectified(.cnt(cnt), .out(full_wave_rectified_output), .sine(sine_output_MSB));
+    GenHalfWaveRectified half_rectified(.cnt(cnt), .out(half_wave_rectified_output),  .sine(sine_output_MSB));
 
-    always @(*) begin
+    always @(slc or reciprocal_output or square_output
+             triangle_output or sine_output_MSB or 
+             full_wave_rectified_output or DDS_output) begin
         case (slc)
             3'b000: out = reciprocal_output; 
             3'b001: out = square_output;     
@@ -29,7 +30,8 @@ module WaveformGenerator(clk, rst, slc, out);
             3'b011: out = sine_output_MSB;
             3'b100: out = full_wave_rectified_output;    
             3'b101: out = half_wave_rectified_output;    
-            3'b110: out = DDS_output            default: out = 8'bz;
+            3'b110: out = DDS_output;
+            default: out = 8'bz;
         endcase
     end
 
