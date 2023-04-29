@@ -1,0 +1,169 @@
+C:/Users/Asus/source/dld-lab/ex3/archive/code/GenTriangleWave.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/GenTriangleWave.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module GenTriangleWave
+
+Top level modules:
+	GenTriangleWave
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/PWM.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/PWM.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module PWM
+
+Top level modules:
+	PWM
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/WaveGenProcessor.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/WaveGenProcessor.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module WaveGenProcessor
+
+Top level modules:
+	WaveGenProcessor
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/DAC_TB.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/DAC_TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DAC_TB
+
+Top level modules:
+	DAC_TB
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/FreqSelectorTB.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/FreqSelectorTB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FreqSelectorTB
+
+Top level modules:
+	FreqSelectorTB
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/GenSquareWave.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/GenSquareWave.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module GenSquareWave
+
+Top level modules:
+	GenSquareWave
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/Counter.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/Counter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Counter
+
+Top level modules:
+	Counter
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/DAC.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/DAC.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DAC
+
+Top level modules:
+	DAC
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/DDS_TB.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/DDS_TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DDS_TB
+
+Top level modules:
+	DDS_TB
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/GenRhomboidWave.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/GenRhomboidWave.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module GenRhomboidWave
+
+Top level modules:
+	GenRhomboidWave
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/Mux.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/Mux.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux2to1
+
+Top level modules:
+	Mux2to1
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/GenSinHalfWave.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/GenSinHalfWave.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module GenSinHalfWave
+
+Top level modules:
+	GenSinHalfWave
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/WaveGenProcessorTB.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/WaveGenProcessorTB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module WaveGenProcessorTB
+
+Top level modules:
+	WaveGenProcessorTB
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/GenSineWave.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/GenSineWave.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module GenSineWave
+
+Top level modules:
+	GenSineWave
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/FuncGenTB.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/FuncGenTB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FuncGenTB
+
+Top level modules:
+	FuncGenTB
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/GenModulatedWave.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/GenModulatedWave.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module GenModulatedWave
+
+Top level modules:
+	GenModulatedWave
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/Register.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/Register.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Register
+
+Top level modules:
+	Register
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/AmplitudeSelector.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/AmplitudeSelector.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module AmplitudeSelector
+
+Top level modules:
+	AmplitudeSelector
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/FreqSelector.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/FreqSelector.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FreqSelector
+
+Top level modules:
+	FreqSelector
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/Adder.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/Adder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Adder
+
+Top level modules:
+	Adder
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/Subtractor.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/Subtractor.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Subtractor
+
+Top level modules:
+	Subtractor
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/jkFlipFlop.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/jkFlipFlop.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module jkFlipFlop
+
+Top level modules:
+	jkFlipFlop
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/GenReciprocalWave.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/GenReciprocalWave.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module GenReciprocalWave
+
+Top level modules:
+	GenReciprocalWave
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/archive/code/GenSinFullWave.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/archive/code/GenSinFullWave.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module GenSinFullWave
+
+Top level modules:
+	GenSinFullWave
+
+} {} {}}

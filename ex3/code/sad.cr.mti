@@ -26,12 +26,33 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	GenReciprocalWave
 
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/code/WaveformGenerator.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/WaveformGenerator.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module WaveformGenerator
+
+Top level modules:
+	WaveformGenerator
+
 } {} {}} C:/Users/Asus/source/dld-lab/ex3/code/genSquareWave.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/genSquareWave.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module GenSquareWave
 
 Top level modules:
 	GenSquareWave
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/code/genFullWaveRectified.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/genFullWaveRectified.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module GenFullWaveRectified
+
+Top level modules:
+	GenFullWaveRectified
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/code/genHalfWaveRectified.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/genHalfWaveRectified.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module GenHalfWaveRectified
+
+Top level modules:
+	GenHalfWaveRectified
 
 } {} {}} C:/Users/Asus/source/dld-lab/ex3/code/genSinWave.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/genSinWave.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -46,19 +67,5 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	GenTriangleWave
-
-} {} {}} C:/Users/Asus/source/dld-lab/ex3/code/genHalfWaveRectified.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/genHalfWaveRectified.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module GenHalfWaveRectified
-
-Top level modules:
-	GenHalfWaveRectified
-
-} {} {}} C:/Users/Asus/source/dld-lab/ex3/code/genFullWaveRectified.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/genFullWaveRectified.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module GenFullWaveRectified
-
-Top level modules:
-	GenFullWaveRectified
 
 } {} {}}
