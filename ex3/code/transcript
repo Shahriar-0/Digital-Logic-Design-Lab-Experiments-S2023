@@ -99,3 +99,10 @@ run -all
 # ** Note: $stop    : C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v(20)
 #    Time: 153710 ns  Iteration: 0  Instance: /WaveformGeneratorTB
 # Break in Module WaveformGeneratorTB at C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v line 20
+# Compile of amplitudeSelector.v failed with 5 errors.
+# Compile of amplitudeSelector.v failed with 1 errors.
+# Compile of amplitudeSelector.v failed with 2 errors.
+# Compile of amplitudeSelector.v was successful.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/Asus/source/dld-lab/ex3/code/sad.mpf).  File can not be renamed.

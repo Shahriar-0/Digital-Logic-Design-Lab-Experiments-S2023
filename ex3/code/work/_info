@@ -9,20 +9,44 @@ z2
 !i10f 100
 cModel Technology
 dC:/Users/Asus/source/ca_uni/1/code
+vAmplitudeSelector
+!s110 1682867404
+!i10b 1
+!s100 QNlTNSaSab`AB9B3Ob6g80
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IMcclXh?:Zeej>ac_3Ai;d1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Asus/source/dld-lab/ex3/code
+w1682867399
+8C:/Users/Asus/source/dld-lab/ex3/code/amplitudeSelector.v
+FC:/Users/Asus/source/dld-lab/ex3/code/amplitudeSelector.v
+!i122 169
+L0 1 9
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1682867403.000000
+!s107 C:/Users/Asus/source/dld-lab/ex3/code/amplitudeSelector.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Asus/source/dld-lab/ex3/code/amplitudeSelector.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@amplitude@selector
 vCounter
 !s110 1682866888
 !i10b 1
 !s100 E_c?RJC5ajJ^gk?VN3bfF2
-Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+R0
 Ig7495Q=zUHP2Ob`kDf6nh0
-Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dC:/Users/Asus/source/dld-lab/ex3/code
+R1
+R2
 w1682697653
 8C:/Users/Asus/source/dld-lab/ex3/code/counter.v
 FC:/Users/Asus/source/dld-lab/ex3/code/counter.v
 !i122 159
 L0 1 15
-Z3 OV;L;2020.1;71
+R3
 r1
 !s85 0
 31
@@ -30,8 +54,8 @@ r1
 !s107 C:/Users/Asus/source/dld-lab/ex3/code/counter.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Asus/source/dld-lab/ex3/code/counter.v|
 !i113 1
-Z4 o-work work
-Z5 tCvgOpt 0
+R4
+R5
 n@counter
 vGenFullWaveRectified
 Z6 !s110 1682866889
