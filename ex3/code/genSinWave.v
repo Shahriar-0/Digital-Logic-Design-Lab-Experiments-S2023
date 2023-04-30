@@ -15,8 +15,8 @@ module GenSineWave (cnt, clk, rst, out);
     wire signed [15:0] shifted_cos, shifted_sine;
     wire [5:0] cos_shift, sine_shift;
 
-    assign shifted_cos = {{6{prev_cos_output[15]}}, prev_cos_output[15:6]};
-    assign shifted_sine = {{6{sine_load_data[15]}}, sine_load_data[15:6]};
+    assign shifted_cos = {{5{prev_cos_output[15]}}, prev_cos_output[15:5]};
+    assign shifted_sine = {{5{sine_load_data[15]}}, sine_load_data[15:5]};
 
     assign sine_load_data = prev_sine_output + shifted_cos;
     assign cos_load_data = prev_cos_output - shifted_sine;

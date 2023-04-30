@@ -7,7 +7,7 @@ module WaveformGenerator(clk, rst, slc, out);
     wire co;
 
     wire [7:0] square_output, triangle_output, full_wave_rectified_output, half_wave_rectified_output, reciprocal_output, DDS_output;
-    wire si gned [7:0] sine_output;
+    wire signed [7:0] sine_output;
 
     Counter counter(.clk(clk), .rst(rst), .out(cnt), .co(co));
 
@@ -29,8 +29,7 @@ module WaveformGenerator(clk, rst, slc, out);
             3'b100: out = full_wave_rectified_output;    // this is not checked
             3'b101: out = half_wave_rectified_output;    // this also
             3'b110: out = DDS_output;
-            3'b111: out = 
-            default: out = 8'bz;
+            3'b111: out = 8'bz;
         endcase
     end
 

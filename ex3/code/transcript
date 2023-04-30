@@ -1,0 +1,101 @@
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v was successful.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v was successful.
+# Compile of register.v was successful.
+# Compile of WaveformGenerator.v failed with 2 errors.
+# Compile of WaveformgeneratorTB.v was successful.
+# 10 compiles, 1 failed with 2 errors.
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v was successful.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v was successful.
+# Compile of register.v was successful.
+# Compile of WaveformGenerator.v was successful.
+# Compile of WaveformgeneratorTB.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.WaveformGeneratorTB
+# vsim -gui work.WaveformGeneratorTB 
+# Start time: 14:50:26 on Apr 30,2023
+# Loading work.WaveformGeneratorTB
+# Loading work.WaveformGenerator
+# Loading work.Counter
+# Loading work.GenReciprocalWave
+# Loading work.GenSquareWave
+# Loading work.GenTriangleWave
+# Loading work.GenSineWave
+# Loading work.Register
+# Loading work.GenFullWaveRectified
+# Loading work.GenHalfWaveRectified
+add wave -position insertpoint  \
+sim:/WaveformGeneratorTB/main/full_wave_rectified_output \
+sim:/WaveformGeneratorTB/main/half_wave_rectified_output \
+sim:/WaveformGeneratorTB/main/sine_output \
+sim:/WaveformGeneratorTB/main/square_output \
+sim:/WaveformGeneratorTB/main/triangle_output
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Note: $stop    : C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v(20)
+#    Time: 153710 ns  Iteration: 0  Instance: /WaveformGeneratorTB
+# Break in Module WaveformGeneratorTB at C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v line 20
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v was successful.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v was successful.
+# Compile of register.v was successful.
+# Compile of WaveformGenerator.v was successful.
+# Compile of WaveformgeneratorTB.v was successful.
+# 10 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.WaveformGeneratorTB
+# Loading work.WaveformGenerator
+# Loading work.Counter
+# Loading work.GenReciprocalWave
+# Loading work.GenSquareWave
+# Loading work.GenTriangleWave
+# Loading work.GenSineWave
+# Loading work.Register
+# Loading work.GenFullWaveRectified
+# Loading work.GenHalfWaveRectified
+run -all
+# ** Note: $stop    : C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v(20)
+#    Time: 153710 ns  Iteration: 0  Instance: /WaveformGeneratorTB
+# Break in Module WaveformGeneratorTB at C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v line 20
+# Compile of counter.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v was successful.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v was successful.
+# Compile of register.v was successful.
+# Compile of WaveformGenerator.v was successful.
+# Compile of WaveformgeneratorTB.v was successful.
+# 10 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.WaveformGeneratorTB
+# Loading work.WaveformGenerator
+# Loading work.Counter
+# Loading work.GenReciprocalWave
+# Loading work.GenSquareWave
+# Loading work.GenTriangleWave
+# Loading work.GenSineWave
+# Loading work.Register
+# Loading work.GenFullWaveRectified
+# Loading work.GenHalfWaveRectified
+run -all
+# ** Note: $stop    : C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v(20)
+#    Time: 153710 ns  Iteration: 0  Instance: /WaveformGeneratorTB
+# Break in Module WaveformGeneratorTB at C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v line 20

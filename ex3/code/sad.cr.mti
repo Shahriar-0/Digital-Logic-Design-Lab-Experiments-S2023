@@ -1,23 +1,16 @@
-C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module WaveformGeneratorTB
-
-Top level modules:
-	WaveformGeneratorTB
-
-} {} {}} C:/Users/Asus/source/dld-lab/ex3/code/counter.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/counter.v
+C:/Users/Asus/source/dld-lab/ex3/code/counter.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/counter.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module Counter
 
 Top level modules:
 	Counter
 
-} {} {}} C:/Users/Asus/source/dld-lab/ex3/code/register.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/register.v
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/WaveformgeneratorTB.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module Register
+-- Compiling module WaveformGeneratorTB
 
 Top level modules:
-	Register
+	WaveformGeneratorTB
 
 } {} {}} C:/Users/Asus/source/dld-lab/ex3/code/genReciprocalWave.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/genReciprocalWave.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -25,6 +18,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	GenReciprocalWave
+
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/code/register.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/register.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Register
+
+Top level modules:
+	Register
 
 } {} {}} C:/Users/Asus/source/dld-lab/ex3/code/WaveformGenerator.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/WaveformGenerator.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -40,12 +40,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	GenSquareWave
 
-} {} {}} C:/Users/Asus/source/dld-lab/ex3/code/genFullWaveRectified.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/genFullWaveRectified.v
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/code/genTriangleWave.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/genTriangleWave.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module GenFullWaveRectified
+-- Compiling module GenTriangleWave
 
 Top level modules:
-	GenFullWaveRectified
+	GenTriangleWave
 
 } {} {}} C:/Users/Asus/source/dld-lab/ex3/code/genHalfWaveRectified.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/genHalfWaveRectified.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -54,18 +54,11 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	GenHalfWaveRectified
 
-} {} {}} C:/Users/Asus/source/dld-lab/ex3/code/genSinWave.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/genSinWave.v
+} {} {}} C:/Users/Asus/source/dld-lab/ex3/code/genFullWaveRectified.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/genFullWaveRectified.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module GenSineWave
+-- Compiling module GenFullWaveRectified
 
 Top level modules:
-	GenSineWave
-
-} {} {}} C:/Users/Asus/source/dld-lab/ex3/code/genTriangleWave.v {1 {vlog -work work -stats=none C:/Users/Asus/source/dld-lab/ex3/code/genTriangleWave.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module GenTriangleWave
-
-Top level modules:
-	GenTriangleWave
+	GenFullWaveRectified
 
 } {} {}}
