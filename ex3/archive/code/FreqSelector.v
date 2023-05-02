@@ -1,12 +1,12 @@
 module FreqSelector #(
     parameter N = 8
 )(
-    input [N-1:0] sel,
+    input [N-1:0] slc,
     input clr, clk, rst,
     output co
 );
     wire [N-1:0] comp;
-    assign comp = {1'b1, {N{1'b0}}} - sel;
+    assign comp = {1'b1, {N{1'b0}}} - slc;
 
     wire coLsb, coMsb;
     wire [N/2-1:0] outLsb, outMsb;
