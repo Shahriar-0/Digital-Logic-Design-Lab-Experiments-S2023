@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect -144 16 24 32)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "sel[2..0]" (rect 5 0 43 11)(font "Intel Clear" ))
+	(text "slc[2..0]" (rect 5 0 43 11)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -192,8 +192,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "sel[2..0]" (rect 0 0 40 12)(font "Arial" ))
-		(text "sel[2..0]" (rect 21 27 61 39)(font "Arial" ))
+		(text "slc[2..0]" (rect 0 0 40 12)(font "Arial" ))
+		(text "slc[2..0]" (rect 21 27 61 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
@@ -350,8 +350,8 @@ applicable agreement for further details.
 	(port
 		(pt 56 88)
 		(input)
-		(text "sel" (rect 59 70 75 84)(font "Arial" (font_size 8)))
-		(text "sel" (rect 59 70 75 84)(font "Arial" (font_size 8)))
+		(text "slc" (rect 59 70 75 84)(font "Arial" (font_size 8)))
+		(text "slc" (rect 59 70 75 84)(font "Arial" (font_size 8)))
 		(line (pt 56 88)(pt 56 72))
 	)
 	(port
@@ -478,23 +478,23 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "sel[2..0]" (rect 618 376 656 387)(font "Intel Clear" ))
+	(text "slc[2..0]" (rect 618 376 656 387)(font "Intel Clear" ))
 	(pt 712 392)
 	(pt 608 392)
 	(bus)
 )
 (connector
-	(text "sel[0]" (rect 696 359 707 384)(font "Intel Clear" )(vertical))
+	(text "slc[0]" (rect 696 359 707 384)(font "Intel Clear" )(vertical))
 	(pt 712 360)
 	(pt 712 392)
 )
 (connector
-	(text "sel[1]" (rect 704 359 715 384)(font "Intel Clear" )(vertical))
+	(text "slc[1]" (rect 704 359 715 384)(font "Intel Clear" )(vertical))
 	(pt 720 360)
 	(pt 720 392)
 )
 (connector
-	(text "sel[2]" (rect 712 359 723 384)(font "Intel Clear" )(vertical))
+	(text "slc[2]" (rect 712 359 723 384)(font "Intel Clear" )(vertical))
 	(pt 728 360)
 	(pt 728 392)
 )

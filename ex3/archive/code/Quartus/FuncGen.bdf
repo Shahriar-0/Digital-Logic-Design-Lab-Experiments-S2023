@@ -167,8 +167,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "sel[N-1..0]" (rect 0 0 51 12)(font "Arial" ))
-		(text "sel[N-1..0]" (rect 21 27 72 39)(font "Arial" ))
+		(text "slc[N-1..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "slc[N-1..0]" (rect 21 27 72 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
@@ -233,8 +233,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "sel[2..0]" (rect 0 0 44 14)(font "Arial" (font_size 8)))
-		(text "sel[2..0]" (rect 21 27 65 41)(font "Arial" (font_size 8)))
+		(text "slc[2..0]" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "slc[2..0]" (rect 21 27 65 41)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port

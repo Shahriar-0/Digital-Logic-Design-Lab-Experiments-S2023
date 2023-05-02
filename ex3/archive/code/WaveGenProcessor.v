@@ -1,5 +1,5 @@
 module WaveGenProcessor(
-    input [2:0] sel,
+    input [2:0] slc,
     input [7:0] cnt,
     input clk, rst,
     output reg [7:0] out
@@ -19,7 +19,7 @@ module WaveGenProcessor(
     GenRhomboidWave   rhomboid(.cnt(cnt), .out(rhomboidOut));
 
     always @(*) begin
-        case (sel)
+        case (slc)
             3'b000: out = rhomboidOut;   // Rhomboid
             3'b001: out = squareOut;     // Square
             3'b010: out = reciprocalOut; // Reciprocal
