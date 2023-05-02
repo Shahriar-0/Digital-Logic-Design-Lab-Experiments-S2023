@@ -1,3 +1,0 @@
-In order to set the frequency of the output signal a frequency selector is required. The frequency
-selector consists of a counter that divides a high source input signal to the desired value. For this
-purpose, you can write the Verilog description of a simple 9 bit counter.
