@@ -5,7 +5,9 @@ module WaveformGeneratorTB();
     wire [7:0] out;
     reg clk = 1'b0, rst = 1'b0;
 
-    WaveformGenerator main(.clk(clk), .rst(rst), .slc(slc), .out(out));
+    WaveformGenerator main(.clk(clk), .rst(rst),.square(square), .triangle(triangle), .full_wave_rectified(full_wave_rectified),
+         .half_wave_rectified(half_wave_rectified), .reciprocal(reciprocal),.sine(sine));
+    wire [7:0] square, triangle, full_wave_rectified, half_wave_rectified, reciprocal;
 
     always #5 clk = ~clk;
 

@@ -1,38 +1,26 @@
-module WaveformGenerator(clk, rst, slc, out);
+module WaveformGeneratorTB(rst,clk,sw,out);
+    input rst;
+    input [2:0] sw;
+    output [7:0] out;
+    WaveformGenerator main(.clk(clk), .rst(rst),.square(square), .triangle(triangle), .full_wave_rectified(full_wave_rectified),
+         .half_wave_rectified(half_wave_rectified), .reciprocal(reciprocal),.sine(sine));
+    wire [7:0] square, triangle, full_wave_rectified, half_wave_rectified, reciprocal, sine, DDS;
 
-    input [2:0] slc;
-    input clk, rst;
-    output reg [7:0] out;
-    wire [7:0] cnt;
-    wire co;
 
-    wire [7:0] square_output, triangle_output, full_wave_rectified_output, half_wave_rectified_output, reciprocal_output, DDS_output;
-    wire signed [7:0] sine_output;
-
-    Counter counter(.clk(clk), .rst(rst), .out(cnt), .co(co));
-
-    GenReciprocalWave    reciprocal(.cnt(cnt), .out(reciprocal_output));
-    GenSquareWave        square(.cnt(cnt), .out(square_output));
-    GenTriangleWave      triangle(.cnt(cnt), .out(triangle_output));
-    GenSineWave          sine(.cnt(cnt), .out(sine_output), .clk(clk), .rst(rst));
-    GenFullWaveRectified full_rectified(.cnt(cnt), .out(full_wave_rectified_output), .sine(sine_output));
-    GenHalfWaveRectified half_rectified(.cnt(cnt), .out(half_wave_rectified_output),  .sine(sine_output));
-
-    always @(slc or reciprocal_output or square_output or
-             triangle_output or sine_output or 
-             full_wave_rectified_output or DDS_output) begin
+always @(slc or reciprocal or square or
+             triangle or sine or 
+             full_wave_rectified or DDS) begin
         case (slc)
-            3'b000: out = reciprocal_output; 
-            3'b001: out = square_output;     
-            3'b010: out = triangle_output; 
-            3'b011: out = sine_output + 8'd127;
-            3'b100: out = full_wave_rectified_output;    // this is not checked
-            3'b101: out = half_wave_rectified_output;    // this also
-            3'b110: out = DDS_output;
+            3'b000: out = reciprocal; 
+            3'b001: out = square;     
+            3'b010: out = triangle; 
+            3'b011: out = sine;
+            3'b100: out = full_wave_rectified;    
+            3'b101: out = half_wave_rectified;
+            3'b110: out = DDS;
             3'b111: out = 8'bz;
         endcase
     end
 
-endmodule
 
-
+endmodule 
