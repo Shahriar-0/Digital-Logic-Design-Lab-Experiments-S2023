@@ -17,21 +17,6 @@ module WG(clk, rst, square_out, triangle_out, full_wave_rectified_out, half_wave
     GenFullWaveRectified full_rectified(.cnt(cnt), .out(full_wave_rectified_out), .sine(sine_f));
     GenHalfWaveRectified half_rectified(.cnt(cnt), .out(half_wave_rectified_out),  .sine(sine_f));
 
-    // always @(slc or reciprocal or square or
-    //          triangle or sine or 
-    //          full_wave_rectified or DDS) begin
-    //     case (slc)
-    //         3'b000: out = reciprocal; 
-    //         3'b001: out = square;     
-    //         3'b010: out = triangle; 
-    //         3'b011: out = sine + 8'd127;
-    //         3'b100: out = full_wave_rectified;    // this is not checked
-    //         3'b101: out = half_wave_rectified;    // this also
-    //         3'b110: out = DDS;
-    //         3'b111: out = 8'bz;
-    //     endcase
-    // end
-
 endmodule
 
 

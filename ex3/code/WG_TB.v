@@ -17,9 +17,9 @@ module AFG_TB();
     assign freq_slc = SW[4:2];
 
     initial begin
-        #10 rst = 1'b1; phase_cntrl = 2'b00; clk = 1'b0;
+        #10 rst = 1'b1;
+        clk = 1'b0;
         #100 rst = 1'b0;
-
         #100 mux_slc = 3'b000; 
         #25600 $stop;
     end
