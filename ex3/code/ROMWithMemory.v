@@ -1,6 +1,7 @@
-module memoryRomImplementation(phase_cntrl, out);
+module memoryRomImplementation(phase_cntrl, out, clk);
     input [1:0] phase_cntrl;
-    output [7:0] out;
+    input clk;
+    output reg [7:0] out;
 
     reg [7:0] address;
 
@@ -12,7 +13,7 @@ module memoryRomImplementation(phase_cntrl, out);
 
     always @(posedge clk) begin
         address = address + phase_cntrl;
-        data_out = memory[phase_cntrl];
+        out = mem[address];
     end
-    
+
 endmodule

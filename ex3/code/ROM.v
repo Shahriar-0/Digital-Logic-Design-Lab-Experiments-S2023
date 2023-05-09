@@ -14,7 +14,7 @@ module rom_module(phase_cntrl, data_out, clk);
 
     always @(posedge clk) begin
         address = address + phase_cntrl;
-        data_out = memory[phase_cntrl];
+        data_out = memory[address];
     end
 
 endmodule
