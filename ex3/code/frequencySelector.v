@@ -5,10 +5,12 @@ module FreqSelector #(parameter N = 9)
     reg [N-1:0] counter;
     input  clk, rst;
     output co;
+    
     always @(posedge rst or posedge clk) begin
         if (co || rst)
             counter <= {slc, 6'b1};
-        else {co, counter} <= counter + 1;
+        else 
+            {co, counter} <= counter + 1;
     end
 
     
