@@ -7,9 +7,9 @@ module FreqSelector #(parameter N = 9)
     output reg co;
     always @(posedge rst or posedge clk) begin
         if (rst)
-            {co, counter} <= {1'b0,slc, 6'b1};
+            {co, counter} <= {1'b0, slc, 6'b1};
         else if (co)
-            {co, counter} <= {1'b0,slc, 6'b1};
+            {co, counter} <= {1'b0, slc, 6'b1};
         else 
             {co, counter} <= counter + 1;
     end

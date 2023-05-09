@@ -7,4 +7,5 @@ module DDS(phase_cntrl, clk, out, rst);
     Register #(8) regg(.load_data(load_data), .clk(clk), .rst(rst), .out(out)); 
 
     assign load_data = out + phase_cntrl;
+
 endmodule

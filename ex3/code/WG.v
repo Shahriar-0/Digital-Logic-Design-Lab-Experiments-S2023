@@ -1,11 +1,13 @@
 
-module WG(clk, rst, square_out, triangle_out, full_wave_rectified_out, half_wave_rectified_out, reciprocal_out,sine_out);
+module WG(clk, rst, reciprocal_out, 
+          square_out, sine_out, triangle_out, 
+          full_wave_rectified_out, half_wave_rectified_out);
 
     input clk, rst; 
     wire [7:0] cnt;
     wire co;
 
-    output [7:0] square_out, triangle_out, full_wave_rectified_out, half_wave_rectified_out, reciprocal_out,sine_out;
+    output [7:0] reciprocal_out, square_out, sine_out, triangle_out, full_wave_rectified_out, half_wave_rectified_out;
     wire signed [7:0] sine_f;
     assign sine_out = sine_f + 8'd127;
     Counter counter(.clk(clk), .rst(rst), .out(cnt), .co(co));
