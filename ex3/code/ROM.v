@@ -1,6 +1,7 @@
-module rom_module(phase_cntrl, data_out);
+module rom_module(phase_cntrl, data_out, clk);
 
     input [1:0] phase_cntrl;
+    input clk;
     output reg [7:0] data_out;
     reg [7:0] address;
 
