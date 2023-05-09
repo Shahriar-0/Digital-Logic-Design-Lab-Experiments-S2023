@@ -9,7 +9,7 @@ module WG(clk, rst, reciprocal_out,
 
     output [7:0] reciprocal_out, square_out, sine_out, triangle_out, full_wave_rectified_out, half_wave_rectified_out;
     wire signed [7:0] sine_f;
-    assign sine_out = sine_f + 8'd127;
+    assign sine_out = sine_f + 8'd127; // should be unsigned
     Counter counter(.clk(clk), .rst(rst), .out(cnt), .co(co));
 
     GenReciprocalWave    reciprocal(.cnt(cnt), .out(reciprocal_out));
