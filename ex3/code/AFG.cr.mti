@@ -33,6 +33,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	mux7_1
 
+} {} {}} E:/elahe/git/dld-lab-uni/ex3/code/frequencySelector_TB.v {1 {vlog -work work -stats=none E:/elahe/git/dld-lab-uni/ex3/code/frequencySelector_TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FreqSelectorTB
+
+Top level modules:
+	FreqSelectorTB
+
 } {} {}} E:/elahe/git/dld-lab-uni/ex3/code/counter.v {1 {vlog -work work -stats=none E:/elahe/git/dld-lab-uni/ex3/code/counter.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module Counter
@@ -74,9 +81,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	WG
-
-} {} {}} E:/elahe/git/dld-lab-uni/ex3/code/ROM.v {1 {vlog -work work -stats=none E:/elahe/git/dld-lab-uni/ex3/code/ROM.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
 } {} {}} E:/elahe/git/dld-lab-uni/ex3/code/amplitudeSelector.v {1 {vlog -work work -stats=none E:/elahe/git/dld-lab-uni/ex3/code/amplitudeSelector.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
