@@ -68,6 +68,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	FreqSelector
 
+} {} {}} E:/elahe/git/dld-lab-uni/ex3/code/WG.v {1 {vlog -work work -stats=none E:/elahe/git/dld-lab-uni/ex3/code/WG.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module WG
+
+Top level modules:
+	WG
+
 } {} {}} E:/elahe/git/dld-lab-uni/ex3/code/ROM.v {1 {vlog -work work -stats=none E:/elahe/git/dld-lab-uni/ex3/code/ROM.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 

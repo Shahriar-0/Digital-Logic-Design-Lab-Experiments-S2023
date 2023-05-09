@@ -176,3 +176,77 @@ run -all
 # ** Note: $stop    : E:/elahe/git/dld-lab-uni/ex3/code/WG_TB.v(18)
 #    Time: 10030 ns  Iteration: 0  Instance: /WG_TB
 # Break in Module WG_TB at E:/elahe/git/dld-lab-uni/ex3/code/WG_TB.v line 18
+# Compile of amplitudeSelector.v was successful.
+# Compile of counter.v was successful.
+# Compile of DAC.v was successful.
+# Compile of DDs.v was successful.
+# Compile of frequencySelector.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v was successful.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v was successful.
+# Compile of mux7-1.v was successful.
+# Compile of register.v was successful.
+# Compile of ROM.v was successful.
+# Compile of ROMWithMemory.v was successful.
+# Compile of WG.v was successful.
+# Compile of AFG_TB.v was successful.
+# Compile of WG_TB.v was successful.
+# 18 compiles, 0 failed with no errors.
+# Compile of frequencySelector_TB.v was successful.
+quit -sim
+# End time: 15:50:57 on May 09,2023, Elapsed time: 0:11:09
+# Errors: 0, Warnings: 4
+vsim -gui work.FreqSelectorTB
+# vsim -gui work.FreqSelectorTB 
+# Start time: 15:51:05 on May 09,2023
+# Loading work.FreqSelectorTB
+# Loading work.FreqSelector
+add wave -position insertpoint  \
+sim:/FreqSelectorTB/clk \
+sim:/FreqSelectorTB/co \
+sim:/FreqSelectorTB/rst \
+sim:/FreqSelectorTB/slc
+restart -f
+run -all
+# ** Note: $stop    : E:/elahe/git/dld-lab-uni/ex3/code/frequencySelector_TB.v(17)
+#    Time: 20050 ns  Iteration: 0  Instance: /FreqSelectorTB
+# Break in Module FreqSelectorTB at E:/elahe/git/dld-lab-uni/ex3/code/frequencySelector_TB.v line 17
+add wave -position insertpoint  \
+sim:/FreqSelectorTB/fs/co \
+sim:/FreqSelectorTB/fs/counter
+restart -f
+run
+# ** Note: $stop    : E:/elahe/git/dld-lab-uni/ex3/code/frequencySelector_TB.v(17)
+#    Time: 20050 ns  Iteration: 0  Instance: /FreqSelectorTB
+# Break in Module FreqSelectorTB at E:/elahe/git/dld-lab-uni/ex3/code/frequencySelector_TB.v line 17
+# Compile of amplitudeSelector.v was successful.
+# Compile of counter.v was successful.
+# Compile of DAC.v was successful.
+# Compile of DDs.v was successful.
+# Compile of frequencySelector.v was successful.
+# Compile of genFullWaveRectified.v was successful.
+# Compile of genHalfWaveRectified.v was successful.
+# Compile of genReciprocalWave.v was successful.
+# Compile of genSinWave.v was successful.
+# Compile of genSquareWave.v was successful.
+# Compile of genTriangleWave.v was successful.
+# Compile of mux7-1.v was successful.
+# Compile of register.v was successful.
+# Compile of ROM.v was successful.
+# Compile of ROMWithMemory.v was successful.
+# Compile of WG.v was successful.
+# Compile of AFG_TB.v was successful.
+# Compile of WG_TB.v was successful.
+# Compile of frequencySelector_TB.v was successful.
+# 19 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FreqSelectorTB
+# Loading work.FreqSelector
+run
+# ** Note: $stop    : E:/elahe/git/dld-lab-uni/ex3/code/frequencySelector_TB.v(16)
+#    Time: 20050 ns  Iteration: 0  Instance: /FreqSelectorTB
+# Break in Module FreqSelectorTB at E:/elahe/git/dld-lab-uni/ex3/code/frequencySelector_TB.v line 16
