@@ -2,7 +2,8 @@ module mux7_1(a, b, c, d, e, f, g, slc, w);
     input [7:0] a, b, c, d, e, f, g;
     input [2:0] slc;
     output [7:0] w;
-    assign w = (slc == 3'b000) ? a :
+    
+    assign w =  (slc == 3'b000)  ? a :
                 (slc == 3'b001)  ? b :
                 (slc == 3'b010)  ? c :
                 (slc == 3'b011)  ? d :

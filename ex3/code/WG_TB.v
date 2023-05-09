@@ -20,7 +20,6 @@ module AFG_TB();
         #10 rst = 1'b1;
         clk = 1'b0;
         #100 rst = 1'b0;
-        #100 mux_slc = 3'b000; 
         #25600 $stop;
     end
 endmodule
