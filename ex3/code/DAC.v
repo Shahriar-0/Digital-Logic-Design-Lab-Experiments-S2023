@@ -12,14 +12,7 @@ module DAC(in, clk, rst, out);
     Register inReg(.load_data(in), .load(ldIn), .clk(clk), .rst(rst), .out(inOut));
 
     always @(inOut, cntOut, cntCo) begin
-        ldIn = 1'b0;
-
-        if (cntCo) 
-            ldIn = 1'b1;
-            
-        if (cntOut <= inOut) 
-            out = 1'b1;
-        else 
-            out = 1'b0;
+        ldIn = cntCo;            
+        out = (cntOut <= inOut) ? 1'b1 : 1'b0;
     end
 endmodule

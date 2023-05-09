@@ -3,7 +3,7 @@ module Register #(parameter N = 16,
                  (load_data, load, clk, rst, out);
 
     input [N - 1:0] load_data;
-    input clk, rst;
+    input clk, rst, load;
     output reg [N - 1:0] out;
 
     always @(posedge clk or posedge rst) begin
