@@ -5,7 +5,7 @@ module FreqSelectorTB();
     reg clk, rst;
     wire co;
 
-    FreqSelector fs(.slc(slc), .clk(clk), .rst(rst), .co(co));
+    FreqSelector frequency_selector(.slc(slc), .clk(clk), .rst(rst), .co(co));
 
     always #5 clk = ~clk;
 

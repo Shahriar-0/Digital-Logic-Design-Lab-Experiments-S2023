@@ -1,4 +1,5 @@
 module DAC_TB();
+
     reg clk, rst;
     reg [7:0] in;
 

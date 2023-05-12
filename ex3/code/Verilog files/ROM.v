@@ -1,20 +1,12 @@
-module rom_module(phase_cntrl, data_out, clk);
-
-    input [1:0] phase_cntrl;
+module ROM(address, out, clk);
     input clk;
-    output reg [7:0] data_out;
-    reg [7:0] address;
+    output reg [7:0] out;
+    input [1:0] address;
 
-    reg [7:0] memory [255:0];
-
-    initial begin
-        $readmemb("sine.mif", memory);
-        address = 8'b0;
-    end
+    (* romstyle = "M9K" *)(* ram_init_file = "sine.mif" *) reg [7:0] mem [3:0];
 
     always @(posedge clk) begin
-        address = address + phase_cntrl;
-        data_out = memory[address];
+        out = mem[address];
     end
 
 endmodule
