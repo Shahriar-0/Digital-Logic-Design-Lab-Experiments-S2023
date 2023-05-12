@@ -8,7 +8,7 @@ module mux7_1(a, b, c, d, e, f, g, slc, w);
                 (slc == 3'b010)  ? c :
                 (slc == 3'b011)  ? d :
                 (slc == 3'b100)  ? e :
-                (slc == 3'b001)  ? f :
+                (slc == 3'b101)  ? f :
                 (slc == 3'b110)  ? g : 8'bz;
 
 endmodule
