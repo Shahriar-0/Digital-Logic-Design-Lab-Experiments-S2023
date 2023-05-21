@@ -1,21 +1,26 @@
 `timescale 1ns/1ns
 
-module WG_TB();
+module AFG_TB();
+    reg [9:0] SW;
+    wire [7:0] out;
     reg clk, rst;
-    wire [7:0] reciprocal_out, square_out, sine_out, triangle_out, 
-               full_wave_rectified_out, half_wave_rectified_out;
+    wire [2:0] mux_slc, freq_slc;
+    wire [1:0] Amp_slc, phase_cntrl;
 
-    WG wg(.clk(clk), .rst(rst), .reciprocal_out(reciprocal_out), .
-          square_out(square_out), .sine_out(sine_out), .triangle_out(triangle_out), .
-          full_wave_rectified_out(full_wave_rectified_out), .half_wave_rectified_out(half_wave_rectified_out));
+    AFG afg(out, clk, rst, freq_slc, phase_cntrl, mux_slc, Amp_slc); 
 
     always #5 clk = ~clk;
 
-    initial begin 
-        clk = 1'b0;
-        rst = 1'b1;
-        #30 rst = 1'b0;
-        #10000 $stop;
-    end
+    assign mux_slc = SW[9:7];
+    assign Amp_slc = SW[6:5];
+    assign phase_cntrl = SW[1:0];
+    assign freq_slc = SW[4:2];
 
+    initial begin
+        #10 rst = 1'b1;
+        clk = 1'b0;
+        #100 rst = 1'b0;
+        #100 mux_slc = 3'b000; 
+        #25600 $stop;
+    end
 endmodule
