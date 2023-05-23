@@ -1,0 +1,489 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vAFG_TB
+Z0 !s110 1683643460
+!i10b 1
+!s100 zZbbDc3dJ0B@W2Y]OE;GG2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I^inOU3CMQHSFA=M`G]Dcz1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dE:/elahe/git/dld-lab-uni/ex3/code
+Z4 w1683629811
+8E:/elahe/git/dld-lab-uni/ex3/code/AFG_TB.v
+FE:/elahe/git/dld-lab-uni/ex3/code/AFG_TB.v
+!i122 196
+L0 3 23
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1683643460.000000
+!s107 E:/elahe/git/dld-lab-uni/ex3/code/AFG_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/elahe/git/dld-lab-uni/ex3/code/AFG_TB.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+n@a@f@g_@t@b
+vAmplitudeSelector
+Z9 !s110 1683643458
+!i10b 1
+!s100 QNlTNSaSab`AB9B3Ob6g80
+R1
+I?K:39;><[ZG2E^?f^282o2
+R2
+R3
+Z10 w1682875422
+8E:/elahe/git/dld-lab-uni/ex3/code/amplitudeSelector.v
+FE:/elahe/git/dld-lab-uni/ex3/code/amplitudeSelector.v
+!i122 180
+L0 1 9
+R5
+r1
+!s85 0
+31
+Z11 !s108 1683643458.000000
+!s107 E:/elahe/git/dld-lab-uni/ex3/code/amplitudeSelector.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/elahe/git/dld-lab-uni/ex3/code/amplitudeSelector.v|
+!i113 1
+R7
+R8
+n@amplitude@selector
+vCounter
+R9
+!i10b 1
+!s100 E_c?RJC5ajJ^gk?VN3bfF2
+R1
+If[48WT25hHEDlF?Ef5aUl1
+R2
+R3
+R10
+8E:/elahe/git/dld-lab-uni/ex3/code/counter.v
+FE:/elahe/git/dld-lab-uni/ex3/code/counter.v
+!i122 181
+L0 1 15
+R5
+r1
+!s85 0
+31
+R11
+!s107 E:/elahe/git/dld-lab-uni/ex3/code/counter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/elahe/git/dld-lab-uni/ex3/code/counter.v|
+!i113 1
+R7
+R8
+n@counter
+vDAC
+R9
+!i10b 1
+!s100 ]0jEZjj93>0=@mPH1Daz32
+R1
+IVA`d6jJP01oc0QndKB?`U1
+R2
+R3
+R4
+8E:/elahe/git/dld-lab-uni/ex3/code/DAC.v
+FE:/elahe/git/dld-lab-uni/ex3/code/DAC.v
+!i122 182
+Z12 L0 1 18
+R5
+r1
+!s85 0
+31
+R11
+!s107 E:/elahe/git/dld-lab-uni/ex3/code/DAC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/elahe/git/dld-lab-uni/ex3/code/DAC.v|
+!i113 1
+R7
+R8
+n@d@a@c
+vDAC_TB
+R0
+!i10b 1
+!s100 UgUG5SWcITFO_@m[o_^f83
+R1
+IhXYi?U?2F[hUgVSZ1jBa12
+R2
+R3
+w1683634652
+8E:/elahe/git/dld-lab-uni/ex3/code/DAC_TB.v
+FE:/elahe/git/dld-lab-uni/ex3/code/DAC_TB.v
+!i122 199
+Z13 L0 1 19
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/elahe/git/dld-lab-uni/ex3/code/DAC_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/elahe/git/dld-lab-uni/ex3/code/DAC_TB.v|
+!i113 1
+R7
+R8
+n@d@a@c_@t@b
+vDDS
+R9
+!i10b 1
+!s100 b5Ro;:>?lQIJ3eMaKldSO0
+R1
+Ig>gSG61B4OGRTGVUARRz?0
+R2
+R3
+Z14 w1683629567
+8E:/elahe/git/dld-lab-uni/ex3/code/DDs.v
+FE:/elahe/git/dld-lab-uni/ex3/code/DDs.v
+!i122 183
+Z15 L0 1 11
+R5
+r1
+!s85 0
+31
+R11
+!s107 E:/elahe/git/dld-lab-uni/ex3/code/DDs.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/elahe/git/dld-lab-uni/ex3/code/DDs.v|
+!i113 1
+R7
+R8
+n@d@d@s
+vFreqSelector
+R9
+!i10b 1
+!s100 mTnWLhf:VZ`Y9RW7I83P82
+R1
+IX75;<VaRFVA5@X@00oF>Q2
+R2
+R3
+R4
+8E:/elahe/git/dld-lab-uni/ex3/code/frequencySelector.v
+FE:/elahe/git/dld-lab-uni/ex3/code/frequencySelector.v
+!i122 184
+R12
+R5
+r1
+!s85 0
+31
+R11
+!s107 E:/elahe/git/dld-lab-uni/ex3/code/frequencySelector.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/elahe/git/dld-lab-uni/ex3/code/frequencySelector.v|
+!i113 1
+R7
+R8
+n@freq@selector
+vFreqSelectorTB
+R0
+!i10b 1
+!s100 e3ml`7YmIS5NN@>EQDB;;2
+R1
+Ii?;]1`j^F3:oJ9EXEhnC30
+R2
+R3
+w1683636059
+8E:/elahe/git/dld-lab-uni/ex3/code/frequencySelector_TB.v
+FE:/elahe/git/dld-lab-uni/ex3/code/frequencySelector_TB.v
+!i122 198
+L0 3 16
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/elahe/git/dld-lab-uni/ex3/code/frequencySelector_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/elahe/git/dld-lab-uni/ex3/code/frequencySelector_TB.v|
+!i113 1
+R7
+R8
+n@freq@selector@t@b
+vGenFullWaveRectified
+R9
+!i10b 1
+!s100 l4YT3jbZIlg_e8mzC[BST2
+R1
+IPzd@UP@eCnacMAmVUJKg10
+R2
+R3
+R10
+8E:/elahe/git/dld-lab-uni/ex3/code/genFullWaveRectified.v
+FE:/elahe/git/dld-lab-uni/ex3/code/genFullWaveRectified.v
+!i122 185
+Z16 L0 1 13
+R5
+r1
+!s85 0
+31
+R11
+!s107 E:/elahe/git/dld-lab-uni/ex3/code/genFullWaveRectified.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/elahe/git/dld-lab-uni/ex3/code/genFullWaveRectified.v|
+!i113 1
+R7
+R8
+n@gen@full@wave@rectified
+vGenHalfWaveRectified
+Z17 !s110 1683643459
+!i10b 1
+!s100 kAOo?]15:zLVOJ1_@mJGY3
+R1
+IYC0O?Y>TL>O2HAkHBd4k41
+R2
+R3
+R10
+8E:/elahe/git/dld-lab-uni/ex3/code/genHalfWaveRectified.v
+FE:/elahe/git/dld-lab-uni/ex3/code/genHalfWaveRectified.v
+!i122 186
+Z18 L0 1 14
+R5
+r1
+!s85 0
+31
+Z19 !s108 1683643459.000000
+!s107 E:/elahe/git/dld-lab-uni/ex3/code/genHalfWaveRectified.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/elahe/git/dld-lab-uni/ex3/code/genHalfWaveRectified.v|
+!i113 1
+R7
+R8
+n@gen@half@wave@rectified
+vGenReciprocalWave
+R17
+!i10b 1
+!s100 UOg14:8;k_b`mGFJ?kA;12
+R1
+IO^:aHf<1PSNh=mbJ0;B]:1
+R2
+R3
+R10
+8E:/elahe/git/dld-lab-uni/ex3/code/genReciprocalWave.v
+FE:/elahe/git/dld-lab-uni/ex3/code/genReciprocalWave.v
+!i122 187
+R15
+R5
+r1
+!s85 0
+31
+R19
+!s107 E:/elahe/git/dld-lab-uni/ex3/code/genReciprocalWave.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/elahe/git/dld-lab-uni/ex3/code/genReciprocalWave.v|
+!i113 1
+R7
+R8
+n@gen@reciprocal@wave
+vGenSineWave
+R17
+!i10b 1
+!s100 ;5PehLHc4zfZHV]EZ35K01
+R1
+IUGeY2Eb6QHeUkMhk]P4h]2
+R2
+R3
+R14
+8E:/elahe/git/dld-lab-uni/ex3/code/genSinWave.v
+FE:/elahe/git/dld-lab-uni/ex3/code/genSinWave.v
+!i122 188
+L0 1 28
+R5
+r1
+!s85 0
+31
+R19
+!s107 E:/elahe/git/dld-lab-uni/ex3/code/genSinWave.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/elahe/git/dld-lab-uni/ex3/code/genSinWave.v|
+!i113 1
+R7
+R8
+n@gen@sine@wave
+vGenSquareWave
+R17
+!i10b 1
+!s100 GGb:[ggNIfD9O;SUa[<6W2
+R1
+IhIODC3oVK;@_D3?Xa7HU_1
+R2
+R3
+w1682433311
+8E:/elahe/git/dld-lab-uni/ex3/code/genSquareWave.v
+FE:/elahe/git/dld-lab-uni/ex3/code/genSquareWave.v
+!i122 189
+R18
+R5
+r1
+!s85 0
+31
+R19
+!s107 E:/elahe/git/dld-lab-uni/ex3/code/genSquareWave.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/elahe/git/dld-lab-uni/ex3/code/genSquareWave.v|
+!i113 1
+R7
+R8
+n@gen@square@wave
+vGenTriangleWave
+R17
+!i10b 1
+!s100 zoTXTWalN2f@]RAkEUkd61
+R1
+IWmJF59^0?GoMkjlGh2HeA2
+R2
+R3
+w1682433336
+8E:/elahe/git/dld-lab-uni/ex3/code/genTriangleWave.v
+FE:/elahe/git/dld-lab-uni/ex3/code/genTriangleWave.v
+!i122 190
+R16
+R5
+r1
+!s85 0
+31
+R19
+!s107 E:/elahe/git/dld-lab-uni/ex3/code/genTriangleWave.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/elahe/git/dld-lab-uni/ex3/code/genTriangleWave.v|
+!i113 1
+R7
+R8
+n@gen@triangle@wave
+vmemoryRomImplementation
+R0
+!i10b 1
+!s100 25dZ]@KPk`]f:_:NzAF421
+R1
+IzQlnGIgTnJbSW7`oVm4_^1
+R2
+R3
+w1683634797
+8E:/elahe/git/dld-lab-uni/ex3/code/ROMWithMemory.v
+FE:/elahe/git/dld-lab-uni/ex3/code/ROMWithMemory.v
+!i122 194
+R13
+R5
+r1
+!s85 0
+31
+R19
+!s107 E:/elahe/git/dld-lab-uni/ex3/code/ROMWithMemory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/elahe/git/dld-lab-uni/ex3/code/ROMWithMemory.v|
+!i113 1
+R7
+R8
+nmemory@rom@implementation
+vmux7_1
+R17
+!i10b 1
+!s100 dd32LCPQGTA>[562jY:bj2
+R1
+I<Q9FJVQK^hdl^A[VE9D;J0
+R2
+R3
+R4
+8E:/elahe/git/dld-lab-uni/ex3/code/mux7-1.v
+FE:/elahe/git/dld-lab-uni/ex3/code/mux7-1.v
+!i122 191
+R18
+R5
+r1
+!s85 0
+31
+R19
+!s107 E:/elahe/git/dld-lab-uni/ex3/code/mux7-1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/elahe/git/dld-lab-uni/ex3/code/mux7-1.v|
+!i113 1
+R7
+R8
+vRegister
+R17
+!i10b 1
+!s100 ZYAVeUk4ANCgZz?k?gHE^2
+R1
+I;3R3b6c;TNTSM9DnAS=>60
+R2
+R3
+R4
+8E:/elahe/git/dld-lab-uni/ex3/code/register.v
+FE:/elahe/git/dld-lab-uni/ex3/code/register.v
+!i122 192
+L0 1 16
+R5
+r1
+!s85 0
+31
+R19
+!s107 E:/elahe/git/dld-lab-uni/ex3/code/register.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/elahe/git/dld-lab-uni/ex3/code/register.v|
+!i113 1
+R7
+R8
+n@register
+vrom_module
+R17
+!i10b 1
+!s100 za^L1?oFcoYn7]]N9C?oI2
+R1
+I2DZ:E2TF]B;i=fk;MVS9O0
+R2
+R3
+w1683634497
+8E:/elahe/git/dld-lab-uni/ex3/code/ROM.v
+FE:/elahe/git/dld-lab-uni/ex3/code/ROM.v
+!i122 193
+L0 1 20
+R5
+r1
+!s85 0
+31
+R19
+!s107 E:/elahe/git/dld-lab-uni/ex3/code/ROM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/elahe/git/dld-lab-uni/ex3/code/ROM.v|
+!i113 1
+R7
+R8
+vWG
+R0
+!i10b 1
+!s100 :Rgo7iEhiE^J^A6b6U[lm3
+R1
+I;7TgUglkUjN03LKN2oY`A1
+R2
+R3
+w1683630928
+8E:/elahe/git/dld-lab-uni/ex3/code/WG.v
+FE:/elahe/git/dld-lab-uni/ex3/code/WG.v
+!i122 195
+L0 2 21
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/elahe/git/dld-lab-uni/ex3/code/WG.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/elahe/git/dld-lab-uni/ex3/code/WG.v|
+!i113 1
+R7
+R8
+n@w@g
+vWG_TB
+R0
+!i10b 1
+!s100 9FZ^a@^PO@i7[H`DAJoI>3
+R1
+IO:1Vkkz>?T]TWUP9`K7Ze2
+R2
+R3
+w1683630804
+8E:/elahe/git/dld-lab-uni/ex3/code/WG_TB.v
+FE:/elahe/git/dld-lab-uni/ex3/code/WG_TB.v
+!i122 197
+L0 3 19
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/elahe/git/dld-lab-uni/ex3/code/WG_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/elahe/git/dld-lab-uni/ex3/code/WG_TB.v|
+!i113 1
+R7
+R8
+n@w@g_@t@b
