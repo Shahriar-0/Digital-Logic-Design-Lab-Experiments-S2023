@@ -5,11 +5,15 @@
 `define E 2'b100
 `define F 2'b101
 
-module controller(input clk, rst, eng_done, start, co 
+module controller(input clk, rst, eng_done, start,
                   output ld, sh_en, wr_req, 
                   eng_start, ui_reg_ld, done);
 
     reg [2:0] ps, ns;
+    reg [1:0] count;
+    
+    wire co;
+    assign co = &count;
 
     always @(ps or start or co or eng_done or rst) begin
         case (ps)
@@ -31,15 +35,20 @@ module controller(input clk, rst, eng_done, start, co
             `C: eng_start = 1'b1;
             `E: {cnt_en, wr_req} = 2'b1;
             `F: sh_en = 1'b1;
-            default;
+            default:;
         endcase
     end
             
     always @(posedge clk or posedge rst) begin
-        if (rst)
+        if (rst) begin
             ps <= `A;
-        else
+            count <= 2'd0;
+        end
+        else begin
             ps <= ns;
+            count <= count + 1;
+        end
     end
+
 
 endmodule
