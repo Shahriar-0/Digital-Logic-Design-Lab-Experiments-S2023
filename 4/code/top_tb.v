@@ -1,3 +1,4 @@
+`timescale 1ns/1ns
 module top_tb();
     reg start, rst, clk;
     reg [4:0] V;

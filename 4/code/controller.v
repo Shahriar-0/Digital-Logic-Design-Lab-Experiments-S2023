@@ -6,7 +6,7 @@
 `define F 2'b101
 
 module controller(input clk, rst, eng_done, start,
-                  output ld, sh_en, wr_req, 
+                  output reg ld, sh_en, wr_req, 
                   eng_start, ui_reg_ld, done);
 
     reg [2:0] ps, ns;
@@ -26,9 +26,9 @@ module controller(input clk, rst, eng_done, start,
             default: ns = `A;
         endcase
     end
-    wire cnt_en;
+    reg  cnt_en;
     always @(ps) begin
-        {done, ld, ui_reg_ld, eng_start, eng_done, cnt_en, sh_en, wr_req} = 8'b0;
+        {done, ld, ui_reg_ld, eng_start, cnt_en, sh_en, wr_req} = 7'b0;
         case (ps)
             `A: done = 1'b1;
             `B: {ld, ui_reg_ld} = 2'b1;
