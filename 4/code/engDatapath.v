@@ -1,4 +1,4 @@
-module datapath(input clk,rst, zx,initx,ldx, zt,initt,ldt, zr,initr,ldr, zc,ldc,enc, s,
+module engDatapath(input clk,rst, zx,initx,ldx, zt,initt,ldt, zr,initr,ldr, zc,ldc,enc, s,
 		 input [15:0] x, output co,output [17:0]result);
 	wire [15:0] xptwo;
 	wire [2:0] c_in = 0;

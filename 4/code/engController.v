@@ -1,4 +1,4 @@
-module controller(input clk,rst,start,co,
+module engController(input clk,rst,start,co,
 		    	  output reg done, zx,initx,ldx,zt,initt,
 				  ldt,zr,initr,ldr,zc,ldc,enc,s);
 

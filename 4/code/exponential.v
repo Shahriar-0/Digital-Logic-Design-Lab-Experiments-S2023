@@ -3,10 +3,10 @@ module exponential(input clk,rst,start, input [15:0] x,
 	
 	wire co,zx,initx,ldx,zt,initt,ldt,zr,initr,ldr,zc,ldc,enc,s;
 	
-	controller control(clk,rst,start,co,done, zx,initx,ldx, 
+	engController control(clk,rst,start,co,done, zx,initx,ldx, 
 			  zt,initt,ldt, zr,initr,ldr, zc,ldc,enc, s);
 
-	datapath dP(clk,rst, zx,initx,ldx, zt,initt,ldt,
+	engDatapath dP(clk,rst, zx,initx,ldx, zt,initt,ldt,
 		    zr,initr,ldr, zc,ldc,enc, s,x,co,{intpart,fracpart});
 
 endmodule
