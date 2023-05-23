@@ -1,10 +1,10 @@
-module LUT (adr, data);
+module LUT(adr, data);
 	
 	input [3:0] adr;
 	output [15:0] data;
 
 	reg [15:0] datat;
-	
+
 	always @(adr) begin
 		case(adr)
 			0: datat = 16'hFFFF;

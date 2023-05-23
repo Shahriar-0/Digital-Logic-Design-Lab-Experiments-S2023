@@ -1,9 +1,10 @@
-module Counter (clk, rst, ld, en, in, out, co);
+module Counter(clk, rst, ld, en, in, out, co);
+	parameter N = 8;
 	input clk, rst, ld, en;
-	input [2:0] in;
+	input [N-1:0] in;
 
 	output co;
-	output reg [3:0] out;
+	output reg [N-1:0] out;
 
 	always@(posedge clk or posedge rst)begin
 		if(rst)
@@ -14,6 +15,6 @@ module Counter (clk, rst, ld, en, in, out, co);
 			out <= out + 1'b1;
 	end
 
-	assign co = (out >= 4'b1000)? 1'b1: 1'b0; // ?
+	assign co = &out;
 
 endmodule 

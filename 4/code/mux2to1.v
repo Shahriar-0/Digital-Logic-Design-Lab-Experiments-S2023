@@ -3,7 +3,7 @@ module Mux2to1(a, b, s, w);
 	input s;
 	output [15:0] w;
 
-	assign y = s ? a : b;
+	assign w = s ? a : b;
 
 endmodule 
 
