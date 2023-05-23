@@ -12,8 +12,9 @@ module tb();
     initial begin
         clk = 1'b0; rst = 1'b1; start = 1'b0; x = 16'd10;
         #30 rst = 1'b0;
-        #10 start = 1'b1;
-        #10 start = 1'b0;
+        #30 start = 1'b1;
+        #30 start = 1'b0;
+        #1000 $stop;
     end
 
 endmodule
