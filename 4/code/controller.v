@@ -1,9 +1,9 @@
-`define A 2'b000
-`define B 2'b001
-`define C 2'b010
-`define D 2'b011
-`define E 2'b100
-`define F 2'b101
+`define A 3'b000
+`define B 3'b001
+`define C 3'b010
+`define D 3'b011
+`define E 3'b100
+`define F 3'b101
 
 module controller(input clk, rst, eng_done, start,
                   output reg ld, sh_en, wr_req, 
@@ -31,9 +31,9 @@ module controller(input clk, rst, eng_done, start,
         {done, ld, ui_reg_ld, eng_start, cnt_en, sh_en, wr_req} = 7'b0;
         case (ps)
             `A: done = 1'b1;
-            `B: {ld, ui_reg_ld} = 2'b1;
+            `B: {ld, ui_reg_ld} = 2'b11;
             `C: eng_start = 1'b1;
-            `E: {cnt_en, wr_req} = 2'b1;
+            `E: {cnt_en, wr_req} = 2'b11;
             `F: sh_en = 1'b1;
             default:;
         endcase

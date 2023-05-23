@@ -10,7 +10,7 @@ module top_tb();
                                .U(U), .V(V), .done(done), 
                                .wr_req(wr_req), .wr_data(wr_data));
 
-    assign clk = 1'b0
+    assign clk = 1'b0;
     always #5 clk = ~clk;
 
     initial begin
