@@ -9,7 +9,7 @@ module datapath(input clk,rst, zx,initx,ldx, zt,initt,ldt, zr,initr,ldr, zc,ldc,
 
 	register regx(clk,rst,zx,initx,ldx,x,xr);
 
-	counter count(clk,rst,zc,ldc,enc,c_in,adr,co);
+	engCounter counter(clk,rst,zc,ldc,enc,c_in,adr,co);
 
 	LUT lut(adr,data);
 	
