@@ -15,3 +15,5 @@ module tb();
         #10 start = 1'b1;
         #10 start = 1'b0;
     end
+
+endmodule

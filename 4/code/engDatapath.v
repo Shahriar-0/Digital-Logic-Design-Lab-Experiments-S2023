@@ -18,8 +18,10 @@ module datapath(input clk,rst, zx,initx,ldx, zt,initt,ldt, zr,initr,ldr, zc,ldc,
 	multiplier mult(m_out,temp_out,temp_in);
 
 	register rtemp(clk,rst,zt,initt,ldt,temp_in,temp_out);
+	
 	adder add(result,{2'b00,temp_out},res_in);
 	
 	register18 rres(clk,rst,zr,initr,ldr,res_in,result);
+
 endmodule
 

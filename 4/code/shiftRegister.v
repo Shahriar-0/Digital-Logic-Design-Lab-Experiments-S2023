@@ -15,4 +15,5 @@ module shiftRegister (input clk,rst,zero,init,ld,sh_en,
             else if (sh_en == 1'b1)
                 r_out <= r_out << 1;
 	end
+    
  endmodule
