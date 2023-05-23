@@ -1,3 +1,4 @@
+`timescale 1ns/1ns
 module tb();
     reg clk, rst, start;
     reg [15:0] x;
