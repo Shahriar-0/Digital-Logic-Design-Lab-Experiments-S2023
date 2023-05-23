@@ -26,7 +26,7 @@ module controller(input clk, rst, eng_done, start,
             default: ns = `A;
         endcase
     end
-
+    wire cnt_en;
     always @(ps) begin
         {done, ld, ui_reg_ld, eng_start, eng_done, cnt_en, sh_en, wr_req} = 8'b0;
         case (ps)
@@ -46,7 +46,8 @@ module controller(input clk, rst, eng_done, start,
         end
         else begin
             ps <= ns;
-            count <= count + 1;
+            if(cnt_en)
+                count <= count + 1;
         end
     end
 

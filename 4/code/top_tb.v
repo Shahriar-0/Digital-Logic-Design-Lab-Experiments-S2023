@@ -7,7 +7,7 @@ module top_tb();
     
     accelerator_wrappers accwr(.clk(clk), .rst(rst), .start(start), 
                                .U(U), .V(V), .done(done), 
-                               .wr_req(wr_req), .wr_data(wr_data))
+                               .wr_req(wr_req), .wr_data(wr_data));
 
     always #5 clk = ~clk;
 
