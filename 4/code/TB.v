@@ -11,7 +11,7 @@ module tb();
     always #5 clk = ~clk;
 
     initial begin
-        clk = 1'b0; rst = 1'b1; start = 1'b0; x = 16'd10;
+        clk = 1'b0; rst = 1'b1; start = 1'b0; x = 16'b1111111111111111;
         #30 rst = 1'b0;
         #30 start = 1'b1;
         #30 start = 1'b0;
