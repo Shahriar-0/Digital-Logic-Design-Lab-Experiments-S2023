@@ -1,4 +1,4 @@
-module LUT (input [3:0] adr, output [15:0] data);
+module LUT(input [3:0] adr, output [15:0] data);
 	
 	reg [15:0] datat;
 

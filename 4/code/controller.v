@@ -5,12 +5,13 @@
 `define E 3'b100
 `define F 3'b101
 
-module controller(input clk, rst, eng_done, start,
+module Controller(input clk, rst, eng_done, start,
                   output reg ld, sh_en, wr_req, 
                   eng_start, ui_reg_ld, done);
 
     reg [2:0] ps, ns;
     reg [1:0] count;
+    reg  cnt_en;
     
     wire co;
     assign co = &count;
@@ -26,7 +27,7 @@ module controller(input clk, rst, eng_done, start,
             default: ns = `A;
         endcase
     end
-    reg  cnt_en;
+
     always @(ps) begin
         {done, ld, ui_reg_ld, eng_start, cnt_en, sh_en, wr_req} = 7'b0;
         case (ps)
@@ -50,6 +51,5 @@ module controller(input clk, rst, eng_done, start,
                 count <= count + 1;
         end
     end
-
 
 endmodule

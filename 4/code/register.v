@@ -1,5 +1,4 @@
-`timescale 1 ns/ 100 ps
-module register (input clk,rst,zero,init,ld, input [15:0] r_in, output reg [15:0] r_out);
+module Register (input clk,rst,zero,init,ld, input [15:0] r_in, output reg [15:0] r_out);
 
 	always@(posedge clk, posedge rst)begin
 		if(rst == 1'b1)
@@ -12,4 +11,5 @@ module register (input clk,rst,zero,init,ld, input [15:0] r_in, output reg [15:0
 			else if(ld == 1'b1)
 				r_out <= r_in;
 	end
+	
  endmodule

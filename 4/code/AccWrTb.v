@@ -1,12 +1,13 @@
 `timescale 1ns/1ns
-module top_tb();
+
+module AccWrTb();
     reg start, rst, clk;
     reg [4:0] V;
     reg [1:0] U;
     wire done, wr_req;
     wire [20:0] wr_data;
     
-    accelerator_wrappers accwr(.clk(clk), .rst(rst), .start(start), 
+    AcceleratorWrappers accwr(.clk(clk), .rst(rst), .start(start), 
                                .U(U), .V(V), .done(done), 
                                .wr_req(wr_req), .wr_data(wr_data));
 

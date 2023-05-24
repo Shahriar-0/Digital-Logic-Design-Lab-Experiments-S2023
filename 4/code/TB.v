@@ -5,7 +5,7 @@ module tb();
     wire done;
     wire [1:0] intpart;
     wire [15:0] fracpart;
-    exponential exp(.clk(clk), .rst(rst), .start(start), 
+    Exponential exp(.clk(clk), .rst(rst), .start(start), 
     .x(x), .done(done), .intpart(intpart), .fracpart(fracpart));
     
     always #5 clk = ~clk;

@@ -1,5 +1,4 @@
-`timescale 1 ns/ 100 ps
-module shiftRegisterII (input clk, rst, ld, sh_en, 
+module ShiftRegisterII (input clk, rst, ld, sh_en, 
                       input [4:0] r_in, output reg [15:0] r_out);
 
 	always@(posedge clk, posedge rst)begin
