@@ -1,4 +1,4 @@
-module ShiftRegister (input clk,rst,zero,init,ld,sh_en, 
+module ShiftRegister(input clk,rst,zero,init,ld,sh_en, 
                       input [15:0] r_in, output reg [15:0] r_out);
 
 	always@(posedge clk, posedge rst)begin

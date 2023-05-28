@@ -1,4 +1,4 @@
-module Register18bit (input clk,rst,zero,init,ld, input [17:0] r_in, output reg [17:0] r_out);
+module Register18bit(input clk,rst,zero,init,ld, input [17:0] r_in, output reg [17:0] r_out);
 
 	always@(posedge clk, posedge rst)begin
 		if(rst == 1'b1)
@@ -11,4 +11,5 @@ module Register18bit (input clk,rst,zero,init,ld, input [17:0] r_in, output reg 
 			else if(ld == 1'b1)
 				r_out <= r_in;
 	end
+
  endmodule

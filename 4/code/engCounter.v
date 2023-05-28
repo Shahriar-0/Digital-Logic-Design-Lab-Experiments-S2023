@@ -1,5 +1,5 @@
 `timescale 1 ns/ 100 ps
-module EngCounter (input clk,rst,zero,ld,enb, 
+module EngCounter(input clk,rst,zero,ld,enb, 
 				   input [2:0] in ,output reg [3:0] out, output  co);
 	
 	always@(posedge clk, posedge rst) begin
@@ -14,6 +14,6 @@ module EngCounter (input clk,rst,zero,ld,enb,
 				out <= out + 1'b1;
 	end
 
-	assign co = (out >= 4'b1000)? 1'b1: 1'b0;
+	assign co = (out >= 4'b1000)? 1'b1 : 1'b0;
 
 endmodule 
