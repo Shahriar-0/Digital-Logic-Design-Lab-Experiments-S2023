@@ -1,0 +1,102 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2012 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 32-bit
+# Version 12.1 Build 177 11/07/2012 SJ Web Edition
+# Date created = 13:20:09  May 04, 2023
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		AW_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C20F484C7
+set_global_assignment -name TOP_LEVEL_ENTITY AW
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 12.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:20:09  MAY 04, 2023"
+set_global_assignment -name LAST_QUARTUS_VERSION 12.1
+set_global_assignment -name VERILOG_FILE TB.v
+set_global_assignment -name VERILOG_FILE shiftRegisterII.v
+set_global_assignment -name VERILOG_FILE shiftRegister.v
+set_global_assignment -name VERILOG_FILE shiftComb.v
+set_global_assignment -name VERILOG_FILE register2.v
+set_global_assignment -name VERILOG_FILE register18.v
+set_global_assignment -name VERILOG_FILE register.v
+set_global_assignment -name VERILOG_FILE OnePulser.v
+set_global_assignment -name VERILOG_FILE mux2to1.v
+set_global_assignment -name VERILOG_FILE multiplier.v
+set_global_assignment -name VERILOG_FILE LUTExp.v
+set_global_assignment -name VERILOG_FILE exponential.v
+set_global_assignment -name VERILOG_FILE engDatapath.v
+set_global_assignment -name VERILOG_FILE engCounter.v
+set_global_assignment -name VERILOG_FILE engController.v
+set_global_assignment -name VERILOG_FILE datapath.v
+set_global_assignment -name VERILOG_FILE controller.v
+set_global_assignment -name VERILOG_FILE adder.v
+set_global_assignment -name VERILOG_FILE AccWrTb.v
+set_global_assignment -name VERILOG_FILE accelerator&wrapper.v
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name QIP_FILE fifo.qip
+set_global_assignment -name QIP_FILE fifo0.qip
+set_global_assignment -name BDF_FILE AW.bdf
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_L1 -to clk
+set_location_assignment PIN_U21 -to done
+set_location_assignment PIN_V22 -to empty
+set_location_assignment PIN_U22 -to full
+set_location_assignment PIN_R22 -to lp
+set_location_assignment PIN_R17 -to q[20]
+set_location_assignment PIN_R18 -to q[19]
+set_location_assignment PIN_U18 -to q[18]
+set_location_assignment PIN_Y18 -to q[17]
+set_location_assignment PIN_V19 -to q[16]
+set_location_assignment PIN_T18 -to q[15]
+set_location_assignment PIN_Y19 -to q[14]
+set_location_assignment PIN_U19 -to q[13]
+set_location_assignment PIN_R19 -to q[12]
+set_location_assignment PIN_R20 -to q[11]
+set_location_assignment PIN_L22 -to rst
+set_location_assignment PIN_L21 -to start
+set_location_assignment PIN_V12 -to U[1]
+set_location_assignment PIN_M22 -to U[0]
+set_location_assignment PIN_M1 -to V[4]
+set_location_assignment PIN_M2 -to V[3]
+set_location_assignment PIN_U11 -to V[2]
+set_location_assignment PIN_U12 -to V[1]
+set_location_assignment PIN_W12 -to V[0]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

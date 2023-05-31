@@ -1,0 +1,24 @@
+
+State Machine - |AW|OnePulser:inst2|ps
+Name ps.00 ps.10 ps.01 
+ps.00 0 0 0 
+ps.01 1 0 1 
+ps.10 1 1 0 
+
+State Machine - |AW|AcceleratorWrappers:inst|Controller:cntrl|ps
+Name ps.101 ps.100 ps.011 ps.010 ps.001 ps.000 
+ps.000 0 0 0 0 0 0 
+ps.001 0 0 0 0 1 1 
+ps.010 0 0 0 1 0 1 
+ps.011 0 0 1 0 0 1 
+ps.100 0 1 0 0 0 1 
+ps.101 1 0 0 0 0 1 
+
+State Machine - |AW|AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngController:control|ps
+Name ps.Add ps.Mult2 ps.Mult1 ps.Begin ps.Initialization ps.Idle 
+ps.Idle 0 0 0 0 0 0 
+ps.Initialization 0 0 0 0 1 1 
+ps.Begin 0 0 0 1 0 1 
+ps.Mult1 0 0 1 0 0 1 
+ps.Mult2 0 1 0 0 0 1 
+ps.Add 1 0 0 0 0 1 

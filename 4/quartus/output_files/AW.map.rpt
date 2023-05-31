@@ -1,0 +1,795 @@
+Analysis & Synthesis report for AW
+Thu May 04 13:54:39 2023
+Quartus II 32-bit Version 12.1 Build 177 11/07/2012 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis DSP Block Usage Summary
+ 10. Analysis & Synthesis IP Cores Summary
+ 11. State Machine - |AW|OnePulser:inst2|ps
+ 12. State Machine - |AW|AcceleratorWrappers:inst|Controller:cntrl|ps
+ 13. State Machine - |AW|AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngController:control|ps
+ 14. User-Specified and Inferred Latches
+ 15. Registers Removed During Synthesis
+ 16. Removed Registers Triggering Further Register Optimizations
+ 17. General Register Statistics
+ 18. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 19. Source assignments for fifo0:inst10|scfifo:scfifo_component|scfifo_5b31:auto_generated|a_dpfifo_ch31:dpfifo|dpram_5v01:FIFOram|altsyncram_muj1:altsyncram2
+ 20. Parameter Settings for User Entity Instance: AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngController:control
+ 21. Parameter Settings for User Entity Instance: fifo0:inst10|scfifo:scfifo_component
+ 22. Parameter Settings for Inferred Entity Instance: AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Multiplier:mult|lpm_mult:Mult0
+ 23. scfifo Parameter Settings by Entity Instance
+ 24. lpm_mult Parameter Settings by Entity Instance
+ 25. Port Connectivity Checks: "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Adder:add"
+ 26. Port Connectivity Checks: "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter"
+ 27. Elapsed Time Per Partition
+ 28. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++------------------------------------+------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu May 04 13:54:39 2023    ;
+; Quartus II 32-bit Version          ; 12.1 Build 177 11/07/2012 SJ Web Edition ;
+; Revision Name                      ; AW                                       ;
+; Top-level Entity Name              ; AW                                       ;
+; Family                             ; Cyclone II                               ;
+; Total logic elements               ; 165                                      ;
+;     Total combinational functions  ; 161                                      ;
+;     Dedicated logic registers      ; 80                                       ;
+; Total registers                    ; 80                                       ;
+; Total pins                         ; 59                                       ;
+; Total virtual pins                 ; 0                                        ;
+; Total memory bits                  ; 84                                       ;
+; Embedded Multiplier 9-bit elements ; 2                                        ;
+; Total PLLs                         ; 0                                        ;
++------------------------------------+------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C20F484C7       ;                    ;
+; Top-level entity name                                                      ; AW                 ; AW                 ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                             ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                   ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------+---------+
+; shiftRegisterII.v                ; yes             ; User Verilog HDL File              ; C:/Users/DLDLab 6/Desktop/fuck/shiftRegisterII.v               ;         ;
+; shiftComb.v                      ; yes             ; User Verilog HDL File              ; C:/Users/DLDLab 6/Desktop/fuck/shiftComb.v                     ;         ;
+; register2.v                      ; yes             ; User Verilog HDL File              ; C:/Users/DLDLab 6/Desktop/fuck/register2.v                     ;         ;
+; register18.v                     ; yes             ; User Verilog HDL File              ; C:/Users/DLDLab 6/Desktop/fuck/register18.v                    ;         ;
+; register.v                       ; yes             ; User Verilog HDL File              ; C:/Users/DLDLab 6/Desktop/fuck/register.v                      ;         ;
+; OnePulser.v                      ; yes             ; User Verilog HDL File              ; C:/Users/DLDLab 6/Desktop/fuck/OnePulser.v                     ;         ;
+; mux2to1.v                        ; yes             ; User Verilog HDL File              ; C:/Users/DLDLab 6/Desktop/fuck/mux2to1.v                       ;         ;
+; multiplier.v                     ; yes             ; User Verilog HDL File              ; C:/Users/DLDLab 6/Desktop/fuck/multiplier.v                    ;         ;
+; LUTExp.v                         ; yes             ; User Verilog HDL File              ; C:/Users/DLDLab 6/Desktop/fuck/LUTExp.v                        ;         ;
+; exponential.v                    ; yes             ; User Verilog HDL File              ; C:/Users/DLDLab 6/Desktop/fuck/exponential.v                   ;         ;
+; engDatapath.v                    ; yes             ; User Verilog HDL File              ; C:/Users/DLDLab 6/Desktop/fuck/engDatapath.v                   ;         ;
+; engCounter.v                     ; yes             ; User Verilog HDL File              ; C:/Users/DLDLab 6/Desktop/fuck/engCounter.v                    ;         ;
+; engController.v                  ; yes             ; User Verilog HDL File              ; C:/Users/DLDLab 6/Desktop/fuck/engController.v                 ;         ;
+; datapath.v                       ; yes             ; User Verilog HDL File              ; C:/Users/DLDLab 6/Desktop/fuck/datapath.v                      ;         ;
+; controller.v                     ; yes             ; User Verilog HDL File              ; C:/Users/DLDLab 6/Desktop/fuck/controller.v                    ;         ;
+; adder.v                          ; yes             ; User Verilog HDL File              ; C:/Users/DLDLab 6/Desktop/fuck/adder.v                         ;         ;
+; accelerator&wrapper.v            ; yes             ; User Verilog HDL File              ; C:/Users/DLDLab 6/Desktop/fuck/accelerator&wrapper.v           ;         ;
+; fifo0.v                          ; yes             ; User Wizard-Generated File         ; C:/Users/DLDLab 6/Desktop/fuck/fifo0.v                         ;         ;
+; AW.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/DLDLab 6/Desktop/fuck/AW.bdf                          ;         ;
+; scfifo.tdf                       ; yes             ; Megafunction                       ; c:/altera/12.1/quartus/libraries/megafunctions/scfifo.tdf      ;         ;
+; a_regfifo.inc                    ; yes             ; Megafunction                       ; c:/altera/12.1/quartus/libraries/megafunctions/a_regfifo.inc   ;         ;
+; a_dpfifo.inc                     ; yes             ; Megafunction                       ; c:/altera/12.1/quartus/libraries/megafunctions/a_dpfifo.inc    ;         ;
+; a_i2fifo.inc                     ; yes             ; Megafunction                       ; c:/altera/12.1/quartus/libraries/megafunctions/a_i2fifo.inc    ;         ;
+; a_fffifo.inc                     ; yes             ; Megafunction                       ; c:/altera/12.1/quartus/libraries/megafunctions/a_fffifo.inc    ;         ;
+; a_f2fifo.inc                     ; yes             ; Megafunction                       ; c:/altera/12.1/quartus/libraries/megafunctions/a_f2fifo.inc    ;         ;
+; aglobal121.inc                   ; yes             ; Megafunction                       ; c:/altera/12.1/quartus/libraries/megafunctions/aglobal121.inc  ;         ;
+; db/scfifo_5b31.tdf               ; yes             ; Auto-Generated Megafunction        ; C:/Users/DLDLab 6/Desktop/fuck/db/scfifo_5b31.tdf              ;         ;
+; db/a_dpfifo_ch31.tdf             ; yes             ; Auto-Generated Megafunction        ; C:/Users/DLDLab 6/Desktop/fuck/db/a_dpfifo_ch31.tdf            ;         ;
+; db/a_fefifo_h4f.tdf              ; yes             ; Auto-Generated Megafunction        ; C:/Users/DLDLab 6/Desktop/fuck/db/a_fefifo_h4f.tdf             ;         ;
+; db/cntr_nj7.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/DLDLab 6/Desktop/fuck/db/cntr_nj7.tdf                 ;         ;
+; db/dpram_5v01.tdf                ; yes             ; Auto-Generated Megafunction        ; C:/Users/DLDLab 6/Desktop/fuck/db/dpram_5v01.tdf               ;         ;
+; db/altsyncram_muj1.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/DLDLab 6/Desktop/fuck/db/altsyncram_muj1.tdf          ;         ;
+; db/cntr_bjb.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/DLDLab 6/Desktop/fuck/db/cntr_bjb.tdf                 ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                       ; c:/altera/12.1/quartus/libraries/megafunctions/lpm_mult.tdf    ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/altera/12.1/quartus/libraries/megafunctions/lpm_add_sub.inc ;         ;
+; multcore.inc                     ; yes             ; Megafunction                       ; c:/altera/12.1/quartus/libraries/megafunctions/multcore.inc    ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera/12.1/quartus/libraries/megafunctions/bypassff.inc    ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/12.1/quartus/libraries/megafunctions/altshift.inc    ;         ;
+; db/mult_l8t.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/DLDLab 6/Desktop/fuck/db/mult_l8t.tdf                 ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 165   ;
+;                                             ;       ;
+; Total combinational functions               ; 161   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 11    ;
+;     -- 3 input functions                    ; 110   ;
+;     -- <=2 input functions                  ; 40    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 141   ;
+;     -- arithmetic mode                      ; 20    ;
+;                                             ;       ;
+; Total registers                             ; 80    ;
+;     -- Dedicated logic registers            ; 80    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 59    ;
+; Total memory bits                           ; 84    ;
+; Embedded Multiplier 9-bit elements          ; 2     ;
+; Maximum fan-out                             ; 101   ;
+; Total fan-out                               ; 1012  ;
+; Average fan-out                             ; 3.13  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                  ;
++-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                     ; Library Name ;
++-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |AW                                             ; 161 (1)           ; 80 (0)       ; 84          ; 2            ; 0       ; 1         ; 59   ; 0            ; |AW                                                                                                                                     ;              ;
+;    |AcceleratorWrappers:inst|                   ; 145 (0)           ; 70 (0)       ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |AW|AcceleratorWrappers:inst                                                                                                            ;              ;
+;       |Controller:cntrl|                        ; 9 (9)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|AcceleratorWrappers:inst|Controller:cntrl                                                                                           ;              ;
+;       |Datapath:dp|                             ; 136 (0)           ; 62 (0)       ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |AW|AcceleratorWrappers:inst|Datapath:dp                                                                                                ;              ;
+;          |Exponential:exp_eng|                  ; 90 (0)            ; 52 (0)       ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |AW|AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng                                                                            ;              ;
+;             |EngController:control|             ; 5 (5)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngController:control                                                      ;              ;
+;             |EngDatapath:dP|                    ; 85 (0)            ; 46 (0)       ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |AW|AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP                                                             ;              ;
+;                |EngCounter:counter|             ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter                                          ;              ;
+;                |LUT:lut|                        ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut                                                     ;              ;
+;                |Multiplier:mult|                ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |AW|AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Multiplier:mult                                             ;              ;
+;                   |lpm_mult:Mult0|              ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |AW|AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Multiplier:mult|lpm_mult:Mult0                              ;              ;
+;                      |mult_l8t:auto_generated|  ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |AW|AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Multiplier:mult|lpm_mult:Mult0|mult_l8t:auto_generated      ;              ;
+;                |Mux2to1:mux|                    ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Mux2to1:mux                                                 ;              ;
+;                |Register18bit:rres|             ; 19 (19)           ; 18 (18)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register18bit:rres                                          ;              ;
+;                |Register:regx|                  ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register:regx                                               ;              ;
+;                |Register:rtemp|                 ; 17 (17)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register:rtemp                                              ;              ;
+;          |Register2bit:ui_reg|                  ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|AcceleratorWrappers:inst|Datapath:dp|Register2bit:ui_reg                                                                            ;              ;
+;          |ShiftComb:shift_comb|                 ; 37 (37)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|AcceleratorWrappers:inst|Datapath:dp|ShiftComb:shift_comb                                                                           ;              ;
+;          |ShiftRegisterII:shift_reg|            ; 9 (9)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|AcceleratorWrappers:inst|Datapath:dp|ShiftRegisterII:shift_reg                                                                      ;              ;
+;    |OnePulser:inst2|                            ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|OnePulser:inst2                                                                                                                     ;              ;
+;    |fifo0:inst10|                               ; 13 (0)            ; 8 (0)        ; 84          ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|fifo0:inst10                                                                                                                        ;              ;
+;       |scfifo:scfifo_component|                 ; 13 (0)            ; 8 (0)        ; 84          ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|fifo0:inst10|scfifo:scfifo_component                                                                                                ;              ;
+;          |scfifo_5b31:auto_generated|           ; 13 (0)            ; 8 (0)        ; 84          ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|fifo0:inst10|scfifo:scfifo_component|scfifo_5b31:auto_generated                                                                     ;              ;
+;             |a_dpfifo_ch31:dpfifo|              ; 13 (2)            ; 8 (0)        ; 84          ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|fifo0:inst10|scfifo:scfifo_component|scfifo_5b31:auto_generated|a_dpfifo_ch31:dpfifo                                                ;              ;
+;                |a_fefifo_h4f:fifo_state|        ; 7 (5)             ; 4 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|fifo0:inst10|scfifo:scfifo_component|scfifo_5b31:auto_generated|a_dpfifo_ch31:dpfifo|a_fefifo_h4f:fifo_state                        ;              ;
+;                   |cntr_nj7:count_usedw|        ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|fifo0:inst10|scfifo:scfifo_component|scfifo_5b31:auto_generated|a_dpfifo_ch31:dpfifo|a_fefifo_h4f:fifo_state|cntr_nj7:count_usedw   ;              ;
+;                |cntr_bjb:rd_ptr_count|          ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|fifo0:inst10|scfifo:scfifo_component|scfifo_5b31:auto_generated|a_dpfifo_ch31:dpfifo|cntr_bjb:rd_ptr_count                          ;              ;
+;                |cntr_bjb:wr_ptr|                ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|fifo0:inst10|scfifo:scfifo_component|scfifo_5b31:auto_generated|a_dpfifo_ch31:dpfifo|cntr_bjb:wr_ptr                                ;              ;
+;                |dpram_5v01:FIFOram|             ; 0 (0)             ; 0 (0)        ; 84          ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|fifo0:inst10|scfifo:scfifo_component|scfifo_5b31:auto_generated|a_dpfifo_ch31:dpfifo|dpram_5v01:FIFOram                             ;              ;
+;                   |altsyncram_muj1:altsyncram2| ; 0 (0)             ; 0 (0)        ; 84          ; 0            ; 0       ; 0         ; 0    ; 0            ; |AW|fifo0:inst10|scfifo:scfifo_component|scfifo_5b31:auto_generated|a_dpfifo_ch31:dpfifo|dpram_5v01:FIFOram|altsyncram_muj1:altsyncram2 ;              ;
++-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                   ;
++------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; Name                                                                                                                                           ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
++------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; fifo0:inst10|scfifo:scfifo_component|scfifo_5b31:auto_generated|a_dpfifo_ch31:dpfifo|dpram_5v01:FIFOram|altsyncram_muj1:altsyncram2|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 4            ; 21           ; 4            ; 21           ; 84   ; None ;
++------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary        ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 0           ;
+; Simple Multipliers (18-bit)           ; 1           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 2           ;
+; Signed Embedded Multipliers           ; 0           ;
+; Unsigned Embedded Multipliers         ; 1           ;
+; Mixed Sign Embedded Multipliers       ; 0           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                     ;
++--------+--------------+---------+--------------+--------------+------------------+----------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance  ; IP Include File                        ;
++--------+--------------+---------+--------------+--------------+------------------+----------------------------------------+
+; Altera ; FIFO         ; 12.1    ; N/A          ; N/A          ; |AW|fifo0:inst10 ; C:/Users/DLDLab 6/Desktop/fuck/fifo0.v ;
++--------+--------------+---------+--------------+--------------+------------------+----------------------------------------+
+
+
+Encoding Type:  One-Hot
++----------------------------------------+
+; State Machine - |AW|OnePulser:inst2|ps ;
++-------+-------+-------+----------------+
+; Name  ; ps.00 ; ps.10 ; ps.01          ;
++-------+-------+-------+----------------+
+; ps.00 ; 0     ; 0     ; 0              ;
+; ps.01 ; 1     ; 0     ; 1              ;
+; ps.10 ; 1     ; 1     ; 0              ;
++-------+-------+-------+----------------+
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------+
+; State Machine - |AW|AcceleratorWrappers:inst|Controller:cntrl|ps ;
++--------+--------+--------+--------+--------+--------+------------+
+; Name   ; ps.101 ; ps.100 ; ps.011 ; ps.010 ; ps.001 ; ps.000     ;
++--------+--------+--------+--------+--------+--------+------------+
+; ps.000 ; 0      ; 0      ; 0      ; 0      ; 0      ; 0          ;
+; ps.001 ; 0      ; 0      ; 0      ; 0      ; 1      ; 1          ;
+; ps.010 ; 0      ; 0      ; 0      ; 1      ; 0      ; 1          ;
+; ps.011 ; 0      ; 0      ; 1      ; 0      ; 0      ; 1          ;
+; ps.100 ; 0      ; 1      ; 0      ; 0      ; 0      ; 1          ;
+; ps.101 ; 1      ; 0      ; 0      ; 0      ; 0      ; 1          ;
++--------+--------+--------+--------+--------+--------+------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------+
+; State Machine - |AW|AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngController:control|ps ;
++-------------------+--------+----------+----------+----------+-------------------+---------------------+
+; Name              ; ps.Add ; ps.Mult2 ; ps.Mult1 ; ps.Begin ; ps.Initialization ; ps.Idle             ;
++-------------------+--------+----------+----------+----------+-------------------+---------------------+
+; ps.Idle           ; 0      ; 0        ; 0        ; 0        ; 0                 ; 0                   ;
+; ps.Initialization ; 0      ; 0        ; 0        ; 0        ; 1                 ; 1                   ;
+; ps.Begin          ; 0      ; 0        ; 0        ; 1        ; 0                 ; 1                   ;
+; ps.Mult1          ; 0      ; 0        ; 1        ; 0        ; 0                 ; 1                   ;
+; ps.Mult2          ; 0      ; 1        ; 0        ; 0        ; 0                 ; 1                   ;
+; ps.Add            ; 1      ; 0        ; 0        ; 0        ; 0                 ; 1                   ;
++-------------------+--------+----------+----------+----------+-------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                                                                                                                    ;
++-------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+------------------------+
+; Latch Name                                                                                ; Latch Enable Signal                                                                               ; Free of Timing Hazards ;
++-------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+------------------------+
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[0]  ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3] ; yes                    ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[1]  ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3] ; yes                    ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[2]  ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3] ; yes                    ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[3]  ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3] ; yes                    ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[4]  ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3] ; yes                    ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[5]  ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3] ; yes                    ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[6]  ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3] ; yes                    ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[7]  ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3] ; yes                    ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[8]  ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3] ; yes                    ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[9]  ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3] ; yes                    ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[10] ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3] ; yes                    ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[11] ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3] ; yes                    ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[12] ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3] ; yes                    ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[13] ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3] ; yes                    ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[14] ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3] ; yes                    ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[15] ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3] ; yes                    ;
+; Number of user-specified and inferred latches = 16                                        ;                                                                                                   ;                        ;
++-------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                      ;
++------------------------------------------------------------------------------------------------+----------------------------------------+
+; Register name                                                                                  ; Reason for Removal                     ;
++------------------------------------------------------------------------------------------------+----------------------------------------+
+; AcceleratorWrappers:inst|Datapath:dp|ShiftRegisterII:shift_reg|r_out[0]                        ; Stuck at GND due to stuck port data_in ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register:regx|r_out[0] ; Stuck at GND due to stuck port data_in ;
+; AcceleratorWrappers:inst|Datapath:dp|ShiftRegisterII:shift_reg|r_out[1]                        ; Stuck at GND due to stuck port data_in ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register:regx|r_out[1] ; Stuck at GND due to stuck port data_in ;
+; AcceleratorWrappers:inst|Datapath:dp|ShiftRegisterII:shift_reg|r_out[2]                        ; Stuck at GND due to stuck port data_in ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register:regx|r_out[2] ; Stuck at GND due to stuck port data_in ;
+; AcceleratorWrappers:inst|Datapath:dp|ShiftRegisterII:shift_reg|r_out[3]                        ; Stuck at GND due to stuck port data_in ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register:regx|r_out[3] ; Stuck at GND due to stuck port data_in ;
+; AcceleratorWrappers:inst|Datapath:dp|ShiftRegisterII:shift_reg|r_out[4]                        ; Stuck at GND due to stuck port data_in ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register:regx|r_out[4] ; Stuck at GND due to stuck port data_in ;
+; AcceleratorWrappers:inst|Datapath:dp|ShiftRegisterII:shift_reg|r_out[5]                        ; Stuck at GND due to stuck port data_in ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register:regx|r_out[5] ; Stuck at GND due to stuck port data_in ;
+; AcceleratorWrappers:inst|Datapath:dp|ShiftRegisterII:shift_reg|r_out[6]                        ; Stuck at GND due to stuck port data_in ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register:regx|r_out[6] ; Stuck at GND due to stuck port data_in ;
+; AcceleratorWrappers:inst|Datapath:dp|ShiftRegisterII:shift_reg|r_out[7]                        ; Stuck at GND due to stuck port data_in ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register:regx|r_out[7] ; Stuck at GND due to stuck port data_in ;
+; AcceleratorWrappers:inst|Controller:cntrl|ps~4                                                 ; Lost fanout                            ;
+; AcceleratorWrappers:inst|Controller:cntrl|ps~5                                                 ; Lost fanout                            ;
+; AcceleratorWrappers:inst|Controller:cntrl|ps~6                                                 ; Lost fanout                            ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngController:control|ps~4            ; Lost fanout                            ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngController:control|ps~5            ; Lost fanout                            ;
+; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngController:control|ps~6            ; Lost fanout                            ;
+; OnePulser:inst2|ps.10                                                                          ; Lost fanout                            ;
+; Total Number of Removed Registers = 23                                                         ;                                        ;
++------------------------------------------------------------------------------------------------+----------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                                           ;
++-------------------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------------------+
+; Register name                                                           ; Reason for Removal        ; Registers Removed due to This Register                                                          ;
++-------------------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------------------+
+; AcceleratorWrappers:inst|Datapath:dp|ShiftRegisterII:shift_reg|r_out[0] ; Stuck at GND              ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register:regx|r_out[0], ;
+;                                                                         ; due to stuck port data_in ; AcceleratorWrappers:inst|Datapath:dp|ShiftRegisterII:shift_reg|r_out[1],                        ;
+;                                                                         ;                           ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register:regx|r_out[1], ;
+;                                                                         ;                           ; AcceleratorWrappers:inst|Datapath:dp|ShiftRegisterII:shift_reg|r_out[2],                        ;
+;                                                                         ;                           ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register:regx|r_out[2], ;
+;                                                                         ;                           ; AcceleratorWrappers:inst|Datapath:dp|ShiftRegisterII:shift_reg|r_out[3],                        ;
+;                                                                         ;                           ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register:regx|r_out[3], ;
+;                                                                         ;                           ; AcceleratorWrappers:inst|Datapath:dp|ShiftRegisterII:shift_reg|r_out[4],                        ;
+;                                                                         ;                           ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register:regx|r_out[4], ;
+;                                                                         ;                           ; AcceleratorWrappers:inst|Datapath:dp|ShiftRegisterII:shift_reg|r_out[5],                        ;
+;                                                                         ;                           ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register:regx|r_out[5], ;
+;                                                                         ;                           ; AcceleratorWrappers:inst|Datapath:dp|ShiftRegisterII:shift_reg|r_out[6],                        ;
+;                                                                         ;                           ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register:regx|r_out[6], ;
+;                                                                         ;                           ; AcceleratorWrappers:inst|Datapath:dp|ShiftRegisterII:shift_reg|r_out[7],                        ;
+;                                                                         ;                           ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register:regx|r_out[7]  ;
++-------------------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 80    ;
+; Number of registers using Synchronous Clear  ; 2     ;
+; Number of registers using Synchronous Load   ; 18    ;
+; Number of registers using Asynchronous Clear ; 72    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 61    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |AW|AcceleratorWrappers:inst|Datapath:dp|ShiftRegisterII:shift_reg|r_out[15]                            ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |AW|AcceleratorWrappers:inst|Datapath:dp|ShiftRegisterII:shift_reg|r_out[11]                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |AW|AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register:regx|r_out[14]     ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |AW|AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[2]   ;
+; 3:1                ; 18 bits   ; 36 LEs        ; 18 LEs               ; 18 LEs                 ; Yes        ; |AW|AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register18bit:rres|r_out[2] ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |AW|AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register:rtemp|r_out[3]     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for fifo0:inst10|scfifo:scfifo_component|scfifo_5b31:auto_generated|a_dpfifo_ch31:dpfifo|dpram_5v01:FIFOram|altsyncram_muj1:altsyncram2 ;
++---------------------------------+--------------------+------+----------------------------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                                           ;
++---------------------------------+--------------------+------+----------------------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                            ;
++---------------------------------+--------------------+------+----------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngController:control ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; Idle           ; 000   ; Unsigned Binary                                                                                    ;
+; Initialization ; 001   ; Unsigned Binary                                                                                    ;
+; Begin          ; 010   ; Unsigned Binary                                                                                    ;
+; Mult1          ; 011   ; Unsigned Binary                                                                                    ;
+; Mult2          ; 100   ; Unsigned Binary                                                                                    ;
+; Add            ; 101   ; Unsigned Binary                                                                                    ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fifo0:inst10|scfifo:scfifo_component ;
++-------------------------+-------------+-------------------------------------------+
+; Parameter Name          ; Value       ; Type                                      ;
++-------------------------+-------------+-------------------------------------------+
+; AUTO_CARRY_CHAINS       ; ON          ; AUTO_CARRY                                ;
+; IGNORE_CARRY_BUFFERS    ; OFF         ; IGNORE_CARRY                              ;
+; AUTO_CASCADE_CHAINS     ; ON          ; AUTO_CASCADE                              ;
+; IGNORE_CASCADE_BUFFERS  ; OFF         ; IGNORE_CASCADE                            ;
+; lpm_width               ; 21          ; Signed Integer                            ;
+; LPM_NUMWORDS            ; 4           ; Signed Integer                            ;
+; LPM_WIDTHU              ; 2           ; Signed Integer                            ;
+; LPM_SHOWAHEAD           ; OFF         ; Untyped                                   ;
+; UNDERFLOW_CHECKING      ; ON          ; Untyped                                   ;
+; OVERFLOW_CHECKING       ; ON          ; Untyped                                   ;
+; ALLOW_RWCYCLE_WHEN_FULL ; OFF         ; Untyped                                   ;
+; ADD_RAM_OUTPUT_REGISTER ; OFF         ; Untyped                                   ;
+; ALMOST_FULL_VALUE       ; 0           ; Untyped                                   ;
+; ALMOST_EMPTY_VALUE      ; 0           ; Untyped                                   ;
+; USE_EAB                 ; ON          ; Untyped                                   ;
+; MAXIMIZE_SPEED          ; 5           ; Untyped                                   ;
+; DEVICE_FAMILY           ; Cyclone II  ; Untyped                                   ;
+; OPTIMIZE_FOR_SPEED      ; 5           ; Untyped                                   ;
+; CBXI_PARAMETER          ; scfifo_5b31 ; Untyped                                   ;
++-------------------------+-------------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Multiplier:mult|lpm_mult:Mult0 ;
++------------------------------------------------+------------+-------------------------------------------------------------------------------------------+
+; Parameter Name                                 ; Value      ; Type                                                                                      ;
++------------------------------------------------+------------+-------------------------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY                                                                                ;
+; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY                                                                              ;
+; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE                                                                              ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE                                                                            ;
+; LPM_WIDTHA                                     ; 16         ; Untyped                                                                                   ;
+; LPM_WIDTHB                                     ; 16         ; Untyped                                                                                   ;
+; LPM_WIDTHP                                     ; 32         ; Untyped                                                                                   ;
+; LPM_WIDTHR                                     ; 32         ; Untyped                                                                                   ;
+; LPM_WIDTHS                                     ; 1          ; Untyped                                                                                   ;
+; LPM_REPRESENTATION                             ; UNSIGNED   ; Untyped                                                                                   ;
+; LPM_PIPELINE                                   ; 0          ; Untyped                                                                                   ;
+; LATENCY                                        ; 0          ; Untyped                                                                                   ;
+; INPUT_A_IS_CONSTANT                            ; NO         ; Untyped                                                                                   ;
+; INPUT_B_IS_CONSTANT                            ; NO         ; Untyped                                                                                   ;
+; USE_EAB                                        ; OFF        ; Untyped                                                                                   ;
+; MAXIMIZE_SPEED                                 ; 6          ; Untyped                                                                                   ;
+; DEVICE_FAMILY                                  ; Cyclone II ; Untyped                                                                                   ;
+; CARRY_CHAIN                                    ; MANUAL     ; Untyped                                                                                   ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K                                                                       ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped                                                                                   ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped                                                                                   ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped                                                                                   ;
+; CBXI_PARAMETER                                 ; mult_l8t   ; Untyped                                                                                   ;
+; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped                                                                                   ;
+; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped                                                                                   ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped                                                                                   ;
++------------------------------------------------+------------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; scfifo Parameter Settings by Entity Instance                      ;
++----------------------------+--------------------------------------+
+; Name                       ; Value                                ;
++----------------------------+--------------------------------------+
+; Number of entity instances ; 1                                    ;
+; Entity Instance            ; fifo0:inst10|scfifo:scfifo_component ;
+;     -- FIFO Type           ; Single Clock                         ;
+;     -- lpm_width           ; 21                                   ;
+;     -- LPM_NUMWORDS        ; 4                                    ;
+;     -- LPM_SHOWAHEAD       ; OFF                                  ;
+;     -- USE_EAB             ; ON                                   ;
++----------------------------+--------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                                                                                 ;
++---------------------------------------+--------------------------------------------------------------------------------------------------------+
+; Name                                  ; Value                                                                                                  ;
++---------------------------------------+--------------------------------------------------------------------------------------------------------+
+; Number of entity instances            ; 1                                                                                                      ;
+; Entity Instance                       ; AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Multiplier:mult|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 16                                                                                                     ;
+;     -- LPM_WIDTHB                     ; 16                                                                                                     ;
+;     -- LPM_WIDTHP                     ; 32                                                                                                     ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                                                                               ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                                     ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                                     ;
+;     -- USE_EAB                        ; OFF                                                                                                    ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                                                   ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                                     ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                                     ;
++---------------------------------------+--------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Adder:add" ;
++-----------+-------+----------+--------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                        ;
++-----------+-------+----------+--------------------------------------------------------------------------------+
+; b[17..16] ; Input ; Info     ; Stuck at GND                                                                   ;
++-----------+-------+----------+--------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter" ;
++------+-------+----------+----------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------+
+; in   ; Input ; Info     ; Stuck at GND                                                                                 ;
++------+-------+----------+----------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Analysis & Synthesis
+    Info: Version 12.1 Build 177 11/07/2012 SJ Web Edition
+    Info: Processing started: Thu May 04 13:54:36 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AW -c AW
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file tb.v
+    Info (12023): Found entity 1: tb
+Info (12021): Found 1 design units, including 1 entities, in source file shiftregisterii.v
+    Info (12023): Found entity 1: ShiftRegisterII
+Info (12021): Found 1 design units, including 1 entities, in source file shiftregister.v
+    Info (12023): Found entity 1: ShiftRegister
+Info (12021): Found 1 design units, including 1 entities, in source file shiftcomb.v
+    Info (12023): Found entity 1: ShiftComb
+Info (12021): Found 1 design units, including 1 entities, in source file register2.v
+    Info (12023): Found entity 1: Register2bit
+Info (12021): Found 1 design units, including 1 entities, in source file register18.v
+    Info (12023): Found entity 1: Register18bit
+Info (12021): Found 1 design units, including 1 entities, in source file register.v
+    Info (12023): Found entity 1: Register
+Info (12021): Found 1 design units, including 1 entities, in source file onepulser.v
+    Info (12023): Found entity 1: OnePulser
+Info (12021): Found 1 design units, including 1 entities, in source file mux2to1.v
+    Info (12023): Found entity 1: Mux2to1
+Info (12021): Found 1 design units, including 1 entities, in source file multiplier.v
+    Info (12023): Found entity 1: Multiplier
+Info (12021): Found 1 design units, including 1 entities, in source file lutexp.v
+    Info (12023): Found entity 1: LUT
+Info (12021): Found 1 design units, including 1 entities, in source file exponential.v
+    Info (12023): Found entity 1: Exponential
+Info (12021): Found 1 design units, including 1 entities, in source file engdatapath.v
+    Info (12023): Found entity 1: EngDatapath
+Info (12021): Found 1 design units, including 1 entities, in source file engcounter.v
+    Info (12023): Found entity 1: EngCounter
+Info (12021): Found 1 design units, including 1 entities, in source file engcontroller.v
+    Info (12023): Found entity 1: EngController
+Info (12021): Found 1 design units, including 1 entities, in source file datapath.v
+    Info (12023): Found entity 1: Datapath
+Warning (10274): Verilog HDL macro warning at controller.v(2): overriding existing definition for macro "A", which was defined in "OnePulser.v", line 2
+Warning (10274): Verilog HDL macro warning at controller.v(3): overriding existing definition for macro "B", which was defined in "OnePulser.v", line 3
+Warning (10274): Verilog HDL macro warning at controller.v(4): overriding existing definition for macro "C", which was defined in "OnePulser.v", line 4
+Info (12021): Found 1 design units, including 1 entities, in source file controller.v
+    Info (12023): Found entity 1: Controller
+Info (12021): Found 1 design units, including 1 entities, in source file adder.v
+    Info (12023): Found entity 1: Adder
+Info (12021): Found 1 design units, including 1 entities, in source file accwrtb.v
+    Info (12023): Found entity 1: AccWrTb
+Info (12021): Found 1 design units, including 1 entities, in source file accelerator&wrapper.v
+    Info (12023): Found entity 1: AcceleratorWrappers
+Info (12021): Found 1 design units, including 1 entities, in source file fifo.v
+    Info (12023): Found entity 1: fifo
+Info (12021): Found 1 design units, including 1 entities, in source file fifo0.v
+    Info (12023): Found entity 1: fifo0
+Info (12021): Found 1 design units, including 1 entities, in source file aw.bdf
+    Info (12023): Found entity 1: AW
+Info (12127): Elaborating entity "AW" for the top level hierarchy
+Info (12128): Elaborating entity "AcceleratorWrappers" for hierarchy "AcceleratorWrappers:inst"
+Info (12128): Elaborating entity "Datapath" for hierarchy "AcceleratorWrappers:inst|Datapath:dp"
+Info (12128): Elaborating entity "ShiftRegisterII" for hierarchy "AcceleratorWrappers:inst|Datapath:dp|ShiftRegisterII:shift_reg"
+Info (12128): Elaborating entity "Register2bit" for hierarchy "AcceleratorWrappers:inst|Datapath:dp|Register2bit:ui_reg"
+Info (12128): Elaborating entity "ShiftComb" for hierarchy "AcceleratorWrappers:inst|Datapath:dp|ShiftComb:shift_comb"
+Info (12128): Elaborating entity "Exponential" for hierarchy "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng"
+Info (12128): Elaborating entity "EngController" for hierarchy "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngController:control"
+Info (12128): Elaborating entity "EngDatapath" for hierarchy "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP"
+Info (12128): Elaborating entity "Register" for hierarchy "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register:regx"
+Info (12128): Elaborating entity "EngCounter" for hierarchy "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter"
+Info (12128): Elaborating entity "LUT" for hierarchy "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut"
+Warning (10270): Verilog HDL Case Statement warning at LUTExp.v(6): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at LUTExp.v(5): inferring latch(es) for variable "datat", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "datat[0]" at LUTExp.v(5)
+Info (10041): Inferred latch for "datat[1]" at LUTExp.v(5)
+Info (10041): Inferred latch for "datat[2]" at LUTExp.v(5)
+Info (10041): Inferred latch for "datat[3]" at LUTExp.v(5)
+Info (10041): Inferred latch for "datat[4]" at LUTExp.v(5)
+Info (10041): Inferred latch for "datat[5]" at LUTExp.v(5)
+Info (10041): Inferred latch for "datat[6]" at LUTExp.v(5)
+Info (10041): Inferred latch for "datat[7]" at LUTExp.v(5)
+Info (10041): Inferred latch for "datat[8]" at LUTExp.v(5)
+Info (10041): Inferred latch for "datat[9]" at LUTExp.v(5)
+Info (10041): Inferred latch for "datat[10]" at LUTExp.v(5)
+Info (10041): Inferred latch for "datat[11]" at LUTExp.v(5)
+Info (10041): Inferred latch for "datat[12]" at LUTExp.v(5)
+Info (10041): Inferred latch for "datat[13]" at LUTExp.v(5)
+Info (10041): Inferred latch for "datat[14]" at LUTExp.v(5)
+Info (10041): Inferred latch for "datat[15]" at LUTExp.v(5)
+Info (12128): Elaborating entity "Mux2to1" for hierarchy "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Mux2to1:mux"
+Info (12128): Elaborating entity "Multiplier" for hierarchy "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Multiplier:mult"
+Info (12128): Elaborating entity "Adder" for hierarchy "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Adder:add"
+Info (12128): Elaborating entity "Register18bit" for hierarchy "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Register18bit:rres"
+Info (12128): Elaborating entity "Controller" for hierarchy "AcceleratorWrappers:inst|Controller:cntrl"
+Info (10264): Verilog HDL Case Statement information at controller.v(33): all case item expressions in this case statement are onehot
+Warning (10230): Verilog HDL assignment warning at controller.v(51): truncated value with size 32 to match size of target (2)
+Info (12128): Elaborating entity "fifo0" for hierarchy "fifo0:inst10"
+Info (12128): Elaborating entity "scfifo" for hierarchy "fifo0:inst10|scfifo:scfifo_component"
+Info (12130): Elaborated megafunction instantiation "fifo0:inst10|scfifo:scfifo_component"
+Info (12133): Instantiated megafunction "fifo0:inst10|scfifo:scfifo_component" with the following parameter:
+    Info (12134): Parameter "add_ram_output_register" = "OFF"
+    Info (12134): Parameter "intended_device_family" = "Cyclone II"
+    Info (12134): Parameter "lpm_numwords" = "4"
+    Info (12134): Parameter "lpm_showahead" = "OFF"
+    Info (12134): Parameter "lpm_type" = "scfifo"
+    Info (12134): Parameter "lpm_width" = "21"
+    Info (12134): Parameter "lpm_widthu" = "2"
+    Info (12134): Parameter "overflow_checking" = "ON"
+    Info (12134): Parameter "underflow_checking" = "ON"
+    Info (12134): Parameter "use_eab" = "ON"
+Info (12021): Found 1 design units, including 1 entities, in source file db/scfifo_5b31.tdf
+    Info (12023): Found entity 1: scfifo_5b31
+Info (12128): Elaborating entity "scfifo_5b31" for hierarchy "fifo0:inst10|scfifo:scfifo_component|scfifo_5b31:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/a_dpfifo_ch31.tdf
+    Info (12023): Found entity 1: a_dpfifo_ch31
+Info (12128): Elaborating entity "a_dpfifo_ch31" for hierarchy "fifo0:inst10|scfifo:scfifo_component|scfifo_5b31:auto_generated|a_dpfifo_ch31:dpfifo"
+Info (12021): Found 1 design units, including 1 entities, in source file db/a_fefifo_h4f.tdf
+    Info (12023): Found entity 1: a_fefifo_h4f
+Info (12128): Elaborating entity "a_fefifo_h4f" for hierarchy "fifo0:inst10|scfifo:scfifo_component|scfifo_5b31:auto_generated|a_dpfifo_ch31:dpfifo|a_fefifo_h4f:fifo_state"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_nj7.tdf
+    Info (12023): Found entity 1: cntr_nj7
+Info (12128): Elaborating entity "cntr_nj7" for hierarchy "fifo0:inst10|scfifo:scfifo_component|scfifo_5b31:auto_generated|a_dpfifo_ch31:dpfifo|a_fefifo_h4f:fifo_state|cntr_nj7:count_usedw"
+Info (12021): Found 1 design units, including 1 entities, in source file db/dpram_5v01.tdf
+    Info (12023): Found entity 1: dpram_5v01
+Info (12128): Elaborating entity "dpram_5v01" for hierarchy "fifo0:inst10|scfifo:scfifo_component|scfifo_5b31:auto_generated|a_dpfifo_ch31:dpfifo|dpram_5v01:FIFOram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_muj1.tdf
+    Info (12023): Found entity 1: altsyncram_muj1
+Info (12128): Elaborating entity "altsyncram_muj1" for hierarchy "fifo0:inst10|scfifo:scfifo_component|scfifo_5b31:auto_generated|a_dpfifo_ch31:dpfifo|dpram_5v01:FIFOram|altsyncram_muj1:altsyncram2"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_bjb.tdf
+    Info (12023): Found entity 1: cntr_bjb
+Info (12128): Elaborating entity "cntr_bjb" for hierarchy "fifo0:inst10|scfifo:scfifo_component|scfifo_5b31:auto_generated|a_dpfifo_ch31:dpfifo|cntr_bjb:rd_ptr_count"
+Info (12128): Elaborating entity "OnePulser" for hierarchy "OnePulser:inst2"
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Multiplier:mult|Mult0"
+Info (12130): Elaborated megafunction instantiation "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Multiplier:mult|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Multiplier:mult|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "16"
+    Info (12134): Parameter "LPM_WIDTHB" = "16"
+    Info (12134): Parameter "LPM_WIDTHP" = "32"
+    Info (12134): Parameter "LPM_WIDTHR" = "32"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_l8t.tdf
+    Info (12023): Found entity 1: mult_l8t
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[12]" merged with LATCH primitive "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[0]"
+    Info (13026): Duplicate LATCH primitive "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[8]" merged with LATCH primitive "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[0]"
+    Info (13026): Duplicate LATCH primitive "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[6]" merged with LATCH primitive "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[2]"
+    Info (13026): Duplicate LATCH primitive "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[11]" merged with LATCH primitive "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[3]"
+    Info (13026): Duplicate LATCH primitive "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[9]" merged with LATCH primitive "AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|LUT:lut|datat[5]"
+Info (17049): 7 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 247 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 48 output pins
+    Info (21061): Implemented 165 logic cells
+    Info (21064): Implemented 21 RAM segments
+    Info (21062): Implemented 2 DSP elements
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 363 megabytes
+    Info: Processing ended: Thu May 04 13:54:39 2023
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+

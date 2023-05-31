@@ -1,0 +1,53 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'clk'
+Slack : -7.845
+TNS   : -440.472
+
+Type  : Slow Model Setup 'AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3]'
+Slack : -2.569
+TNS   : -25.176
+
+Type  : Slow Model Hold 'clk'
+Slack : -2.687
+TNS   : -6.110
+
+Type  : Slow Model Hold 'AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3]'
+Slack : 1.765
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clk'
+Slack : -2.064
+TNS   : -351.231
+
+Type  : Slow Model Minimum Pulse Width 'AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'clk'
+Slack : -1.460
+TNS   : -88.591
+
+Type  : Fast Model Setup 'AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3]'
+Slack : -0.528
+TNS   : -4.729
+
+Type  : Fast Model Hold 'clk'
+Slack : -1.716
+TNS   : -4.517
+
+Type  : Fast Model Hold 'AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3]'
+Slack : 0.893
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clk'
+Slack : -1.627
+TNS   : -282.926
+
+Type  : Fast Model Minimum Pulse Width 'AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|EngCounter:counter|out[3]'
+Slack : 0.500
+TNS   : 0.000
+
+------------------------------------------------------------

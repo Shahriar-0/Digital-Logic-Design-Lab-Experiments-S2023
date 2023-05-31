@@ -1,0 +1,3 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Multiplier:mult|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2,
+PORT_SWAPPING,PORT_SWAPPING_FINISHED,AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Multiplier:mult|lpm_mult:Mult0|mult_l8t:auto_generated|mac_mult1,
