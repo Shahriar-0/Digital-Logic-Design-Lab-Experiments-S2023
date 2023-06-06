@@ -11,11 +11,11 @@ module AccWrTb();
                                .U(U), .V(V), .done(done), 
                                .wr_req(wr_req), .wr_data(wr_data));
 
-    assign clk = 1'b0;
     always #5 clk = ~clk;
 
     initial begin
         rst = 1'b1; start = 1'b0; V= 5'b0 ; U = 2'b0;
+		  clk = 1'b0;
         #30 rst = 1'b0;
         #10 start = 1'b1;
         #20 start = 1'b0;

@@ -1,7 +1,0 @@
-<?xml version="1.0" ?>
-<LOG_ROOT>
-	<PROJECT NAME="AW">
-		<CBX_INST_ENTRY INSTANCE_NAME="|AW|AcceleratorWrappers:inst|Datapath:dp|Exponential:exp_eng|EngDatapath:dP|Multiplier:mult|lpm_mult:Mult0" CBX_FILE_NAME="mult_l8t.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|AW|fifo0:inst10|scfifo:scfifo_component" CBX_FILE_NAME="scfifo_5b31.tdf"/>
-	</PROJECT>
-</LOG_ROOT>
