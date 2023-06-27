@@ -14,14 +14,14 @@ module detector(clk, Clk_EN, rst, serIn, Co,
     always @(serIn or Co or Clk_EN) begin
         
         case (pstate)
-            A : nstate <= serIn ? B : A;
-            B : nstate <= serIn ? C : A;
+            A : nstate <= serIn  ? B : A;
+            B : nstate <= serIn  ? C : A;
             C : nstate <= ~serIn ? D : C;
             D : nstate <= ~serIn ? A : E;
-            E : nstate <= ~serIn ?  F : C;
-            F : nstate <= serIn ? G : A;
+            E : nstate <= ~serIn ? F : C;
+            F : nstate <= serIn  ? G : A;
             G : nstate <= H;
-            H : nstate <= Co ? A : H;
+            H : nstate <= Co     ? A : H;
         endcase
     end
 
